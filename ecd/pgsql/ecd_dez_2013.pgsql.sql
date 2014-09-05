@@ -11,10 +11,6 @@
 
 CREATE TABLE "reg_0000" (
   "ID" bigint NOT NULL,
-  "ID_PAI" bigint NULL,
-  "ID_MASTER" bigint NULL,
-  "ID_ARQUIVO" bigint NULL,
-  "LINHA" bigint NOT NULL,
   "REG" varchar(4) collate latin1_general_ci default NULL,
   "LECD" varchar(4) collate latin1_general_ci default NULL,
   "DT_INI" date default NULL,
@@ -41,10 +37,6 @@ CREATE TABLE "reg_0000" (
 
 CREATE TABLE "reg_0001" (
   "ID" bigint NOT NULL,
-  "ID_PAI" bigint NULL,
-  "ID_MASTER" bigint NULL,
-  "ID_ARQUIVO" bigint NULL,
-  "LINHA" bigint NOT NULL,
   "REG" varchar(4) collate latin1_general_ci default NULL,
   "IND_DAD" varchar(1) collate latin1_general_ci default NULL,
   PRIMARY KEY ("ID")
@@ -56,10 +48,6 @@ CREATE TABLE "reg_0001" (
 
 CREATE TABLE "reg_0007" (
   "ID" bigint NOT NULL,
-  "ID_PAI" bigint NULL,
-  "ID_MASTER" bigint NULL,
-  "ID_ARQUIVO" bigint NULL,
-  "LINHA" bigint NOT NULL,
   "REG" varchar(4) collate latin1_general_ci default NULL,
   "COD_ENT_REF" varchar(255) collate latin1_general_ci default NULL,
   "COD_INSCR" varchar(255) collate latin1_general_ci default NULL,
@@ -72,10 +60,6 @@ CREATE TABLE "reg_0007" (
 
 CREATE TABLE "reg_0020" (
   "ID" bigint NOT NULL,
-  "ID_PAI" bigint NULL,
-  "ID_MASTER" bigint NULL,
-  "ID_ARQUIVO" bigint NULL,
-  "LINHA" bigint NOT NULL,
   "REG" varchar(4) collate latin1_general_ci default NULL,
   "IND_DEC" varchar(1) collate latin1_general_ci default NULL,
   "CNPJ" varchar(14) collate latin1_general_ci default NULL,
@@ -93,10 +77,6 @@ CREATE TABLE "reg_0020" (
 
 CREATE TABLE "reg_0150" (
   "ID" bigint NOT NULL,
-  "ID_PAI" bigint NULL,
-  "ID_MASTER" bigint NULL,
-  "ID_ARQUIVO" bigint NULL,
-  "LINHA" bigint NOT NULL,
   "REG" varchar(4) collate latin1_general_ci default NULL,
   "COD_PART" varchar(255) collate latin1_general_ci default NULL,
   "NOME" varchar(255) collate latin1_general_ci default NULL,
@@ -119,10 +99,6 @@ CREATE TABLE "reg_0150" (
 
 CREATE TABLE "reg_0180" (
   "ID" bigint NOT NULL,
-  "ID_PAI" bigint NULL,
-  "ID_MASTER" bigint NULL,
-  "ID_ARQUIVO" bigint NULL,
-  "LINHA" bigint NOT NULL,
   "REG" varchar(4) collate latin1_general_ci default NULL,
   "COD_REL" varchar(2) collate latin1_general_ci default NULL,
   "DT_INI_REL" date default NULL,
@@ -136,10 +112,6 @@ CREATE TABLE "reg_0180" (
 
 CREATE TABLE "reg_0990" (
   "ID" bigint NOT NULL,
-  "ID_PAI" bigint NULL,
-  "ID_MASTER" bigint NULL,
-  "ID_ARQUIVO" bigint NULL,
-  "LINHA" bigint NOT NULL,
   "REG" varchar(4) collate latin1_general_ci default NULL,
   "QTD_LIN_0" varchar(255) collate latin1_general_ci default NULL,
   PRIMARY KEY ("ID")
@@ -151,10 +123,6 @@ CREATE TABLE "reg_0990" (
 
 CREATE TABLE "reg_9001" (
   "ID" bigint NOT NULL,
-  "ID_PAI" bigint NULL,
-  "ID_MASTER" bigint NULL,
-  "ID_ARQUIVO" bigint NULL,
-  "LINHA" bigint NOT NULL,
   "REG" varchar(4) collate latin1_general_ci default NULL,
   "IND_DAD" varchar(1) collate latin1_general_ci default NULL,
   PRIMARY KEY ("ID")
@@ -166,10 +134,6 @@ CREATE TABLE "reg_9001" (
 
 CREATE TABLE "reg_9900" (
   "ID" bigint NOT NULL,
-  "ID_PAI" bigint NULL,
-  "ID_MASTER" bigint NULL,
-  "ID_ARQUIVO" bigint NULL,
-  "LINHA" bigint NOT NULL,
   "REG" varchar(4) collate latin1_general_ci default NULL,
   "REG_BLC" varchar(4) collate latin1_general_ci default NULL,
   "QTD_REG_BLC" varchar(255) collate latin1_general_ci default NULL,
@@ -182,10 +146,6 @@ CREATE TABLE "reg_9900" (
 
 CREATE TABLE "reg_9990" (
   "ID" bigint NOT NULL,
-  "ID_PAI" bigint NULL,
-  "ID_MASTER" bigint NULL,
-  "ID_ARQUIVO" bigint NULL,
-  "LINHA" bigint NOT NULL,
   "REG" varchar(4) collate latin1_general_ci default NULL,
   "QTD_LIN_9" varchar(255) collate latin1_general_ci default NULL,
   PRIMARY KEY ("ID")
@@ -197,10 +157,6 @@ CREATE TABLE "reg_9990" (
 
 CREATE TABLE "reg_9999" (
   "ID" bigint NOT NULL,
-  "ID_PAI" bigint NULL,
-  "ID_MASTER" bigint NULL,
-  "ID_ARQUIVO" bigint NULL,
-  "LINHA" bigint NOT NULL,
   "REG" varchar(4) collate latin1_general_ci default NULL,
   "QTD_LIN" varchar(255) collate latin1_general_ci default NULL,
   PRIMARY KEY ("ID")
@@ -212,10 +168,6 @@ CREATE TABLE "reg_9999" (
 
 CREATE TABLE "reg_i001" (
   "ID" bigint NOT NULL,
-  "ID_PAI" bigint NULL,
-  "ID_MASTER" bigint NULL,
-  "ID_ARQUIVO" bigint NULL,
-  "LINHA" bigint NOT NULL,
   "REG" varchar(4) collate latin1_general_ci default NULL,
   "IND_DAD" varchar(1) collate latin1_general_ci default NULL,
   PRIMARY KEY ("ID")
@@ -227,10 +179,6 @@ CREATE TABLE "reg_i001" (
 
 CREATE TABLE "reg_i010" (
   "ID" bigint NOT NULL,
-  "ID_PAI" bigint NULL,
-  "ID_MASTER" bigint NULL,
-  "ID_ARQUIVO" bigint NULL,
-  "LINHA" bigint NOT NULL,
   "REG" varchar(4) collate latin1_general_ci default NULL,
   "IND_ESC" varchar(1) collate latin1_general_ci default NULL,
   "COD_VER_LC" varchar(255) collate latin1_general_ci default NULL,
@@ -243,10 +191,6 @@ CREATE TABLE "reg_i010" (
 
 CREATE TABLE "reg_i012" (
   "ID" bigint NOT NULL,
-  "ID_PAI" bigint NULL,
-  "ID_MASTER" bigint NULL,
-  "ID_ARQUIVO" bigint NULL,
-  "LINHA" bigint NOT NULL,
   "REG" varchar(4) collate latin1_general_ci default NULL,
   "NUM_ORD" varchar(255) collate latin1_general_ci default NULL,
   "NAT_LIVRO" varchar(80) collate latin1_general_ci default NULL,
@@ -261,10 +205,6 @@ CREATE TABLE "reg_i012" (
 
 CREATE TABLE "reg_i015" (
   "ID" bigint NOT NULL,
-  "ID_PAI" bigint NULL,
-  "ID_MASTER" bigint NULL,
-  "ID_ARQUIVO" bigint NULL,
-  "LINHA" bigint NOT NULL,
   "REG" varchar(4) collate latin1_general_ci default NULL,
   "COD_CTA_RES" varchar(255) collate latin1_general_ci default NULL,
   PRIMARY KEY ("ID")
@@ -276,10 +216,6 @@ CREATE TABLE "reg_i015" (
 
 CREATE TABLE "reg_i020" (
   "ID" bigint NOT NULL,
-  "ID_PAI" bigint NULL,
-  "ID_MASTER" bigint NULL,
-  "ID_ARQUIVO" bigint NULL,
-  "LINHA" bigint NOT NULL,
   "REG" varchar(4) collate latin1_general_ci default NULL,
   "REG_COD" varchar(4) collate latin1_general_ci default NULL,
   "NUM_AD" varchar(255) collate latin1_general_ci default NULL,
@@ -295,10 +231,6 @@ CREATE TABLE "reg_i020" (
 
 CREATE TABLE "reg_i030" (
   "ID" bigint NOT NULL,
-  "ID_PAI" bigint NULL,
-  "ID_MASTER" bigint NULL,
-  "ID_ARQUIVO" bigint NULL,
-  "LINHA" bigint NOT NULL,
   "REG" varchar(4) collate latin1_general_ci default NULL,
   "DNRC_ABERT" varchar(17) collate latin1_general_ci default NULL,
   "NUM_ORD" varchar(18) collate latin1_general_ci default NULL,
@@ -322,10 +254,6 @@ CREATE TABLE "reg_i030" (
 
 CREATE TABLE "reg_i050" (
   "ID" bigint NOT NULL,
-  "ID_PAI" bigint NULL,
-  "ID_MASTER" bigint NULL,
-  "ID_ARQUIVO" bigint NULL,
-  "LINHA" bigint NOT NULL,
   "REG" varchar(4) collate latin1_general_ci default NULL,
   "DT_ALT" date default NULL,
   "COD_NAT" varchar(2) collate latin1_general_ci default NULL,
@@ -343,10 +271,6 @@ CREATE TABLE "reg_i050" (
 
 CREATE TABLE "reg_i051" (
   "ID" bigint NOT NULL,
-  "ID_PAI" bigint NULL,
-  "ID_MASTER" bigint NULL,
-  "ID_ARQUIVO" bigint NULL,
-  "LINHA" bigint NOT NULL,
   "REG" varchar(4) collate latin1_general_ci default NULL,
   "COD_ENT_REF" varchar(2) collate latin1_general_ci default NULL,
   "COD_CCUS" varchar(255) collate latin1_general_ci default NULL,
@@ -360,10 +284,6 @@ CREATE TABLE "reg_i051" (
 
 CREATE TABLE "reg_i052" (
   "ID" bigint NOT NULL,
-  "ID_PAI" bigint NULL,
-  "ID_MASTER" bigint NULL,
-  "ID_ARQUIVO" bigint NULL,
-  "LINHA" bigint NOT NULL,
   "REG" varchar(4) collate latin1_general_ci default NULL,
   "COD_CCUS" varchar(255) collate latin1_general_ci default NULL,
   "COD_AGL" varchar(255) collate latin1_general_ci default NULL,
@@ -376,10 +296,6 @@ CREATE TABLE "reg_i052" (
 
 CREATE TABLE "reg_i075" (
   "ID" bigint NOT NULL,
-  "ID_PAI" bigint NULL,
-  "ID_MASTER" bigint NULL,
-  "ID_ARQUIVO" bigint NULL,
-  "LINHA" bigint NOT NULL,
   "REG" varchar(4) collate latin1_general_ci default NULL,
   "COD_HIST" varchar(255) collate latin1_general_ci default NULL,
   "DESCR_HIST" varchar(255) collate latin1_general_ci default NULL,
@@ -392,10 +308,6 @@ CREATE TABLE "reg_i075" (
 
 CREATE TABLE "reg_i100" (
   "ID" bigint NOT NULL,
-  "ID_PAI" bigint NULL,
-  "ID_MASTER" bigint NULL,
-  "ID_ARQUIVO" bigint NULL,
-  "LINHA" bigint NOT NULL,
   "REG" varchar(4) collate latin1_general_ci default NULL,
   "DT_ALT" date default NULL,
   "COD_CCUS" varchar(255) collate latin1_general_ci default NULL,
@@ -409,10 +321,6 @@ CREATE TABLE "reg_i100" (
 
 CREATE TABLE "reg_i150" (
   "ID" bigint NOT NULL,
-  "ID_PAI" bigint NULL,
-  "ID_MASTER" bigint NULL,
-  "ID_ARQUIVO" bigint NULL,
-  "LINHA" bigint NOT NULL,
   "REG" varchar(4) collate latin1_general_ci default NULL,
   "DT_INI" date default NULL,
   "DT_FIN" date default NULL,
@@ -425,10 +333,6 @@ CREATE TABLE "reg_i150" (
 
 CREATE TABLE "reg_i151" (
   "ID" bigint NOT NULL,
-  "ID_PAI" bigint NULL,
-  "ID_MASTER" bigint NULL,
-  "ID_ARQUIVO" bigint NULL,
-  "LINHA" bigint NOT NULL,
   "REG" varchar(4) collate latin1_general_ci default NULL,
   "ASSIN_DIG" text collate latin1_general_ci,
   PRIMARY KEY ("ID")
@@ -440,10 +344,6 @@ CREATE TABLE "reg_i151" (
 
 CREATE TABLE "reg_i155" (
   "ID" bigint NOT NULL,
-  "ID_PAI" bigint NULL,
-  "ID_MASTER" bigint NULL,
-  "ID_ARQUIVO" bigint NULL,
-  "LINHA" bigint NOT NULL,
   "REG" varchar(4) collate latin1_general_ci default NULL,
   "COD_CTA" varchar(255) collate latin1_general_ci default NULL,
   "COD_CCUS" varchar(255) collate latin1_general_ci default NULL,
@@ -462,10 +362,6 @@ CREATE TABLE "reg_i155" (
 
 CREATE TABLE "reg_i157" (
   "ID" bigint NOT NULL,
-  "ID_PAI" bigint NULL,
-  "ID_MASTER" bigint NULL,
-  "ID_ARQUIVO" bigint NULL,
-  "LINHA" bigint NOT NULL,
   "REG" varchar(4) collate latin1_general_ci default NULL,
   "COD_CTA" varchar(255) collate latin1_general_ci default NULL,
   "COD_CCUS" varchar(255) collate latin1_general_ci default NULL,
@@ -480,10 +376,6 @@ CREATE TABLE "reg_i157" (
 
 CREATE TABLE "reg_i200" (
   "ID" bigint NOT NULL,
-  "ID_PAI" bigint NULL,
-  "ID_MASTER" bigint NULL,
-  "ID_ARQUIVO" bigint NULL,
-  "LINHA" bigint NOT NULL,
   "REG" varchar(4) collate latin1_general_ci default NULL,
   "NUM_LCTO" varchar(255) collate latin1_general_ci default NULL,
   "DT_LCTO" date default NULL,
@@ -498,10 +390,6 @@ CREATE TABLE "reg_i200" (
 
 CREATE TABLE "reg_i250" (
   "ID" bigint NOT NULL,
-  "ID_PAI" bigint NULL,
-  "ID_MASTER" bigint NULL,
-  "ID_ARQUIVO" bigint NULL,
-  "LINHA" bigint NOT NULL,
   "REG" varchar(4) collate latin1_general_ci default NULL,
   "COD_CTA" varchar(255) collate latin1_general_ci default NULL,
   "COD_CCUS" varchar(255) collate latin1_general_ci default NULL,
@@ -520,10 +408,6 @@ CREATE TABLE "reg_i250" (
 
 CREATE TABLE "reg_i300" (
   "ID" bigint NOT NULL,
-  "ID_PAI" bigint NULL,
-  "ID_MASTER" bigint NULL,
-  "ID_ARQUIVO" bigint NULL,
-  "LINHA" bigint NOT NULL,
   "REG" varchar(4) collate latin1_general_ci default NULL,
   "DT_BCTE" date default NULL,
   PRIMARY KEY ("ID")
@@ -535,10 +419,6 @@ CREATE TABLE "reg_i300" (
 
 CREATE TABLE "reg_i310" (
   "ID" bigint NOT NULL,
-  "ID_PAI" bigint NULL,
-  "ID_MASTER" bigint NULL,
-  "ID_ARQUIVO" bigint NULL,
-  "LINHA" bigint NOT NULL,
   "REG" varchar(4) collate latin1_general_ci default NULL,
   "COD_CTA" varchar(255) collate latin1_general_ci default NULL,
   "COD_CCUS" varchar(255) collate latin1_general_ci default NULL,
@@ -553,10 +433,6 @@ CREATE TABLE "reg_i310" (
 
 CREATE TABLE "reg_i350" (
   "ID" bigint NOT NULL,
-  "ID_PAI" bigint NULL,
-  "ID_MASTER" bigint NULL,
-  "ID_ARQUIVO" bigint NULL,
-  "LINHA" bigint NOT NULL,
   "REG" varchar(4) collate latin1_general_ci default NULL,
   "DT_RES" date default NULL,
   PRIMARY KEY ("ID")
@@ -568,10 +444,6 @@ CREATE TABLE "reg_i350" (
 
 CREATE TABLE "reg_i355" (
   "ID" bigint NOT NULL,
-  "ID_PAI" bigint NULL,
-  "ID_MASTER" bigint NULL,
-  "ID_ARQUIVO" bigint NULL,
-  "LINHA" bigint NOT NULL,
   "REG" varchar(4) collate latin1_general_ci default NULL,
   "COD_CTA" varchar(255) collate latin1_general_ci default NULL,
   "COD_CCUS" varchar(255) collate latin1_general_ci default NULL,
@@ -586,10 +458,6 @@ CREATE TABLE "reg_i355" (
 
 CREATE TABLE "reg_i500" (
   "ID" bigint NOT NULL,
-  "ID_PAI" bigint NULL,
-  "ID_MASTER" bigint NULL,
-  "ID_ARQUIVO" bigint NULL,
-  "LINHA" bigint NOT NULL,
   "REG" varchar(4) collate latin1_general_ci default NULL,
   "TAM_FONTE" varchar(2) collate latin1_general_ci default NULL,
   PRIMARY KEY ("ID")
@@ -601,10 +469,6 @@ CREATE TABLE "reg_i500" (
 
 CREATE TABLE "reg_i510" (
   "ID" bigint NOT NULL,
-  "ID_PAI" bigint NULL,
-  "ID_MASTER" bigint NULL,
-  "ID_ARQUIVO" bigint NULL,
-  "LINHA" bigint NOT NULL,
   "REG" varchar(4) collate latin1_general_ci default NULL,
   "NM_CAMPO" varchar(16) collate latin1_general_ci default NULL,
   "DESC_CAMPO" varchar(50) collate latin1_general_ci default NULL,
@@ -621,10 +485,6 @@ CREATE TABLE "reg_i510" (
 
 CREATE TABLE "reg_i550" (
   "ID" bigint NOT NULL,
-  "ID_PAI" bigint NULL,
-  "ID_MASTER" bigint NULL,
-  "ID_ARQUIVO" bigint NULL,
-  "LINHA" bigint NOT NULL,
   "REG" varchar(4) collate latin1_general_ci default NULL,
   PRIMARY KEY ("ID")
 );
@@ -635,10 +495,6 @@ CREATE TABLE "reg_i550" (
 
 CREATE TABLE "reg_i555" (
   "ID" bigint NOT NULL,
-  "ID_PAI" bigint NULL,
-  "ID_MASTER" bigint NULL,
-  "ID_ARQUIVO" bigint NULL,
-  "LINHA" bigint NOT NULL,
   "REG" varchar(4) collate latin1_general_ci default NULL,
   PRIMARY KEY ("ID")
 );
@@ -649,10 +505,6 @@ CREATE TABLE "reg_i555" (
 
 CREATE TABLE "reg_i990" (
   "ID" bigint NOT NULL,
-  "ID_PAI" bigint NULL,
-  "ID_MASTER" bigint NULL,
-  "ID_ARQUIVO" bigint NULL,
-  "LINHA" bigint NOT NULL,
   "REG" varchar(4) collate latin1_general_ci default NULL,
   "QTD_LIN_I" varchar(255) collate latin1_general_ci default NULL,
   PRIMARY KEY ("ID")
@@ -664,10 +516,6 @@ CREATE TABLE "reg_i990" (
 
 CREATE TABLE "reg_j001" (
   "ID" bigint NOT NULL,
-  "ID_PAI" bigint NULL,
-  "ID_MASTER" bigint NULL,
-  "ID_ARQUIVO" bigint NULL,
-  "LINHA" bigint NOT NULL,
   "REG" varchar(4) collate latin1_general_ci default NULL,
   "IND_DAD" varchar(1) collate latin1_general_ci default NULL,
   PRIMARY KEY ("ID")
@@ -679,10 +527,6 @@ CREATE TABLE "reg_j001" (
 
 CREATE TABLE "reg_j005" (
   "ID" bigint NOT NULL,
-  "ID_PAI" bigint NULL,
-  "ID_MASTER" bigint NULL,
-  "ID_ARQUIVO" bigint NULL,
-  "LINHA" bigint NOT NULL,
   "REG" varchar(4) collate latin1_general_ci default NULL,
   "DT_INI" date default NULL,
   "DT_FIN" date default NULL,
@@ -697,10 +541,6 @@ CREATE TABLE "reg_j005" (
 
 CREATE TABLE "reg_j100" (
   "ID" bigint NOT NULL,
-  "ID_PAI" bigint NULL,
-  "ID_MASTER" bigint NULL,
-  "ID_ARQUIVO" bigint NULL,
-  "LINHA" bigint NOT NULL,
   "REG" varchar(4) collate latin1_general_ci default NULL,
   "COD_AGL" varchar(255) collate latin1_general_ci default NULL,
   "NIVEL_AGL" varchar(255) collate latin1_general_ci default NULL,
@@ -719,10 +559,6 @@ CREATE TABLE "reg_j100" (
 
 CREATE TABLE "reg_j150" (
   "ID" bigint NOT NULL,
-  "ID_PAI" bigint NULL,
-  "ID_MASTER" bigint NULL,
-  "ID_ARQUIVO" bigint NULL,
-  "LINHA" bigint NOT NULL,
   "REG" varchar(4) collate latin1_general_ci default NULL,
   "COD_AGL" varchar(255) collate latin1_general_ci default NULL,
   "NIVEL_AGL" varchar(255) collate latin1_general_ci default NULL,
@@ -738,10 +574,6 @@ CREATE TABLE "reg_j150" (
 
 CREATE TABLE "reg_j200" (
   "ID" bigint NOT NULL,
-  "ID_PAI" bigint NULL,
-  "ID_MASTER" bigint NULL,
-  "ID_ARQUIVO" bigint NULL,
-  "LINHA" bigint NOT NULL,
   "REG" varchar(4) collate latin1_general_ci default NULL,
   "COD_HIST_FAT" varchar(255) collate latin1_general_ci default NULL,
   "DESC_FAT" varchar(255) collate latin1_general_ci default NULL,
@@ -754,10 +586,6 @@ CREATE TABLE "reg_j200" (
 
 CREATE TABLE "reg_j210" (
   "ID" bigint NOT NULL,
-  "ID_PAI" bigint NULL,
-  "ID_MASTER" bigint NULL,
-  "ID_ARQUIVO" bigint NULL,
-  "LINHA" bigint NOT NULL,
   "REG" varchar(4) collate latin1_general_ci default NULL,
   "IND_TIP" varchar(1) collate latin1_general_ci default NULL,
   "COD_AGL" varchar(255) collate latin1_general_ci default NULL,
@@ -775,10 +603,6 @@ CREATE TABLE "reg_j210" (
 
 CREATE TABLE "reg_j215" (
   "ID" bigint NOT NULL,
-  "ID_PAI" bigint NULL,
-  "ID_MASTER" bigint NULL,
-  "ID_ARQUIVO" bigint NULL,
-  "LINHA" bigint NOT NULL,
   "REG" varchar(4) collate latin1_general_ci default NULL,
   "COD_HIST_FAT" varchar(255) collate latin1_general_ci default NULL,
   "VL_FAT_CONT" decimal(21,2) default NULL,
@@ -792,10 +616,6 @@ CREATE TABLE "reg_j215" (
 
 CREATE TABLE "reg_j800" (
   "ID" bigint NOT NULL,
-  "ID_PAI" bigint NULL,
-  "ID_MASTER" bigint NULL,
-  "ID_ARQUIVO" bigint NULL,
-  "LINHA" bigint NOT NULL,
   "REG" varchar(4) collate latin1_general_ci default NULL,
   "ARQ_RTF" varchar(255) collate latin1_general_ci default NULL,
   "IND_FIN_RTF" varchar(255) collate latin1_general_ci default NULL,
@@ -808,10 +628,6 @@ CREATE TABLE "reg_j800" (
 
 CREATE TABLE "reg_j900" (
   "ID" bigint NOT NULL,
-  "ID_PAI" bigint NULL,
-  "ID_MASTER" bigint NULL,
-  "ID_ARQUIVO" bigint NULL,
-  "LINHA" bigint NOT NULL,
   "REG" varchar(4) collate latin1_general_ci default NULL,
   "DNRC_ENCER" varchar(21) collate latin1_general_ci default NULL,
   "NUM_ORD" varchar(255) collate latin1_general_ci default NULL,
@@ -829,10 +645,6 @@ CREATE TABLE "reg_j900" (
 
 CREATE TABLE "reg_j930" (
   "ID" bigint NOT NULL,
-  "ID_PAI" bigint NULL,
-  "ID_MASTER" bigint NULL,
-  "ID_ARQUIVO" bigint NULL,
-  "LINHA" bigint NOT NULL,
   "REG" varchar(4) collate latin1_general_ci default NULL,
   "IDENT_NOM" varchar(255) collate latin1_general_ci default NULL,
   "IDENT_CPF" varchar(11) collate latin1_general_ci default NULL,
@@ -853,10 +665,6 @@ CREATE TABLE "reg_j930" (
 
 CREATE TABLE "reg_j990" (
   "ID" bigint NOT NULL,
-  "ID_PAI" bigint NULL,
-  "ID_MASTER" bigint NULL,
-  "ID_ARQUIVO" bigint NULL,
-  "LINHA" bigint NOT NULL,
   "REG" varchar(4) collate latin1_general_ci default NULL,
   "QTD_LIN_J" varchar(255) collate latin1_general_ci default NULL,
   PRIMARY KEY ("ID")
