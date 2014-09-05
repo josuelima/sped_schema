@@ -31,21 +31,6 @@ Atualmente só existem versões, neste respositório, para MySQL e PostgreSQL.
 # Estrutura dos Registros
 
 Os registros refletem fielmente os manuais disponibilizados pela receita (caso encontre erros, correções serão bem vindas).
-Foram adicionados 4 campos em todas as tabelas com o objetivo de faciliatar a busca e o relacionametno entre os registros. 
-Porém, são opcionais e podem ser removidos.
-São eles:
-
-    ID          Identificador único de um registro (gerado pelo próprio banco de dados)
-    
-    ID_PAI      Identificador do registro Pai na hierarquia. (Ex.: para um registro C170 
-                do SPED informar o ID do reg C100 correspondente)
-    
-    ID_MASTER   Identificador do registro Master na hierarquia. (Ex.: para um registro 
-                C176 informar em ID_PAI o ID do registro C170 correspondente e em 
-                ID_MASTER o ID do registro C100 correspondente)
-
-    ID_ARQUIVO  Identificador do arquivo físico ao qual o registro pertence. (Facilita, 
-                por remoção, exemplo de todos os registros de um arquivo)
 
 A ordem das colunas é a mesma especificada nos manuais
 
