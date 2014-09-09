@@ -37,6 +37,11 @@ A ordem das colunas é a mesma especificada nos manuais
 O nome dos campos estão em letra maiúscula para manter a semelhança com o manual.
 
 
+# Antes de utilizar um schema
+
+TO-DO
+
+
 # Contribuindo
 
 Contribuições são bem vindas. Você pode contribuir de diversas maneiras:
