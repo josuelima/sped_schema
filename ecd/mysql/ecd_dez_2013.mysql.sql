@@ -29,7 +29,7 @@ CREATE TABLE `reg_0000` (
   `NIRE_SUBST` varchar(11) collate latin1_general_ci default NULL,
   `IND_GRANDE_PORTE` varchar(1) collate latin1_general_ci default NULL,
   PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+) ENGINE={ENGINE} DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 --
 -- Registro: 0001
@@ -40,7 +40,7 @@ CREATE TABLE `reg_0001` (
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `IND_DAD` varchar(1) collate latin1_general_ci default NULL,
   PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+) ENGINE={ENGINE} DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 --
 -- Registro: 0007
@@ -52,7 +52,7 @@ CREATE TABLE `reg_0007` (
   `COD_ENT_REF` varchar(255) collate latin1_general_ci default NULL,
   `COD_INSCR` varchar(255) collate latin1_general_ci default NULL,
   PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+) ENGINE={ENGINE} DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 --
 -- Registro: 0020
@@ -69,7 +69,7 @@ CREATE TABLE `reg_0020` (
   `IM` varchar(255) collate latin1_general_ci default NULL,
   `NIRE` varchar(11) collate latin1_general_ci default NULL,
   PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+) ENGINE={ENGINE} DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 --
 -- Registro: 0150
@@ -91,7 +91,7 @@ CREATE TABLE `reg_0150` (
   `IM` varchar(255) collate latin1_general_ci default NULL,
   `SUFRAMA` varchar(9) collate latin1_general_ci default NULL,
   PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+) ENGINE={ENGINE} DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 --
 -- Registro: 0180
@@ -104,7 +104,7 @@ CREATE TABLE `reg_0180` (
   `DT_INI_REL` date default NULL,
   `DT_FIN_REL` date default NULL,
   PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+) ENGINE={ENGINE} DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 --
 -- Registro: 0990
@@ -115,7 +115,7 @@ CREATE TABLE `reg_0990` (
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `QTD_LIN_0` varchar(255) collate latin1_general_ci default NULL,
   PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+) ENGINE={ENGINE} DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 --
 -- Registro: 9001
@@ -126,7 +126,7 @@ CREATE TABLE `reg_9001` (
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `IND_DAD` varchar(1) collate latin1_general_ci default NULL,
   PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+) ENGINE={ENGINE} DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 --
 -- Registro: 9900
@@ -138,7 +138,7 @@ CREATE TABLE `reg_9900` (
   `REG_BLC` varchar(4) collate latin1_general_ci default NULL,
   `QTD_REG_BLC` varchar(255) collate latin1_general_ci default NULL,
   PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+) ENGINE={ENGINE} DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 --
 -- Registro: 9990
@@ -149,7 +149,7 @@ CREATE TABLE `reg_9990` (
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `QTD_LIN_9` varchar(255) collate latin1_general_ci default NULL,
   PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+) ENGINE={ENGINE} DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 --
 -- Registro: 9999
@@ -160,7 +160,7 @@ CREATE TABLE `reg_9999` (
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `QTD_LIN` varchar(255) collate latin1_general_ci default NULL,
   PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+) ENGINE={ENGINE} DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 --
 -- Registro: i001
@@ -171,7 +171,7 @@ CREATE TABLE `reg_i001` (
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `IND_DAD` varchar(1) collate latin1_general_ci default NULL,
   PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+) ENGINE={ENGINE} DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 --
 -- Registro: i010
@@ -183,7 +183,7 @@ CREATE TABLE `reg_i010` (
   `IND_ESC` varchar(1) collate latin1_general_ci default NULL,
   `COD_VER_LC` varchar(255) collate latin1_general_ci default NULL,
   PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+) ENGINE={ENGINE} DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 --
 -- Registro: i012
@@ -197,7 +197,7 @@ CREATE TABLE `reg_i012` (
   `TIPO` varchar(1) collate latin1_general_ci default NULL,
   `COD_HASH_AUX` varchar(40) collate latin1_general_ci default NULL,
   PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+) ENGINE={ENGINE} DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 --
 -- Registro: i015
@@ -208,7 +208,7 @@ CREATE TABLE `reg_i015` (
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `COD_CTA_RES` varchar(255) collate latin1_general_ci default NULL,
   PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+) ENGINE={ENGINE} DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 --
 -- Registro: i020
@@ -223,7 +223,7 @@ CREATE TABLE `reg_i020` (
   `DESCRICAO` varchar(255) collate latin1_general_ci default NULL,
   `TIPO` varchar(255) collate latin1_general_ci default NULL,
   PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+) ENGINE={ENGINE} DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 --
 -- Registro: i030
@@ -246,7 +246,7 @@ CREATE TABLE `reg_i030` (
   `NOME_AUDITOR` varchar(255) collate latin1_general_ci default NULL,
   `COD_CVM_AUDITOR` varchar(255) collate latin1_general_ci default NULL,
   PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+) ENGINE={ENGINE} DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 --
 -- Registro: i050
@@ -263,7 +263,7 @@ CREATE TABLE `reg_i050` (
   `COD_CTA_SUP` varchar(255) collate latin1_general_ci default NULL,
   `CTA` varchar(255) collate latin1_general_ci default NULL,
   PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+) ENGINE={ENGINE} DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 --
 -- Registro: i051
@@ -276,7 +276,7 @@ CREATE TABLE `reg_i051` (
   `COD_CCUS` varchar(255) collate latin1_general_ci default NULL,
   `COD_CTA_REF` varchar(255) collate latin1_general_ci default NULL,
   PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+) ENGINE={ENGINE} DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 --
 -- Registro: i052
@@ -288,7 +288,7 @@ CREATE TABLE `reg_i052` (
   `COD_CCUS` varchar(255) collate latin1_general_ci default NULL,
   `COD_AGL` varchar(255) collate latin1_general_ci default NULL,
   PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+) ENGINE={ENGINE} DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 --
 -- Registro: i075
@@ -300,7 +300,7 @@ CREATE TABLE `reg_i075` (
   `COD_HIST` varchar(255) collate latin1_general_ci default NULL,
   `DESCR_HIST` varchar(255) collate latin1_general_ci default NULL,
   PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+) ENGINE={ENGINE} DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 --
 -- Registro: i100
@@ -313,7 +313,7 @@ CREATE TABLE `reg_i100` (
   `COD_CCUS` varchar(255) collate latin1_general_ci default NULL,
   `CCUS` varchar(255) collate latin1_general_ci default NULL,
   PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+) ENGINE={ENGINE} DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 --
 -- Registro: i150
@@ -325,7 +325,7 @@ CREATE TABLE `reg_i150` (
   `DT_INI` date default NULL,
   `DT_FIN` date default NULL,
   PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+) ENGINE={ENGINE} DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 --
 -- Registro: i151
@@ -336,7 +336,7 @@ CREATE TABLE `reg_i151` (
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `ASSIN_DIG` mediumtext collate latin1_general_ci,
   PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+) ENGINE={ENGINE} DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 --
 -- Registro: i155
@@ -354,7 +354,7 @@ CREATE TABLE `reg_i155` (
   `VL_SLD_FIN` decimal(21,2) default NULL,
   `IND_DC_FIN` varchar(1) collate latin1_general_ci default NULL,
   PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+) ENGINE={ENGINE} DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 --
 -- Registro: i157
@@ -368,7 +368,7 @@ CREATE TABLE `reg_i157` (
   `VL_SLD_INI` decimal(21,2) default NULL,
   `IND_DC_INI` varchar(1) collate latin1_general_ci default NULL,
   PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+) ENGINE={ENGINE} DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 --
 -- Registro: i200
@@ -382,7 +382,7 @@ CREATE TABLE `reg_i200` (
   `VL_LCTO` decimal(21,2) default NULL,
   `IND_LCTO` varchar(1) collate latin1_general_ci default NULL,
   PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+) ENGINE={ENGINE} DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 --
 -- Registro: i250
@@ -400,7 +400,7 @@ CREATE TABLE `reg_i250` (
   `HIST` mediumtext collate latin1_general_ci,
   `COD_PART` varchar(255) collate latin1_general_ci default NULL,
   PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+) ENGINE={ENGINE} DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 --
 -- Registro: i300
@@ -411,7 +411,7 @@ CREATE TABLE `reg_i300` (
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `DT_BCTE` date default NULL,
   PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+) ENGINE={ENGINE} DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 --
 -- Registro: i310
@@ -425,7 +425,7 @@ CREATE TABLE `reg_i310` (
   `VAL_DEBD` decimal(21,2) default NULL,
   `VAL_CREDD` decimal(21,2) default NULL,
   PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+) ENGINE={ENGINE} DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 --
 -- Registro: i350
@@ -436,7 +436,7 @@ CREATE TABLE `reg_i350` (
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `DT_RES` date default NULL,
   PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+) ENGINE={ENGINE} DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 --
 -- Registro: i355
@@ -450,7 +450,7 @@ CREATE TABLE `reg_i355` (
   `VL_CTA` decimal(21,2) default NULL,
   `IND_DC` varchar(1) collate latin1_general_ci default NULL,
   PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+) ENGINE={ENGINE} DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 --
 -- Registro: i500
@@ -461,7 +461,7 @@ CREATE TABLE `reg_i500` (
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `TAM_FONTE` varchar(2) collate latin1_general_ci default NULL,
   PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+) ENGINE={ENGINE} DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 --
 -- Registro: i510
@@ -477,7 +477,7 @@ CREATE TABLE `reg_i510` (
   `DEC_CAMPO` varchar(2) collate latin1_general_ci default NULL,
   `COL_CAMPO` varchar(3) collate latin1_general_ci default NULL,
   PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+) ENGINE={ENGINE} DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 --
 -- Registro: i550
@@ -487,7 +487,7 @@ CREATE TABLE `reg_i550` (
   `ID` bigint(20) NOT NULL,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+) ENGINE={ENGINE} DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 --
 -- Registro: i555
@@ -497,7 +497,7 @@ CREATE TABLE `reg_i555` (
   `ID` bigint(20) NOT NULL,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+) ENGINE={ENGINE} DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 --
 -- Registro: i990
@@ -508,7 +508,7 @@ CREATE TABLE `reg_i990` (
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `QTD_LIN_I` varchar(255) collate latin1_general_ci default NULL,
   PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+) ENGINE={ENGINE} DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 --
 -- Registro: j001
@@ -519,7 +519,7 @@ CREATE TABLE `reg_j001` (
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `IND_DAD` varchar(1) collate latin1_general_ci default NULL,
   PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+) ENGINE={ENGINE} DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 --
 -- Registro: j005
@@ -533,7 +533,7 @@ CREATE TABLE `reg_j005` (
   `ID_DEM` varchar(1) collate latin1_general_ci default NULL,
   `CAB_DEM` mediumtext collate latin1_general_ci,
   PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+) ENGINE={ENGINE} DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 --
 -- Registro: j100
@@ -551,7 +551,7 @@ CREATE TABLE `reg_j100` (
   `VL_CTA_INI` decimal(21,2) default NULL,
   `IND_DC_BAL_INI` varchar(1) collate latin1_general_ci default NULL,
   PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+) ENGINE={ENGINE} DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 --
 -- Registro: j150
@@ -566,7 +566,7 @@ CREATE TABLE `reg_j150` (
   `VL_CTA` decimal(21,2) default NULL,
   `IND_VL` varchar(1) collate latin1_general_ci default NULL,
   PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+) ENGINE={ENGINE} DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 --
 -- Registro: j200
@@ -578,7 +578,7 @@ CREATE TABLE `reg_j200` (
   `COD_HIST_FAT` varchar(255) collate latin1_general_ci default NULL,
   `DESC_FAT` varchar(255) collate latin1_general_ci default NULL,
   PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+) ENGINE={ENGINE} DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 --
 -- Registro: j210
@@ -595,7 +595,7 @@ CREATE TABLE `reg_j210` (
   `VL_CTA_INI` decimal(21,2) default NULL,
   `IND_DC_CTA_INI` varchar(1) collate latin1_general_ci default NULL,
   PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+) ENGINE={ENGINE} DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 --
 -- Registro: j215
@@ -608,7 +608,7 @@ CREATE TABLE `reg_j215` (
   `VL_FAT_CONT` decimal(21,2) default NULL,
   `IND_DC_FAT` varchar(1) collate latin1_general_ci default NULL,
   PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+) ENGINE={ENGINE} DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 --
 -- Registro: j800
@@ -620,7 +620,7 @@ CREATE TABLE `reg_j800` (
   `ARQ_RTF` varchar(255) collate latin1_general_ci default NULL,
   `IND_FIN_RTF` varchar(255) collate latin1_general_ci default NULL,
   PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+) ENGINE={ENGINE} DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 --
 -- Registro: j900
@@ -637,7 +637,7 @@ CREATE TABLE `reg_j900` (
   `DT_INI_ESCR` date default NULL,
   `DT_FIN_ESCR` date default NULL,
   PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+) ENGINE={ENGINE} DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 --
 -- Registro: j930
@@ -657,7 +657,7 @@ CREATE TABLE `reg_j930` (
   `NUM_SEQ_CRC` varchar(255) collate latin1_general_ci default NULL,
   `DT_CRC` date default NULL,
   PRIMARY KEY  (`ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+) ENGINE={ENGINE} DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 --
 -- Registro: j990
@@ -668,4 +668,4 @@ CREATE TABLE `reg_j990` (
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `QTD_LIN_J` varchar(255) collate latin1_general_ci default NULL,
   PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+) ENGINE={ENGINE} DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
