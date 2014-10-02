@@ -1,5 +1,7 @@
 # SPED Schema
 
+** This repository contains the implementation of the Brazilian Public Digital Bookkeeping System projects specification in SQL. Due to its size and complexity, developers need to read lots of specifications and user guides to create or maintain these schemas in their systems. This repository aims to easy this process by grouping and maintaining all these schemas. **
+
 Este repositório reune o esquema SQL para os projetos do Sistema Público de Escritução Digital da Receita Federal do Brasil.
 [http://www1.receita.fazenda.gov.br/sped](http://www1.receita.fazenda.gov.br/sped)
 
@@ -30,7 +32,7 @@ Atualmente só existem versões, neste respositório, para MySQL e PostgreSQL.
 
 # Estrutura dos Registros
 
-Os registros refletem fielmente os manuais disponibilizados pela receita (caso encontre erros, correções serão bem vindas).
+Os registros refletem fielmente (ou tentam) os manuais disponibilizados pela receita (caso encontre erros, correções serão bem vindas).
 
 A ordem das colunas é a mesma especificada nos manuais
 
@@ -39,7 +41,10 @@ O nome dos campos estão em letra maiúscula para manter a semelhança com o man
 
 # Antes de utilizar um schema
 
-TO-DO
+Verifique o arquivo .sql e substitua
+{COLLATE} pela codificação que você irá utilizar no seu banco (latin1_general_ci, utf8_general_ci ...)
+{ENGINE} pela engine que você irá utilizar (InnoDB, MyISAM ...)
+{CHARSET} charset que você irá utilziar (utf8, iso-8859-1 ...)
 
 
 # Contribuindo
