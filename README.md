@@ -42,9 +42,10 @@ O nome dos campos estão em letra maiúscula para manter a semelhança com o man
 # Antes de utilizar um schema
 
 Verifique o arquivo .sql e substitua
-{COLLATE} pela codificação que você irá utilizar no seu banco (latin1_general_ci, utf8_general_ci ...)
-{ENGINE} pela engine que você irá utilizar (InnoDB, MyISAM ...)
-{CHARSET} charset que você irá utilziar (utf8, iso-8859-1 ...)
+
+* {COLLATE} - codificação (latin1_general_ci, utf8_general_ci ...)
+* {ENGINE} - engine (InnoDB, MyISAM ...)
+* {CHARSET} charset (utf8, iso-8859-1 ...)
 
 
 # Contribuindo
