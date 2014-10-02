@@ -1,6 +1,6 @@
 # SPED Schema
 
-** This repository contains the implementation of the Brazilian Public Digital Bookkeeping System projects specification in SQL. Due to its size and complexity, developers need to read lots of specifications and user guides to create or maintain these schemas in their systems. This repository aims to easy this process by grouping and maintaining all these schemas. **
+** This repository contains the implementation of the Brazilian Public Digital Bookkeeping System (SPED) specifications in SQL. Due to its size and complexity, developers need to read lots of specifications and user guides to create or maintain these schemas in their systems. This repository aims to easy this process by grouping and maintaining all these schemas. **
 
 Este repositório reune o esquema SQL para os projetos do Sistema Público de Escritução Digital da Receita Federal do Brasil.
 [http://www1.receita.fazenda.gov.br/sped](http://www1.receita.fazenda.gov.br/sped)
