@@ -188,6 +188,19 @@ CREATE TABLE "reg_0206" (
 );
 
 --
+-- Registro: 0210
+--
+
+CREATE TABLE "reg_0210" (
+  "ID" bigint NOT NULL,
+  "REG" varchar(4) DEFAULT NULL,
+  "COD_ITEM_COMP" varchar(60) DEFAULT NULL,
+  "QTD_COMP" decimal(17,6) DEFAULT NULL,
+  "PERDA" decimal(5,2) DEFAULT NULL,
+  PRIMARY KEY ("ID")
+);
+
+--
 -- Registro: 0220
 --
 

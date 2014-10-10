@@ -188,6 +188,19 @@ CREATE TABLE `reg_0206` (
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
+-- Registro: 0210
+--
+
+CREATE TABLE `reg_0210` (
+  `ID` bigint(20) NOT NULL,
+  `REG` varchar(4) collate {COLLATE} default NULL,
+  `COD_ITEM_COMP` varchar(60) collate {COLLATE} default NULL,
+  `QTD_COMP` decimal(17,6) default NULL,
+  `PERDA` decimal(5,2) default NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
+
+--
 -- Registro: 0220
 --
 
