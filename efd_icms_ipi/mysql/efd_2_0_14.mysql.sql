@@ -3187,3 +3187,122 @@ CREATE TABLE `reg_h990` (
   `QTD_LIN_H` varchar(255) collate {COLLATE} default NULL,
   PRIMARY KEY (`ID`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
+
+--
+-- Registro: reg_k001
+--
+
+CREATE TABLE `reg_k001` (
+  `ID` bigint(20) NOT NULL,
+  `REG` varchar(4) collate {COLLATE} default NULL,
+  `IND_MOV` varchar(1) collate {COLLATE} default NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
+
+-- 
+-- Registro: reg_k100
+--
+
+CREATE TABLE `reg_k100` (
+  `ID` bigint(20) NOT NULL,
+  `REG` varchar(4) collate {COLLATE} default NULL,
+  `COD_ITEM` date default NULL,
+  `DT_FIN` date default NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
+
+--
+-- Registro: reg_k200
+--
+
+CREATE TABLE `reg_k200` (
+  `ID` bigint(20) NOT NULL,
+  `REG` varchar(4) collate {COLLATE} default NULL,
+  `DT_EST` date default NULL,
+  `COD_ITEM` varchar(60) collate {COLLATE} default NULL,
+  `QTD` decimal(17,3) default NULL,
+  `IND_EST` varchar(1) collate {COLLATE} default NULL,
+  `COD_PART` varchar(60) collate {COLLATE} default NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
+
+--
+-- Registro: reg_k220
+--
+
+CREATE TABLE `reg_k220` (
+  `ID` bigint(20) NOT NULL,
+  `REG` varchar(4) collate {COLLATE} default NULL,
+  `DT_MOV` date default NULL,
+  `COD_ITEM_ORI` varchar(60) collate {COLLATE} default NULL,
+  `COD_ITEM_DEST` varchar(60) collate {COLLATE} default NULL,
+  `QTD` decimal(17,3) default NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
+
+--
+-- Registro: reg_k230
+--
+
+CREATE TABLE `reg_k230` (
+  `ID` bigint(20) NOT NULL,
+  `REG` varchar(4) collate {COLLATE} default NULL,
+  `DT_INI_OP` date default NULL,
+  `DT_FIN_OP` date default NULL,
+  `COD_DOC_OP` varchar(30) collate {COLLATE} default NULL,
+  `COD_ITEM` varchar(60) collate {COLLATE} default NULL,
+  `QTD_ENC` decimal(17,3) default NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
+
+--
+-- Registro: reg_k235
+--
+
+CREATE TABLE `reg_k235` (
+  `ID` bigint(20) NOT NULL,
+  `REG` varchar(4) collate {COLLATE} default NULL,
+  `DT_SAIDA` date default NULL,
+  `COD_ITEM` varchar(60) collate {COLLATE} default NULL,
+  `QTD` decimal(17,3) default NULL,
+  `COD_INS_SUBST` varchar(60) collate {COLLATE} default NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
+
+--
+-- Registro: reg_k250
+--
+
+CREATE TABLE `reg_k250` (
+  `ID` bigint(20) NOT NULL,
+  `REG` varchar(4) collate {COLLATE} default NULL,
+  `DT_PROD` date default NULL,
+  `COD_ITEM` varchar(60) collate {COLLATE} default NULL,
+  `QTD` decimal(17,3) default NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
+
+-- 
+-- Registro: reg_k255
+--
+
+CREATE TABLE `reg_k255` (
+  `ID` bigint(20) NOT NULL,
+  `REG` varchar(4) collate {COLLATE} default NULL,
+  `DT_CONS` date default NULL,
+  `COD_ITEM` varchar(60) collate {COLLATE} default NULL,
+  `QTD` decimal(17,3) default NULL,
+  `COD_INS_SUBST` varchar(60) collate {COLLATE} default NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
+
+--
+-- Registro: reg_k990
+--
+
+CREATE TABLE `reg_k990` (
+  `ID` bigint(20) NOT NULL,
+  `REG` varchar(4) collate {COLLATE} default NULL,
+  `QTD_LIN_H` varchar(255) collate {COLLATE} default NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
