@@ -3189,7 +3189,7 @@ CREATE TABLE `reg_h990` (
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
--- Registro: reg_k001
+-- Registro: k001
 --
 
 CREATE TABLE `reg_k001` (
@@ -3200,7 +3200,7 @@ CREATE TABLE `reg_k001` (
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 -- 
--- Registro: reg_k100
+-- Registro: k100
 --
 
 CREATE TABLE `reg_k100` (
@@ -3212,7 +3212,7 @@ CREATE TABLE `reg_k100` (
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
--- Registro: reg_k200
+-- Registro: k200
 --
 
 CREATE TABLE `reg_k200` (
@@ -3227,7 +3227,7 @@ CREATE TABLE `reg_k200` (
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
--- Registro: reg_k220
+-- Registro: k220
 --
 
 CREATE TABLE `reg_k220` (
@@ -3241,7 +3241,7 @@ CREATE TABLE `reg_k220` (
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
--- Registro: reg_k230
+-- Registro: k230
 --
 
 CREATE TABLE `reg_k230` (
@@ -3256,7 +3256,7 @@ CREATE TABLE `reg_k230` (
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
--- Registro: reg_k235
+-- Registro: k235
 --
 
 CREATE TABLE `reg_k235` (
@@ -3270,7 +3270,7 @@ CREATE TABLE `reg_k235` (
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
--- Registro: reg_k250
+-- Registro: k250
 --
 
 CREATE TABLE `reg_k250` (
@@ -3283,7 +3283,7 @@ CREATE TABLE `reg_k250` (
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 -- 
--- Registro: reg_k255
+-- Registro: k255
 --
 
 CREATE TABLE `reg_k255` (
@@ -3297,7 +3297,7 @@ CREATE TABLE `reg_k255` (
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
--- Registro: reg_k990
+-- Registro: k990
 --
 
 CREATE TABLE `reg_k990` (
