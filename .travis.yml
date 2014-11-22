@@ -4,4 +4,8 @@ rvm:
 branches:
   only:
     - master
+before_script:
+  - mysql -e 'create database ecd;'
+  - mysql -e 'create database efd_contribuicoes;'
+  - mysql -e 'create database efd_icms_ipi;'
 script: ruby travis_script.rb
