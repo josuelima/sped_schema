@@ -4,12 +4,20 @@ rvm:
 branches:
   only:
     - master
+addons:
+  postgresql: '9.3'
 before_script:
   - mysql -e 'create database ecd;'
   - mysql -e 'create database efd_contribuicoes;'
   - mysql -e 'create database efd_icms_ipi;'
+  - psql -c 'create database ecd;' -U postgres
+  - psql -c 'create database efd_contribuicoes;' -U postgres
+  - psql -c 'create database efd_icms_ipi;' -U postgres
 script:
   - ruby travis_script.rb
-  - mysql -u travis ecdsdsd < ./ecd/mysql/ecd_dez_2013.mysql.sql
+  - mysql -u travis ecd < ./ecd/mysql/ecd_dez_2013.mysql.sql
   - mysql -u travis efd_contribuicoes < ./efd_contribuicoes/mysql/efd_cont_1_16.mysql.sql
   - mysql -u travis efd_icms_ipi < ./efd_icms_ipi/mysql/efd_2_0_14.mysql.sql
+  - psql -U postgres ecd < ./ecd/pgsql/ecd_dez_2013.pgsql.sql
+  - psql -U postgres efd_contribuicoes < ./efd_contribuicoes/pgsql/efd_cont_1_16.pgsql.sql
+  - psql -U postgres efd_icms_ipi < ./efd_icms_ipi/pgsql/efd_2_0_14.pgsql.sql
