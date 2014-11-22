@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/josuelima/sped_schema.svg?branch=master)](https://travis-ci.org/josuelima/sped_schema)
+
+
 # SPED Schema
 
 ** This repository contains the implementation of the Brazilian Public Digital Bookkeeping System (SPED) specifications in SQL. Due to its size and complexity, developers need to read lots of specifications and user guides to create or maintain these schemas in their systems. This repository aims to easy this process by grouping and maintaining all these schemas in one place. All fields are intentionally in uppercase to make it as close as possible with the specifications.**
