@@ -8,7 +8,7 @@
 Dir["./**/*.sql"].each do |arquivo|
   conteudo = IO.read(arquivo)
                .gsub('{COLLATE}', 'latin1_general_ci')
-               .gsub('{CHARSET}', 'MyISAM')
-               .gsub('{ENGINE}',  'latin1')
+               .gsub('{CHARSET}', 'latin1')
+               .gsub('{ENGINE}',  'MyISAM')
   IO.write(arquivo, conteudo)
 end
