@@ -3206,8 +3206,8 @@ CREATE TABLE "reg_k001" (
 CREATE TABLE "reg_k100" (
   "ID" bigint NOT NULL,
   "REG" varchar(4) DEFAULT NULL,
-  "COD_ITEM" date default NULL,
-  "DT_FIN" date default NULL,
+  "COD_ITEM" date DEFAULT NULL,
+  "DT_FIN" date DEFAULT NULL,
   PRIMARY KEY ("ID")
 );
 
@@ -3218,9 +3218,9 @@ CREATE TABLE "reg_k100" (
 CREATE TABLE "reg_k200" (
   "ID" bigint NOT NULL,
   "REG" varchar(4) DEFAULT NULL,
-  "DT_EST" date default NULL,
+  "DT_EST" date DEFAULT NULL,
   "COD_ITEM" varchar(60) DEFAULT NULL,
-  "QTD" decimal(17,3) default NULL,
+  "QTD" decimal(17,3) DEFAULT NULL,
   "IND_EST" varchar(1) DEFAULT NULL,
   "COD_PART" varchar(60) DEFAULT NULL,
   PRIMARY KEY ("ID")
@@ -3233,10 +3233,10 @@ CREATE TABLE "reg_k200" (
 CREATE TABLE "reg_k220" (
   "ID" bigint NOT NULL,
   "REG" varchar(4) DEFAULT NULL,
-  "DT_MOV" date default NULL,
+  "DT_MOV" date DEFAULT NULL,
   "COD_ITEM_ORI" varchar(60) DEFAULT NULL,
   "COD_ITEM_DEST" varchar(60) DEFAULT NULL,
-  "QTD" decimal(17,3) default NULL,
+  "QTD" decimal(17,3) DEFAULT NULL,
   PRIMARY KEY ("ID")
 );
 
@@ -3247,11 +3247,11 @@ CREATE TABLE "reg_k220" (
 CREATE TABLE "reg_k230" (
   "ID" bigint NOT NULL,
   "REG" varchar(4) DEFAULT NULL,
-  "DT_INI_OP" date default NULL,
-  "DT_FIN_OP" date default NULL,
+  "DT_INI_OP" date DEFAULT NULL,
+  "DT_FIN_OP" date DEFAULT NULL,
   "COD_DOC_OP" varchar(30) DEFAULT NULL,
   "COD_ITEM" varchar(60) DEFAULT NULL,
-  "QTD_ENC" decimal(17,3) default NULL,
+  "QTD_ENC" decimal(17,3) DEFAULT NULL,
   PRIMARY KEY ("ID")
 );
 
@@ -3262,9 +3262,9 @@ CREATE TABLE "reg_k230" (
 CREATE TABLE "reg_k235" (
   "ID" bigint NOT NULL,
   "REG" varchar(4) DEFAULT NULL,
-  "DT_SAIDA" date default NULL,
+  "DT_SAIDA" date DEFAULT NULL,
   "COD_ITEM" varchar(60) DEFAULT NULL,
-  "QTD" decimal(17,3) default NULL,
+  "QTD" decimal(17,3) DEFAULT NULL,
   "COD_INS_SUBST" varchar(60) DEFAULT NULL,
   PRIMARY KEY ("ID")
 );
@@ -3276,9 +3276,9 @@ CREATE TABLE "reg_k235" (
 CREATE TABLE "reg_k250" (
   "ID" bigint NOT NULL,
   "REG" varchar(4) DEFAULT NULL,
-  "DT_PROD" date default NULL,
+  "DT_PROD" date DEFAULT NULL,
   "COD_ITEM" varchar(60) DEFAULT NULL,
-  "QTD" decimal(17,3) default NULL,
+  "QTD" decimal(17,3) DEFAULT NULL,
   PRIMARY KEY ("ID")
 );
 
@@ -3289,9 +3289,9 @@ CREATE TABLE "reg_k250" (
 CREATE TABLE "reg_k255" (
   "ID" bigint NOT NULL,
   "REG" varchar(4) DEFAULT NULL,
-  "DT_CONS" date default NULL,
+  "DT_CONS" date DEFAULT NULL,
   "COD_ITEM" varchar(60) DEFAULT NULL,
-  "QTD" decimal(17,3) default NULL,
+  "QTD" decimal(17,3) DEFAULT NULL,
   "COD_INS_SUBST" varchar(60) DEFAULT NULL,
   PRIMARY KEY ("ID")
 );
