@@ -10,7 +10,7 @@
 --
 
 CREATE TABLE `cont_reg0000s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `COD_VER` varchar(3) collate latin1_general_ci default NULL,
   `TIPO_ESCRIT` varchar(1) collate latin1_general_ci default NULL,
@@ -43,7 +43,7 @@ CREATE TABLE `cont_reg0000s` (
 --
 
 CREATE TABLE `cont_reg0001s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `IND_MOV` varchar(1) collate latin1_general_ci default NULL,
   `HASH` char(36) default NULL,
@@ -65,7 +65,7 @@ CREATE TABLE `cont_reg0001s` (
 --
 
 CREATE TABLE `cont_reg0035s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `COD_SCP` varchar(14) collate latin1_general_ci default NULL,
   `NOME_SCP` varchar(255) collate latin1_general_ci default NULL,
@@ -88,7 +88,7 @@ CREATE TABLE `cont_reg0035s` (
 --
 
 CREATE TABLE `cont_reg0100s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `NOME` varchar(100) collate latin1_general_ci default NULL,
   `CPF` varchar(11) collate latin1_general_ci default NULL,
@@ -121,7 +121,7 @@ CREATE TABLE `cont_reg0100s` (
 --
 
 CREATE TABLE `cont_reg0110s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `COD_INC_TRIB` varchar(1) collate latin1_general_ci default NULL,
   `IND_APRO_CRED` varchar(1) collate latin1_general_ci default NULL,
@@ -145,7 +145,7 @@ CREATE TABLE `cont_reg0110s` (
 --
 
 CREATE TABLE `cont_reg0111s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `REC_BRU_NCUM_TRIB_MI` decimal(21,2) default NULL,
   `REC_BRU_NCUM_NT_MI` decimal(21,2) default NULL,
@@ -170,7 +170,7 @@ CREATE TABLE `cont_reg0111s` (
 --
 
 CREATE TABLE `cont_reg0120s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `MES_DISPENSA` varchar(6) collate latin1_general_ci default NULL,
   `INF_COMP` varchar(90) collate latin1_general_ci default NULL,
@@ -192,7 +192,7 @@ CREATE TABLE `cont_reg0120s` (
 --
 
 CREATE TABLE `cont_reg0140s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `COD_EST` varchar(60) collate latin1_general_ci default NULL,
   `NOME` varchar(100) collate latin1_general_ci default NULL,
@@ -220,7 +220,7 @@ CREATE TABLE `cont_reg0140s` (
 --
 
 CREATE TABLE `cont_reg0145s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `COD_INC_TRIB` varchar(1) collate latin1_general_ci default NULL,
   `VL_REC_TOT` decimal(21,2) default NULL,
@@ -245,7 +245,7 @@ CREATE TABLE `cont_reg0145s` (
 --
 
 CREATE TABLE `cont_reg0150s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `COD_PART` varchar(60) collate latin1_general_ci default NULL,
   `NOME` varchar(100) collate latin1_general_ci default NULL,
@@ -277,7 +277,7 @@ CREATE TABLE `cont_reg0150s` (
 --
 
 CREATE TABLE `cont_reg0190s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `UNID` varchar(6) collate latin1_general_ci default NULL,
   `DESCR` varchar(255) collate latin1_general_ci default NULL,
@@ -299,7 +299,7 @@ CREATE TABLE `cont_reg0190s` (
 --
 
 CREATE TABLE `cont_reg0200s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `COD_ITEM` varchar(60) collate latin1_general_ci default NULL,
   `DESCR_ITEM` varchar(255) collate latin1_general_ci default NULL,
@@ -330,7 +330,7 @@ CREATE TABLE `cont_reg0200s` (
 --
 
 CREATE TABLE `cont_reg0205s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `DESCR_ANT_ITEM` varchar(255) collate latin1_general_ci default NULL,
   `DT_INI` date default NULL,
@@ -354,7 +354,7 @@ CREATE TABLE `cont_reg0205s` (
 --
 
 CREATE TABLE `cont_reg0206s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `COD_COMB` varchar(255) collate latin1_general_ci default NULL,
   `HASH` char(36) default NULL,
@@ -375,7 +375,7 @@ CREATE TABLE `cont_reg0206s` (
 --
 
 CREATE TABLE `cont_reg0208s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `COD_TAB` varchar(2) collate latin1_general_ci default NULL,
   `COD_GRU` varchar(2) collate latin1_general_ci default NULL,
@@ -398,7 +398,7 @@ CREATE TABLE `cont_reg0208s` (
 --
 
 CREATE TABLE `cont_reg0400s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `COD_NAT` varchar(10) collate latin1_general_ci default NULL,
   `DESCR_NAT` varchar(255) collate latin1_general_ci default NULL,
@@ -420,7 +420,7 @@ CREATE TABLE `cont_reg0400s` (
 --
 
 CREATE TABLE `cont_reg0450s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `COD_INF` varchar(6) collate latin1_general_ci default NULL,
   `TXT` varchar(255) collate latin1_general_ci default NULL,
@@ -442,7 +442,7 @@ CREATE TABLE `cont_reg0450s` (
 --
 
 CREATE TABLE `cont_reg0500s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `DT_ALT` date default NULL,
   `COD_NAT_CC` varchar(2) collate latin1_general_ci default NULL,
@@ -470,7 +470,7 @@ CREATE TABLE `cont_reg0500s` (
 --
 
 CREATE TABLE `cont_reg0600s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `DT_ALT` date default NULL,
   `COD_CCUS` varchar(60) collate latin1_general_ci default NULL,
@@ -493,7 +493,7 @@ CREATE TABLE `cont_reg0600s` (
 --
 
 CREATE TABLE `cont_reg0990s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `QTD_LIN_0` varchar(255) collate latin1_general_ci default NULL,
   `HASH` char(36) default NULL,
@@ -515,7 +515,7 @@ CREATE TABLE `cont_reg0990s` (
 --
 
 CREATE TABLE `cont_reg1001s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `IND_MOV` varchar(1) collate latin1_general_ci default NULL,
   `HASH` char(36) default NULL,
@@ -537,7 +537,7 @@ CREATE TABLE `cont_reg1001s` (
 --
 
 CREATE TABLE `cont_reg1010s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `NUM_PROC` varchar(20) collate latin1_general_ci default NULL,
   `ID_SEC_JUD` varchar(255) collate latin1_general_ci default NULL,
@@ -563,7 +563,7 @@ CREATE TABLE `cont_reg1010s` (
 --
 
 CREATE TABLE `cont_reg1020s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `NUM_PROC` varchar(20) collate latin1_general_ci default NULL,
   `IND_NAT_ACAO` varchar(2) collate latin1_general_ci default NULL,
@@ -586,7 +586,7 @@ CREATE TABLE `cont_reg1020s` (
 --
 
 CREATE TABLE `cont_reg1100s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `PER_APU_CRED` varchar(6) collate latin1_general_ci default NULL,
   `ORIG_CRED` varchar(2) collate latin1_general_ci default NULL,
@@ -623,7 +623,7 @@ CREATE TABLE `cont_reg1100s` (
 --
 
 CREATE TABLE `cont_reg1300s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `IND_NAT_RET` varchar(2) collate latin1_general_ci default NULL,
   `PR_REC_RET` varchar(6) collate latin1_general_ci default NULL,
@@ -650,7 +650,7 @@ CREATE TABLE `cont_reg1300s` (
 --
 
 CREATE TABLE `cont_reg1500s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `PER_APU_CRED` varchar(6) collate latin1_general_ci default NULL,
   `ORIG_CRED` varchar(2) collate latin1_general_ci default NULL,
@@ -687,7 +687,7 @@ CREATE TABLE `cont_reg1500s` (
 --
 
 CREATE TABLE `cont_reg1700s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `IND_NAT_RET` varchar(2) collate latin1_general_ci default NULL,
   `PR_REC_RET` varchar(6) collate latin1_general_ci default NULL,
@@ -714,7 +714,7 @@ CREATE TABLE `cont_reg1700s` (
 --
 
 CREATE TABLE `cont_reg1800s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `INC_IMOB` varchar(90) collate latin1_general_ci default NULL,
   `REC_RECEB_RET` decimal(21,2) default NULL,
@@ -742,7 +742,7 @@ CREATE TABLE `cont_reg1800s` (
 --
 
 CREATE TABLE `cont_reg1900s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `CNPJ` varchar(14) collate latin1_general_ci default NULL,
   `COD_MOD` varchar(2) collate latin1_general_ci default NULL,
@@ -774,7 +774,7 @@ CREATE TABLE `cont_reg1900s` (
 --
 
 CREATE TABLE `cont_reg1990s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `QTD_LIN_1` varchar(255) collate latin1_general_ci default NULL,
   `HASH` char(36) default NULL,
@@ -796,7 +796,7 @@ CREATE TABLE `cont_reg1990s` (
 --
 
 CREATE TABLE `cont_reg9001s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `IND_MOV` varchar(1) collate latin1_general_ci default NULL,
   `HASH` char(36) default NULL,
@@ -818,7 +818,7 @@ CREATE TABLE `cont_reg9001s` (
 --
 
 CREATE TABLE `cont_reg9900s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `REG_BLC` varchar(4) collate latin1_general_ci default NULL,
   `QTD_REG_BLC` varchar(255) collate latin1_general_ci default NULL,
@@ -841,7 +841,7 @@ CREATE TABLE `cont_reg9900s` (
 --
 
 CREATE TABLE `cont_reg9990s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `QTD_LIN_9` varchar(255) collate latin1_general_ci default NULL,
   `HASH` char(36) default NULL,
@@ -863,7 +863,7 @@ CREATE TABLE `cont_reg9990s` (
 --
 
 CREATE TABLE `cont_reg9999s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `QTD_LIN` varchar(255) collate latin1_general_ci default NULL,
   `HASH` char(36) default NULL,
@@ -885,7 +885,7 @@ CREATE TABLE `cont_reg9999s` (
 --
 
 CREATE TABLE `cont_rega001s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `IND_MOV` varchar(1) collate latin1_general_ci default NULL,
   `HASH` char(36) default NULL,
@@ -907,7 +907,7 @@ CREATE TABLE `cont_rega001s` (
 --
 
 CREATE TABLE `cont_rega010s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `CNPJ` varchar(14) collate latin1_general_ci default NULL,
   `HASH` char(36) default NULL,
@@ -929,7 +929,7 @@ CREATE TABLE `cont_rega010s` (
 --
 
 CREATE TABLE `cont_rega100s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `IND_OPER` varchar(1) collate latin1_general_ci default NULL,
   `IND_EMIT` varchar(1) collate latin1_general_ci default NULL,
@@ -969,7 +969,7 @@ CREATE TABLE `cont_rega100s` (
 --
 
 CREATE TABLE `cont_rega110s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `COD_INF` varchar(6) collate latin1_general_ci default NULL,
   `TXT_COMPL` varchar(255) collate latin1_general_ci default NULL,
@@ -991,7 +991,7 @@ CREATE TABLE `cont_rega110s` (
 --
 
 CREATE TABLE `cont_rega111s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `NUM_PROC` varchar(20) collate latin1_general_ci default NULL,
   `IND_PROC` varchar(1) collate latin1_general_ci default NULL,
@@ -1013,7 +1013,7 @@ CREATE TABLE `cont_rega111s` (
 --
 
 CREATE TABLE `cont_rega120s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `VL_TOT_SERV` decimal(21,2) default NULL,
   `VL_BC_PIS` decimal(21,2) default NULL,
@@ -1041,7 +1041,7 @@ CREATE TABLE `cont_rega120s` (
 --
 
 CREATE TABLE `cont_rega170s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `NUM_ITEM` varchar(4) collate latin1_general_ci default NULL,
   `COD_ITEM` varchar(60) collate latin1_general_ci default NULL,
@@ -1078,7 +1078,7 @@ CREATE TABLE `cont_rega170s` (
 --
 
 CREATE TABLE `cont_rega990s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `QTD_LIN_A` varchar(255) collate latin1_general_ci default NULL,
   `HASH` char(36) default NULL,
@@ -1100,7 +1100,7 @@ CREATE TABLE `cont_rega990s` (
 --
 
 CREATE TABLE `cont_regc001s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `IND_MOV` varchar(1) collate latin1_general_ci default NULL,
   `HASH` char(36) default NULL,
@@ -1122,7 +1122,7 @@ CREATE TABLE `cont_regc001s` (
 --
 
 CREATE TABLE `cont_regc010s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `CNPJ` varchar(14) collate latin1_general_ci default NULL,
   `IND_ESCRI` varchar(1) collate latin1_general_ci default NULL,
@@ -1145,7 +1145,7 @@ CREATE TABLE `cont_regc010s` (
 --
 
 CREATE TABLE `cont_regc100s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `IND_OPER` varchar(1) collate latin1_general_ci default NULL,
   `IND_EMIT` varchar(1) collate latin1_general_ci default NULL,
@@ -1193,7 +1193,7 @@ CREATE TABLE `cont_regc100s` (
 --
 
 CREATE TABLE `cont_regc110s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `COD_INF` varchar(6) collate latin1_general_ci default NULL,
   `TXT_COMPL` varchar(255) collate latin1_general_ci default NULL,
@@ -1215,7 +1215,7 @@ CREATE TABLE `cont_regc110s` (
 --
 
 CREATE TABLE `cont_regc111s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `NUM_PROC` varchar(20) collate latin1_general_ci default NULL,
   `IND_PROC` varchar(1) collate latin1_general_ci default NULL,
@@ -1237,7 +1237,7 @@ CREATE TABLE `cont_regc111s` (
 --
 
 CREATE TABLE `cont_regc120s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `COD_DOC_IMP` varchar(1) collate latin1_general_ci default NULL,
   `NUM_DOC_IMP` varchar(10) collate latin1_general_ci default NULL,
@@ -1262,7 +1262,7 @@ CREATE TABLE `cont_regc120s` (
 --
 
 CREATE TABLE `cont_regc170s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `NUM_ITEM` varchar(3) collate latin1_general_ci default NULL,
   `COD_ITEM` varchar(60) collate latin1_general_ci default NULL,
@@ -1318,7 +1318,7 @@ CREATE TABLE `cont_regc170s` (
 --
 
 CREATE TABLE `cont_regc180s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `COD_MOD` varchar(2) collate latin1_general_ci default NULL,
   `DT_DOC_INI` date default NULL,
@@ -1345,7 +1345,7 @@ CREATE TABLE `cont_regc180s` (
 --
 
 CREATE TABLE `cont_regc181s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `CST_PIS` varchar(2) collate latin1_general_ci default NULL,
   `CFOP` varchar(4) collate latin1_general_ci default NULL,
@@ -1375,7 +1375,7 @@ CREATE TABLE `cont_regc181s` (
 --
 
 CREATE TABLE `cont_regc185s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `CST_COFINS` varchar(2) collate latin1_general_ci default NULL,
   `CFOP` varchar(4) collate latin1_general_ci default NULL,
@@ -1405,7 +1405,7 @@ CREATE TABLE `cont_regc185s` (
 --
 
 CREATE TABLE `cont_regc188s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `NUM_PROC` varchar(20) collate latin1_general_ci default NULL,
   `IND_PROC` varchar(1) collate latin1_general_ci default NULL,
@@ -1427,7 +1427,7 @@ CREATE TABLE `cont_regc188s` (
 --
 
 CREATE TABLE `cont_regc190s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `COD_MOD` varchar(2) collate latin1_general_ci default NULL,
   `DT_REF_INI` date default NULL,
@@ -1454,7 +1454,7 @@ CREATE TABLE `cont_regc190s` (
 --
 
 CREATE TABLE `cont_regc191s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `CNPJ_CPF_PART` varchar(14) collate latin1_general_ci default NULL,
   `CST_PIS` varchar(2) collate latin1_general_ci default NULL,
@@ -1485,7 +1485,7 @@ CREATE TABLE `cont_regc191s` (
 --
 
 CREATE TABLE `cont_regc195s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `CNPJ_CPF_PART` varchar(14) collate latin1_general_ci default NULL,
   `CST_COFINS` varchar(2) collate latin1_general_ci default NULL,
@@ -1516,7 +1516,7 @@ CREATE TABLE `cont_regc195s` (
 --
 
 CREATE TABLE `cont_regc198s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `NUM_PROC` varchar(20) collate latin1_general_ci default NULL,
   `IND_PROC` varchar(1) collate latin1_general_ci default NULL,
@@ -1538,7 +1538,7 @@ CREATE TABLE `cont_regc198s` (
 --
 
 CREATE TABLE `cont_regc199s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `COD_DOC_IMP` varchar(1) collate latin1_general_ci default NULL,
   `NUM_DOC_IMP` varchar(10) collate latin1_general_ci default NULL,
@@ -1563,7 +1563,7 @@ CREATE TABLE `cont_regc199s` (
 --
 
 CREATE TABLE `cont_regc380s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `COD_MOD` varchar(2) collate latin1_general_ci default NULL,
   `DT_DOC_INI` date default NULL,
@@ -1590,7 +1590,7 @@ CREATE TABLE `cont_regc380s` (
 --
 
 CREATE TABLE `cont_regc381s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `CST_PIS` varchar(2) collate latin1_general_ci default NULL,
   `COD_ITEM` varchar(60) collate latin1_general_ci default NULL,
@@ -1619,7 +1619,7 @@ CREATE TABLE `cont_regc381s` (
 --
 
 CREATE TABLE `cont_regc385s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `CST_COFINS` varchar(2) collate latin1_general_ci default NULL,
   `COD_ITEM` varchar(60) collate latin1_general_ci default NULL,
@@ -1648,7 +1648,7 @@ CREATE TABLE `cont_regc385s` (
 --
 
 CREATE TABLE `cont_regc395s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `COD_MOD` varchar(2) collate latin1_general_ci default NULL,
   `COD_PART` varchar(60) collate latin1_general_ci default NULL,
@@ -1675,7 +1675,7 @@ CREATE TABLE `cont_regc395s` (
 --
 
 CREATE TABLE `cont_regc396s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `COD_ITEM` varchar(60) collate latin1_general_ci default NULL,
   `VL_ITEM` decimal(21,2) default NULL,
@@ -1708,7 +1708,7 @@ CREATE TABLE `cont_regc396s` (
 --
 
 CREATE TABLE `cont_regc400s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `COD_MOD` varchar(2) collate latin1_general_ci default NULL,
   `ECF_MOD` varchar(20) collate latin1_general_ci default NULL,
@@ -1732,7 +1732,7 @@ CREATE TABLE `cont_regc400s` (
 --
 
 CREATE TABLE `cont_regc405s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `DT_DOC` date default NULL,
   `CRO` varchar(3) collate latin1_general_ci default NULL,
@@ -1758,7 +1758,7 @@ CREATE TABLE `cont_regc405s` (
 --
 
 CREATE TABLE `cont_regc481s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `CST_PIS` varchar(2) collate latin1_general_ci default NULL,
   `VL_ITEM` decimal(21,2) default NULL,
@@ -1787,7 +1787,7 @@ CREATE TABLE `cont_regc481s` (
 --
 
 CREATE TABLE `cont_regc485s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `CST_COFINS` varchar(2) collate latin1_general_ci default NULL,
   `VL_ITEM` decimal(21,2) default NULL,
@@ -1816,7 +1816,7 @@ CREATE TABLE `cont_regc485s` (
 --
 
 CREATE TABLE `cont_regc489s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `NUM_PROC` varchar(20) collate latin1_general_ci default NULL,
   `IND_PROC` varchar(1) collate latin1_general_ci default NULL,
@@ -1838,7 +1838,7 @@ CREATE TABLE `cont_regc489s` (
 --
 
 CREATE TABLE `cont_regc490s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `DT_DOC_INI` date default NULL,
   `DT_DOC_FIN` date default NULL,
@@ -1861,7 +1861,7 @@ CREATE TABLE `cont_regc490s` (
 --
 
 CREATE TABLE `cont_regc491s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `COD_ITEM` varchar(60) collate latin1_general_ci default NULL,
   `CST_PIS` varchar(2) collate latin1_general_ci default NULL,
@@ -1891,7 +1891,7 @@ CREATE TABLE `cont_regc491s` (
 --
 
 CREATE TABLE `cont_regc495s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `COD_ITEM` varchar(60) collate latin1_general_ci default NULL,
   `CST_COFINS` varchar(2) collate latin1_general_ci default NULL,
@@ -1921,7 +1921,7 @@ CREATE TABLE `cont_regc495s` (
 --
 
 CREATE TABLE `cont_regc499s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `NUM_PROC` varchar(20) collate latin1_general_ci default NULL,
   `IND_PROC` varchar(1) collate latin1_general_ci default NULL,
@@ -1943,7 +1943,7 @@ CREATE TABLE `cont_regc499s` (
 --
 
 CREATE TABLE `cont_regc500s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `COD_PART` varchar(60) collate latin1_general_ci default NULL,
   `COD_MOD` varchar(2) collate latin1_general_ci default NULL,
@@ -1976,7 +1976,7 @@ CREATE TABLE `cont_regc500s` (
 --
 
 CREATE TABLE `cont_regc501s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `CST_PIS` varchar(2) collate latin1_general_ci default NULL,
   `VL_ITEM` decimal(21,2) default NULL,
@@ -2003,7 +2003,7 @@ CREATE TABLE `cont_regc501s` (
 --
 
 CREATE TABLE `cont_regc505s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `CST_COFINS` varchar(2) collate latin1_general_ci default NULL,
   `VL_ITEM` decimal(21,2) default NULL,
@@ -2030,7 +2030,7 @@ CREATE TABLE `cont_regc505s` (
 --
 
 CREATE TABLE `cont_regc509s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `NUM_PROC` varchar(20) collate latin1_general_ci default NULL,
   `IND_PROC` varchar(1) collate latin1_general_ci default NULL,
@@ -2052,7 +2052,7 @@ CREATE TABLE `cont_regc509s` (
 --
 
 CREATE TABLE `cont_regc600s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `COD_MOD` varchar(2) collate latin1_general_ci default NULL,
   `COD_MUN` varchar(7) collate latin1_general_ci default NULL,
@@ -2093,7 +2093,7 @@ CREATE TABLE `cont_regc600s` (
 --
 
 CREATE TABLE `cont_regc601s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `CST_PIS` varchar(2) collate latin1_general_ci default NULL,
   `VL_ITEM` decimal(21,2) default NULL,
@@ -2119,7 +2119,7 @@ CREATE TABLE `cont_regc601s` (
 --
 
 CREATE TABLE `cont_regc605s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `CST_COFINS` varchar(2) collate latin1_general_ci default NULL,
   `VL_ITEM` decimal(21,2) default NULL,
@@ -2145,7 +2145,7 @@ CREATE TABLE `cont_regc605s` (
 --
 
 CREATE TABLE `cont_regc609s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `NUM_PROC` varchar(20) collate latin1_general_ci default NULL,
   `IND_PROC` varchar(1) collate latin1_general_ci default NULL,
@@ -2167,7 +2167,7 @@ CREATE TABLE `cont_regc609s` (
 --
 
 CREATE TABLE `cont_regc990s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `QTD_LIN_C` varchar(255) collate latin1_general_ci default NULL,
   `HASH` char(36) default NULL,
@@ -2189,7 +2189,7 @@ CREATE TABLE `cont_regc990s` (
 --
 
 CREATE TABLE `cont_regd001s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `IND_MOV` varchar(1) collate latin1_general_ci default NULL,
   `HASH` char(36) default NULL,
@@ -2211,7 +2211,7 @@ CREATE TABLE `cont_regd001s` (
 --
 
 CREATE TABLE `cont_regd010s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `CNPJ` varchar(14) collate latin1_general_ci default NULL,
   `HASH` char(36) default NULL,
@@ -2233,7 +2233,7 @@ CREATE TABLE `cont_regd010s` (
 --
 
 CREATE TABLE `cont_regd100s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `IND_OPER` varchar(1) collate latin1_general_ci default NULL,
   `IND_EMIT` varchar(1) collate latin1_general_ci default NULL,
@@ -2275,7 +2275,7 @@ CREATE TABLE `cont_regd100s` (
 --
 
 CREATE TABLE `cont_regd101s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `IND_NAT_FRT` varchar(1) collate latin1_general_ci default NULL,
   `VL_ITEM` decimal(21,2) default NULL,
@@ -2303,7 +2303,7 @@ CREATE TABLE `cont_regd101s` (
 --
 
 CREATE TABLE `cont_regd105s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `IND_NAT_FRT` varchar(1) collate latin1_general_ci default NULL,
   `VL_ITEM` decimal(21,2) default NULL,
@@ -2331,7 +2331,7 @@ CREATE TABLE `cont_regd105s` (
 --
 
 CREATE TABLE `cont_regd111s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `NUM_PROC` varchar(20) collate latin1_general_ci default NULL,
   `IND_PROC` varchar(1) collate latin1_general_ci default NULL,
@@ -2353,7 +2353,7 @@ CREATE TABLE `cont_regd111s` (
 --
 
 CREATE TABLE `cont_regd200s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `COD_MOD` varchar(2) collate latin1_general_ci default NULL,
   `COD_SIT` varchar(2) collate latin1_general_ci default NULL,
@@ -2383,7 +2383,7 @@ CREATE TABLE `cont_regd200s` (
 --
 
 CREATE TABLE `cont_regd201s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `CST_PIS` varchar(2) collate latin1_general_ci default NULL,
   `VL_ITEM` decimal(21,2) default NULL,
@@ -2409,7 +2409,7 @@ CREATE TABLE `cont_regd201s` (
 --
 
 CREATE TABLE `cont_regd205s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `CST_COFINS` varchar(2) collate latin1_general_ci default NULL,
   `VL_ITEM` decimal(21,2) default NULL,
@@ -2435,7 +2435,7 @@ CREATE TABLE `cont_regd205s` (
 --
 
 CREATE TABLE `cont_regd209s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `NUM_PROC` varchar(20) collate latin1_general_ci default NULL,
   `IND_PROC` varchar(1) collate latin1_general_ci default NULL,
@@ -2457,7 +2457,7 @@ CREATE TABLE `cont_regd209s` (
 --
 
 CREATE TABLE `cont_regd300s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `COD_MOD` varchar(2) collate latin1_general_ci default NULL,
   `SER` varchar(4) collate latin1_general_ci default NULL,
@@ -2495,7 +2495,7 @@ CREATE TABLE `cont_regd300s` (
 --
 
 CREATE TABLE `cont_regd309s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `NUM_PROC` varchar(20) collate latin1_general_ci default NULL,
   `IND_PROC` varchar(1) collate latin1_general_ci default NULL,
@@ -2517,7 +2517,7 @@ CREATE TABLE `cont_regd309s` (
 --
 
 CREATE TABLE `cont_regd350s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `COD_MOD` varchar(2) collate latin1_general_ci default NULL,
   `ECF_MOD` varchar(20) collate latin1_general_ci default NULL,
@@ -2559,7 +2559,7 @@ CREATE TABLE `cont_regd350s` (
 --
 
 CREATE TABLE `cont_regd359s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `NUM_PROC` varchar(20) collate latin1_general_ci default NULL,
   `IND_PROC` varchar(1) collate latin1_general_ci default NULL,
@@ -2581,7 +2581,7 @@ CREATE TABLE `cont_regd359s` (
 --
 
 CREATE TABLE `cont_regd500s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `IND_OPER` varchar(1) collate latin1_general_ci default NULL,
   `IND_EMIT` varchar(1) collate latin1_general_ci default NULL,
@@ -2622,7 +2622,7 @@ CREATE TABLE `cont_regd500s` (
 --
 
 CREATE TABLE `cont_regd501s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `CST_PIS` varchar(2) collate latin1_general_ci default NULL,
   `VL_ITEM` decimal(21,2) default NULL,
@@ -2649,7 +2649,7 @@ CREATE TABLE `cont_regd501s` (
 --
 
 CREATE TABLE `cont_regd505s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `CST_COFINS` varchar(2) collate latin1_general_ci default NULL,
   `VL_ITEM` decimal(21,2) default NULL,
@@ -2676,7 +2676,7 @@ CREATE TABLE `cont_regd505s` (
 --
 
 CREATE TABLE `cont_regd509s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `NUM_PROC` varchar(20) collate latin1_general_ci default NULL,
   `IND_PROC` varchar(1) collate latin1_general_ci default NULL,
@@ -2698,7 +2698,7 @@ CREATE TABLE `cont_regd509s` (
 --
 
 CREATE TABLE `cont_regd600s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `COD_MOD` varchar(2) collate latin1_general_ci default NULL,
   `COD_MUN` varchar(7) collate latin1_general_ci default NULL,
@@ -2736,7 +2736,7 @@ CREATE TABLE `cont_regd600s` (
 --
 
 CREATE TABLE `cont_regd601s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `COD_CLASS` varchar(4) collate latin1_general_ci default NULL,
   `VL_ITEM` decimal(21,2) default NULL,
@@ -2764,7 +2764,7 @@ CREATE TABLE `cont_regd601s` (
 --
 
 CREATE TABLE `cont_regd605s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `COD_CLASS` varchar(4) collate latin1_general_ci default NULL,
   `VL_ITEM` decimal(21,2) default NULL,
@@ -2792,7 +2792,7 @@ CREATE TABLE `cont_regd605s` (
 --
 
 CREATE TABLE `cont_regd609s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `NUM_PROC` varchar(20) collate latin1_general_ci default NULL,
   `IND_PROC` varchar(1) collate latin1_general_ci default NULL,
@@ -2814,7 +2814,7 @@ CREATE TABLE `cont_regd609s` (
 --
 
 CREATE TABLE `cont_regd990s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `QTD_LIN_D` varchar(255) collate latin1_general_ci default NULL,
   `HASH` char(36) default NULL,
@@ -2836,7 +2836,7 @@ CREATE TABLE `cont_regd990s` (
 --
 
 CREATE TABLE `cont_regf001s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `IND_MOV` varchar(1) collate latin1_general_ci default NULL,
   `HASH` char(36) default NULL,
@@ -2858,7 +2858,7 @@ CREATE TABLE `cont_regf001s` (
 --
 
 CREATE TABLE `cont_regf010s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `CNPJ` varchar(14) collate latin1_general_ci default NULL,
   `HASH` char(36) default NULL,
@@ -2880,7 +2880,7 @@ CREATE TABLE `cont_regf010s` (
 --
 
 CREATE TABLE `cont_regf100s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `IND_OPER` varchar(1) collate latin1_general_ci default NULL,
   `COD_PART` varchar(60) collate latin1_general_ci default NULL,
@@ -2918,7 +2918,7 @@ CREATE TABLE `cont_regf100s` (
 --
 
 CREATE TABLE `cont_regf111s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `NUM_PROC` varchar(20) collate latin1_general_ci default NULL,
   `IND_PROC` varchar(1) collate latin1_general_ci default NULL,
@@ -2940,7 +2940,7 @@ CREATE TABLE `cont_regf111s` (
 --
 
 CREATE TABLE `cont_regf120s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `NAT_BC_CRED` varchar(2) collate latin1_general_ci default NULL,
   `IDENT_BEM_IMOB` varchar(2) collate latin1_general_ci default NULL,
@@ -2977,7 +2977,7 @@ CREATE TABLE `cont_regf120s` (
 --
 
 CREATE TABLE `cont_regf129s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `NUM_PROC` varchar(20) collate latin1_general_ci default NULL,
   `IND_PROC` varchar(1) collate latin1_general_ci default NULL,
@@ -2999,7 +2999,7 @@ CREATE TABLE `cont_regf129s` (
 --
 
 CREATE TABLE `cont_regf130s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `NAT_BC_CRED` varchar(2) collate latin1_general_ci default NULL,
   `IDENT_BEM_IMOB` varchar(2) collate latin1_general_ci default NULL,
@@ -3039,7 +3039,7 @@ CREATE TABLE `cont_regf130s` (
 --
 
 CREATE TABLE `cont_regf139s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `NUM_PROC` varchar(20) collate latin1_general_ci default NULL,
   `IND_PROC` varchar(1) collate latin1_general_ci default NULL,
@@ -3061,7 +3061,7 @@ CREATE TABLE `cont_regf139s` (
 --
 
 CREATE TABLE `cont_regf150s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `NAT_BC_CRED` varchar(2) collate latin1_general_ci default NULL,
   `VL_TOT_EST` decimal(21,2) default NULL,
@@ -3094,7 +3094,7 @@ CREATE TABLE `cont_regf150s` (
 --
 
 CREATE TABLE `cont_regf200s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `IND_OPER` varchar(2) collate latin1_general_ci default NULL,
   `UNID_IMOB` varchar(2) collate latin1_general_ci default NULL,
@@ -3135,7 +3135,7 @@ CREATE TABLE `cont_regf200s` (
 --
 
 CREATE TABLE `cont_regf205s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `VL_CUS_INC_ACUM_ANT` decimal(21,2) default NULL,
   `VL_CUS_INC_PER_ESC` decimal(21,2) default NULL,
@@ -3172,7 +3172,7 @@ CREATE TABLE `cont_regf205s` (
 --
 
 CREATE TABLE `cont_regf210s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `VL_CUS_ORC` decimal(21,2) default NULL,
   `VL_EXC` decimal(21,2) default NULL,
@@ -3202,7 +3202,7 @@ CREATE TABLE `cont_regf210s` (
 --
 
 CREATE TABLE `cont_regf211s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `NUM_PROC` varchar(20) collate latin1_general_ci default NULL,
   `IND_PROC` varchar(1) collate latin1_general_ci default NULL,
@@ -3224,7 +3224,7 @@ CREATE TABLE `cont_regf211s` (
 --
 
 CREATE TABLE `cont_regf500s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `VL_REC_CAIXA` decimal(21,2) default NULL,
   `CST_PIS` varchar(2) collate latin1_general_ci default NULL,
@@ -3259,7 +3259,7 @@ CREATE TABLE `cont_regf500s` (
 --
 
 CREATE TABLE `cont_regf509s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `NUM_PROC` varchar(20) collate latin1_general_ci default NULL,
   `IND_PROC` varchar(1) collate latin1_general_ci default NULL,
@@ -3281,7 +3281,7 @@ CREATE TABLE `cont_regf509s` (
 --
 
 CREATE TABLE `cont_regf510s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `VL_REC_CAIXA` decimal(21,2) default NULL,
   `CST_PIS` varchar(2) collate latin1_general_ci default NULL,
@@ -3316,7 +3316,7 @@ CREATE TABLE `cont_regf510s` (
 --
 
 CREATE TABLE `cont_regf519s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `NUM_PROC` varchar(20) collate latin1_general_ci default NULL,
   `IND_PROC` varchar(1) collate latin1_general_ci default NULL,
@@ -3338,7 +3338,7 @@ CREATE TABLE `cont_regf519s` (
 --
 
 CREATE TABLE `cont_regf525s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `VL_REC` decimal(21,2) default NULL,
   `IND_REC` varchar(2) collate latin1_general_ci default NULL,
@@ -3368,7 +3368,7 @@ CREATE TABLE `cont_regf525s` (
 --
 
 CREATE TABLE `cont_regf550s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `VL_REC_COMP` decimal(21,2) default NULL,
   `CST_PIS` varchar(2) collate latin1_general_ci default NULL,
@@ -3403,7 +3403,7 @@ CREATE TABLE `cont_regf550s` (
 --
 
 CREATE TABLE `cont_regf559s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `NUM_PROC` varchar(20) collate latin1_general_ci default NULL,
   `IND_PROC` varchar(1) collate latin1_general_ci default NULL,
@@ -3425,7 +3425,7 @@ CREATE TABLE `cont_regf559s` (
 --
 
 CREATE TABLE `cont_regf560s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `VL_REC_COMP` decimal(21,2) default NULL,
   `CST_PIS` varchar(2) collate latin1_general_ci default NULL,
@@ -3460,7 +3460,7 @@ CREATE TABLE `cont_regf560s` (
 --
 
 CREATE TABLE `cont_regf569s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `NUM_PROC` varchar(20) collate latin1_general_ci default NULL,
   `IND_PROC` varchar(1) collate latin1_general_ci default NULL,
@@ -3482,7 +3482,7 @@ CREATE TABLE `cont_regf569s` (
 --
 
 CREATE TABLE `cont_regf600s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `IND_NAT_RET` varchar(2) collate latin1_general_ci default NULL,
   `DT_RET` date default NULL,
@@ -3512,7 +3512,7 @@ CREATE TABLE `cont_regf600s` (
 --
 
 CREATE TABLE `cont_regf700s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `IND_ORI_DED` varchar(2) collate latin1_general_ci default NULL,
   `IND_NAT_DED` varchar(1) collate latin1_general_ci default NULL,
@@ -3539,7 +3539,7 @@ CREATE TABLE `cont_regf700s` (
 --
 
 CREATE TABLE `cont_regf800s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `IND_NAT_EVEN` varchar(2) collate latin1_general_ci default NULL,
   `DT_EVEN` date default NULL,
@@ -3567,7 +3567,7 @@ CREATE TABLE `cont_regf800s` (
 --
 
 CREATE TABLE `cont_regf990s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `QTD_LIN_F` varchar(255) collate latin1_general_ci default NULL,
   `HASH` char(36) default NULL,
@@ -3589,7 +3589,7 @@ CREATE TABLE `cont_regf990s` (
 --
 
 CREATE TABLE `cont_regi001s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `IND_MOV` varchar(1) collate latin1_general_ci default NULL,
   `HASH` char(36) default NULL,
@@ -3611,7 +3611,7 @@ CREATE TABLE `cont_regi001s` (
 --
 
 CREATE TABLE `cont_regi010s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `CNPJ` varchar(14) collate latin1_general_ci default NULL,
   `IND_ATIV` varchar(2) collate latin1_general_ci default NULL,
@@ -3635,7 +3635,7 @@ CREATE TABLE `cont_regi010s` (
 --
 
 CREATE TABLE `cont_regi100s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `VL_REC_FIN` decimal(21,2) default NULL,
   `CST` varchar(2) collate latin1_general_ci default NULL,
@@ -3666,7 +3666,7 @@ CREATE TABLE `cont_regi100s` (
 --
 
 CREATE TABLE `cont_regi199s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `NUM_PROC` varchar(20) collate latin1_general_ci default NULL,
   `IND_PROC` varchar(1) collate latin1_general_ci default NULL,
@@ -3688,7 +3688,7 @@ CREATE TABLE `cont_regi199s` (
 --
 
 CREATE TABLE `cont_regi200s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `NUM_CAMPO` varchar(2) collate latin1_general_ci default NULL,
   `COD_DET` varchar(5) collate latin1_general_ci default NULL,
@@ -3713,7 +3713,7 @@ CREATE TABLE `cont_regi200s` (
 --
 
 CREATE TABLE `cont_regi299s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `NUM_PROC` varchar(20) collate latin1_general_ci default NULL,
   `IND_PROC` varchar(1) collate latin1_general_ci default NULL,
@@ -3735,7 +3735,7 @@ CREATE TABLE `cont_regi299s` (
 --
 
 CREATE TABLE `cont_regi300s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `COD_COMP` varchar(8) collate latin1_general_ci default NULL,
   `VL_COMP` decimal(21,2) default NULL,
@@ -3759,7 +3759,7 @@ CREATE TABLE `cont_regi300s` (
 --
 
 CREATE TABLE `cont_regi399s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `NUM_PROC` varchar(20) collate latin1_general_ci default NULL,
   `IND_PROC` varchar(1) collate latin1_general_ci default NULL,
@@ -3781,7 +3781,7 @@ CREATE TABLE `cont_regi399s` (
 --
 
 CREATE TABLE `cont_regi990s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `QTD_LIN_I` varchar(255) collate latin1_general_ci default NULL,
   `HASH` char(36) default NULL,
@@ -3803,7 +3803,7 @@ CREATE TABLE `cont_regi990s` (
 --
 
 CREATE TABLE `cont_regm001s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `IND_MOV` varchar(1) collate latin1_general_ci default NULL,
   `HASH` char(36) default NULL,
@@ -3825,7 +3825,7 @@ CREATE TABLE `cont_regm001s` (
 --
 
 CREATE TABLE `cont_regm100s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `COD_CRED` varchar(3) collate latin1_general_ci default NULL,
   `IND_CRED_ORI` varchar(1) collate latin1_general_ci default NULL,
@@ -3859,7 +3859,7 @@ CREATE TABLE `cont_regm100s` (
 --
 
 CREATE TABLE `cont_regm105s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `NAT_BC_CRED` varchar(2) collate latin1_general_ci default NULL,
   `CST_PIS` varchar(2) collate latin1_general_ci default NULL,
@@ -3888,7 +3888,7 @@ CREATE TABLE `cont_regm105s` (
 --
 
 CREATE TABLE `cont_regm110s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `IND_AJ` varchar(1) collate latin1_general_ci default NULL,
   `VL_AJ` decimal(21,2) default NULL,
@@ -3914,7 +3914,7 @@ CREATE TABLE `cont_regm110s` (
 --
 
 CREATE TABLE `cont_regm200s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `VL_TOT_CONT_NC_PER` decimal(21,2) default NULL,
   `VL_TOT_CRED_DESC` decimal(21,2) default NULL,
@@ -3946,7 +3946,7 @@ CREATE TABLE `cont_regm200s` (
 --
 
 CREATE TABLE `cont_regm205s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `NUM_CAMPO` varchar(2) collate latin1_general_ci default NULL,
   `COD_REC` varchar(6) collate latin1_general_ci default NULL,
@@ -3969,7 +3969,7 @@ CREATE TABLE `cont_regm205s` (
 --
 
 CREATE TABLE `cont_regm210s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `COD_CONT` varchar(2) collate latin1_general_ci default NULL,
   `VL_REC_BRT` decimal(21,2) default NULL,
@@ -4001,7 +4001,7 @@ CREATE TABLE `cont_regm210s` (
 --
 
 CREATE TABLE `cont_regm211s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `IND_TIP_COOP` varchar(2) collate latin1_general_ci default NULL,
   `VL_BC_CONT_ANT_EXC_COOP` decimal(21,2) default NULL,
@@ -4026,7 +4026,7 @@ CREATE TABLE `cont_regm211s` (
 --
 
 CREATE TABLE `cont_regm220s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `IND_AJ` varchar(1) collate latin1_general_ci default NULL,
   `VL_AJ` decimal(21,2) default NULL,
@@ -4052,7 +4052,7 @@ CREATE TABLE `cont_regm220s` (
 --
 
 CREATE TABLE `cont_regm230s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `CNPJ` varchar(14) collate latin1_general_ci default NULL,
   `VL_VEND` decimal(21,2) default NULL,
@@ -4078,7 +4078,7 @@ CREATE TABLE `cont_regm230s` (
 --
 
 CREATE TABLE `cont_regm300s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `COD_CONT` varchar(2) collate latin1_general_ci default NULL,
   `VL_CONT_APUR_DIFER` decimal(21,2) default NULL,
@@ -4105,7 +4105,7 @@ CREATE TABLE `cont_regm300s` (
 --
 
 CREATE TABLE `cont_regm350s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `VL_TOT_FOL` decimal(21,2) default NULL,
   `VL_EXC_BC` decimal(21,2) default NULL,
@@ -4130,7 +4130,7 @@ CREATE TABLE `cont_regm350s` (
 --
 
 CREATE TABLE `cont_regm400s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `CST_PIS` varchar(2) collate latin1_general_ci default NULL,
   `VL_TOT_REC` decimal(21,2) default NULL,
@@ -4154,7 +4154,7 @@ CREATE TABLE `cont_regm400s` (
 --
 
 CREATE TABLE `cont_regm410s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `NAT_REC` varchar(3) collate latin1_general_ci default NULL,
   `VL_REC` decimal(21,2) default NULL,
@@ -4178,7 +4178,7 @@ CREATE TABLE `cont_regm410s` (
 --
 
 CREATE TABLE `cont_regm500s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `COD_CRED` varchar(3) collate latin1_general_ci default NULL,
   `IND_CRED_ORI` varchar(1) collate latin1_general_ci default NULL,
@@ -4212,7 +4212,7 @@ CREATE TABLE `cont_regm500s` (
 --
 
 CREATE TABLE `cont_regm505s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `NAT_BC_CRED` varchar(2) collate latin1_general_ci default NULL,
   `CST_COFINS` varchar(2) collate latin1_general_ci default NULL,
@@ -4241,7 +4241,7 @@ CREATE TABLE `cont_regm505s` (
 --
 
 CREATE TABLE `cont_regm510s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `IND_AJ` varchar(1) collate latin1_general_ci default NULL,
   `VL_AJ` decimal(21,2) default NULL,
@@ -4267,7 +4267,7 @@ CREATE TABLE `cont_regm510s` (
 --
 
 CREATE TABLE `cont_regm600s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `VL_TOT_CONT_NC_PER` decimal(21,2) default NULL,
   `VL_TOT_CRED_DESC` decimal(21,2) default NULL,
@@ -4299,7 +4299,7 @@ CREATE TABLE `cont_regm600s` (
 --
 
 CREATE TABLE `cont_regm605s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `NUM_CAMPO` varchar(2) collate latin1_general_ci default NULL,
   `COD_REC` varchar(6) collate latin1_general_ci default NULL,
@@ -4322,7 +4322,7 @@ CREATE TABLE `cont_regm605s` (
 --
 
 CREATE TABLE `cont_regm610s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `COD_CONT` varchar(2) collate latin1_general_ci default NULL,
   `VL_REC_BRT` decimal(21,2) default NULL,
@@ -4354,7 +4354,7 @@ CREATE TABLE `cont_regm610s` (
 --
 
 CREATE TABLE `cont_regm611s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `IND_TIP_COOP` varchar(2) collate latin1_general_ci default NULL,
   `VL_BC_CONT_ANT_EXC_COOP` decimal(21,2) default NULL,
@@ -4379,7 +4379,7 @@ CREATE TABLE `cont_regm611s` (
 --
 
 CREATE TABLE `cont_regm620s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `IND_AJ` varchar(1) collate latin1_general_ci default NULL,
   `VL_AJ` decimal(21,2) default NULL,
@@ -4405,7 +4405,7 @@ CREATE TABLE `cont_regm620s` (
 --
 
 CREATE TABLE `cont_regm630s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `CNPJ` varchar(14) collate latin1_general_ci default NULL,
   `VL_VEND` decimal(21,2) default NULL,
@@ -4431,7 +4431,7 @@ CREATE TABLE `cont_regm630s` (
 --
 
 CREATE TABLE `cont_regm700s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `COD_CONT` varchar(2) collate latin1_general_ci default NULL,
   `VL_CONT_APUR_DIFER` decimal(21,2) default NULL,
@@ -4458,7 +4458,7 @@ CREATE TABLE `cont_regm700s` (
 --
 
 CREATE TABLE `cont_regm800s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `CST_COFINS` varchar(2) collate latin1_general_ci default NULL,
   `VL_TOT_REC` decimal(21,2) default NULL,
@@ -4482,7 +4482,7 @@ CREATE TABLE `cont_regm800s` (
 --
 
 CREATE TABLE `cont_regm810s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `NAT_REC` varchar(3) collate latin1_general_ci default NULL,
   `VL_REC` decimal(21,2) default NULL,
@@ -4506,7 +4506,7 @@ CREATE TABLE `cont_regm810s` (
 --
 
 CREATE TABLE `cont_regm990s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `QTD_LIN_M` varchar(255) collate latin1_general_ci default NULL,
   `HASH` char(36) default NULL,
@@ -4528,7 +4528,7 @@ CREATE TABLE `cont_regm990s` (
 --
 
 CREATE TABLE `cont_regp001s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `IND_MOV` varchar(1) collate latin1_general_ci default NULL,
   `HASH` char(36) default NULL,
@@ -4550,7 +4550,7 @@ CREATE TABLE `cont_regp001s` (
 --
 
 CREATE TABLE `cont_regp010s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `CNPJ` varchar(14) collate latin1_general_ci default NULL,
   `HASH` char(36) default NULL,
@@ -4572,7 +4572,7 @@ CREATE TABLE `cont_regp010s` (
 --
 
 CREATE TABLE `cont_regp100s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `DT_INI` date default NULL,
   `DT_FIM` date default NULL,
@@ -4603,7 +4603,7 @@ CREATE TABLE `cont_regp100s` (
 --
 
 CREATE TABLE `cont_regp110s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `NUM_CAMPO` varchar(2) collate latin1_general_ci default NULL,
   `COD_DET` varchar(8) collate latin1_general_ci default NULL,
@@ -4627,7 +4627,7 @@ CREATE TABLE `cont_regp110s` (
 --
 
 CREATE TABLE `cont_regp199s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `NUM_PROC` varchar(20) collate latin1_general_ci default NULL,
   `IND_PROC` varchar(1) collate latin1_general_ci default NULL,
@@ -4649,7 +4649,7 @@ CREATE TABLE `cont_regp199s` (
 --
 
 CREATE TABLE `cont_regp200s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `PER_REF` varchar(6) collate latin1_general_ci default NULL,
   `VL_TOT_CONT_APU` decimal(21,2) default NULL,
@@ -4675,7 +4675,7 @@ CREATE TABLE `cont_regp200s` (
 --
 
 CREATE TABLE `cont_regp210s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `IND_AJ` varchar(1) collate latin1_general_ci default NULL,
   `VL_AJ` decimal(21,2) default NULL,
@@ -4701,7 +4701,7 @@ CREATE TABLE `cont_regp210s` (
 --
 
 CREATE TABLE `cont_regp990s` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate latin1_general_ci default NULL,
   `QTD_LIN_P` varchar(255) collate latin1_general_ci default NULL,
   `HASH` char(36) default NULL,
