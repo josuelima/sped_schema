@@ -10,7 +10,7 @@
 --
 
 CREATE TABLE `reg_0000` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `COD_VER` varchar(3) collate {COLLATE} default NULL,
   `TIPO_ESCRIT` varchar(1) collate {COLLATE} default NULL,
@@ -33,7 +33,7 @@ CREATE TABLE `reg_0000` (
 --
 
 CREATE TABLE `reg_0001` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `IND_MOV` varchar(1) collate {COLLATE} default NULL,
   PRIMARY KEY  (`ID`)
@@ -45,7 +45,7 @@ CREATE TABLE `reg_0001` (
 --
 
 CREATE TABLE `reg_0035` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `COD_SCP` varchar(14) collate {COLLATE} default NULL,
   `NOME_SCP` varchar(255) collate {COLLATE} default NULL,
@@ -58,7 +58,7 @@ CREATE TABLE `reg_0035` (
 --
 
 CREATE TABLE `reg_0100` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `NOME` varchar(100) collate {COLLATE} default NULL,
   `CPF` varchar(11) collate {COLLATE} default NULL,
@@ -81,7 +81,7 @@ CREATE TABLE `reg_0100` (
 --
 
 CREATE TABLE `reg_0110` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `COD_INC_TRIB` varchar(1) collate {COLLATE} default NULL,
   `IND_APRO_CRED` varchar(1) collate {COLLATE} default NULL,
@@ -95,7 +95,7 @@ CREATE TABLE `reg_0110` (
 --
 
 CREATE TABLE `reg_0111` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `REC_BRU_NCUM_TRIB_MI` decimal(21,2) default NULL,
   `REC_BRU_NCUM_NT_MI` decimal(21,2) default NULL,
@@ -110,7 +110,7 @@ CREATE TABLE `reg_0111` (
 --
 
 CREATE TABLE `reg_0120` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `MES_DISPENSA` varchar(6) collate {COLLATE} default NULL,
   `INF_COMP` varchar(90) collate {COLLATE} default NULL,
@@ -122,7 +122,7 @@ CREATE TABLE `reg_0120` (
 --
 
 CREATE TABLE `reg_0140` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `COD_EST` varchar(60) collate {COLLATE} default NULL,
   `NOME` varchar(100) collate {COLLATE} default NULL,
@@ -140,7 +140,7 @@ CREATE TABLE `reg_0140` (
 --
 
 CREATE TABLE `reg_0145` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `COD_INC_TRIB` varchar(1) collate {COLLATE} default NULL,
   `VL_REC_TOT` decimal(21,2) default NULL,
@@ -155,7 +155,7 @@ CREATE TABLE `reg_0145` (
 --
 
 CREATE TABLE `reg_0150` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `COD_PART` varchar(60) collate {COLLATE} default NULL,
   `NOME` varchar(100) collate {COLLATE} default NULL,
@@ -177,7 +177,7 @@ CREATE TABLE `reg_0150` (
 --
 
 CREATE TABLE `reg_0190` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `UNID` varchar(6) collate {COLLATE} default NULL,
   `DESCR` varchar(255) collate {COLLATE} default NULL,
@@ -189,7 +189,7 @@ CREATE TABLE `reg_0190` (
 --
 
 CREATE TABLE `reg_0200` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `COD_ITEM` varchar(60) collate {COLLATE} default NULL,
   `DESCR_ITEM` varchar(255) collate {COLLATE} default NULL,
@@ -210,7 +210,7 @@ CREATE TABLE `reg_0200` (
 --
 
 CREATE TABLE `reg_0205` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `DESCR_ANT_ITEM` varchar(255) collate {COLLATE} default NULL,
   `DT_INI` date default NULL,
@@ -224,7 +224,7 @@ CREATE TABLE `reg_0205` (
 --
 
 CREATE TABLE `reg_0206` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `COD_COMB` varchar(255) collate {COLLATE} default NULL,
   PRIMARY KEY  (`ID`)
@@ -235,7 +235,7 @@ CREATE TABLE `reg_0206` (
 --
 
 CREATE TABLE `reg_0208` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `COD_TAB` varchar(2) collate {COLLATE} default NULL,
   `COD_GRU` varchar(2) collate {COLLATE} default NULL,
@@ -248,7 +248,7 @@ CREATE TABLE `reg_0208` (
 --
 
 CREATE TABLE `reg_0400` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `COD_NAT` varchar(10) collate {COLLATE} default NULL,
   `DESCR_NAT` varchar(255) collate {COLLATE} default NULL,
@@ -260,7 +260,7 @@ CREATE TABLE `reg_0400` (
 --
 
 CREATE TABLE `reg_0450` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `COD_INF` varchar(6) collate {COLLATE} default NULL,
   `TXT` varchar(255) collate {COLLATE} default NULL,
@@ -272,7 +272,7 @@ CREATE TABLE `reg_0450` (
 --
 
 CREATE TABLE `reg_0500` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `DT_ALT` date default NULL,
   `COD_NAT_CC` varchar(2) collate {COLLATE} default NULL,
@@ -290,7 +290,7 @@ CREATE TABLE `reg_0500` (
 --
 
 CREATE TABLE `reg_0600` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `DT_ALT` date default NULL,
   `COD_CCUS` varchar(60) collate {COLLATE} default NULL,
@@ -303,7 +303,7 @@ CREATE TABLE `reg_0600` (
 --
 
 CREATE TABLE `reg_0990` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `QTD_LIN_0` varchar(255) collate {COLLATE} default NULL,
   PRIMARY KEY  (`ID`)
@@ -315,7 +315,7 @@ CREATE TABLE `reg_0990` (
 --
 
 CREATE TABLE `reg_1001` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `IND_MOV` varchar(1) collate {COLLATE} default NULL,
   PRIMARY KEY  (`ID`)
@@ -327,7 +327,7 @@ CREATE TABLE `reg_1001` (
 --
 
 CREATE TABLE `reg_1010` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `NUM_PROC` varchar(20) collate {COLLATE} default NULL,
   `ID_SEC_JUD` varchar(255) collate {COLLATE} default NULL,
@@ -343,7 +343,7 @@ CREATE TABLE `reg_1010` (
 --
 
 CREATE TABLE `reg_1020` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `NUM_PROC` varchar(20) collate {COLLATE} default NULL,
   `IND_NAT_ACAO` varchar(2) collate {COLLATE} default NULL,
@@ -356,7 +356,7 @@ CREATE TABLE `reg_1020` (
 --
 
 CREATE TABLE `reg_1100` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `PER_APU_CRED` varchar(6) collate {COLLATE} default NULL,
   `ORIG_CRED` varchar(2) collate {COLLATE} default NULL,
@@ -383,7 +383,7 @@ CREATE TABLE `reg_1100` (
 --
 
 CREATE TABLE `reg_1300` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `IND_NAT_RET` varchar(2) collate {COLLATE} default NULL,
   `PR_REC_RET` varchar(6) collate {COLLATE} default NULL,
@@ -400,7 +400,7 @@ CREATE TABLE `reg_1300` (
 --
 
 CREATE TABLE `reg_1500` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `PER_APU_CRED` varchar(6) collate {COLLATE} default NULL,
   `ORIG_CRED` varchar(2) collate {COLLATE} default NULL,
@@ -427,7 +427,7 @@ CREATE TABLE `reg_1500` (
 --
 
 CREATE TABLE `reg_1700` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `IND_NAT_RET` varchar(2) collate {COLLATE} default NULL,
   `PR_REC_RET` varchar(6) collate {COLLATE} default NULL,
@@ -444,7 +444,7 @@ CREATE TABLE `reg_1700` (
 --
 
 CREATE TABLE `reg_1800` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `INC_IMOB` varchar(90) collate {COLLATE} default NULL,
   `REC_RECEB_RET` decimal(21,2) default NULL,
@@ -462,7 +462,7 @@ CREATE TABLE `reg_1800` (
 --
 
 CREATE TABLE `reg_1900` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CNPJ` varchar(14) collate {COLLATE} default NULL,
   `COD_MOD` varchar(2) collate {COLLATE} default NULL,
@@ -484,7 +484,7 @@ CREATE TABLE `reg_1900` (
 --
 
 CREATE TABLE `reg_1990` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `QTD_LIN_1` varchar(255) collate {COLLATE} default NULL,
   PRIMARY KEY  (`ID`)
@@ -496,7 +496,7 @@ CREATE TABLE `reg_1990` (
 --
 
 CREATE TABLE `reg_9001` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `IND_MOV` varchar(1) collate {COLLATE} default NULL,
   PRIMARY KEY  (`ID`)
@@ -508,7 +508,7 @@ CREATE TABLE `reg_9001` (
 --
 
 CREATE TABLE `reg_9900` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `REG_BLC` varchar(4) collate {COLLATE} default NULL,
   `QTD_REG_BLC` varchar(255) collate {COLLATE} default NULL,
@@ -521,7 +521,7 @@ CREATE TABLE `reg_9900` (
 --
 
 CREATE TABLE `reg_9990` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `QTD_LIN_9` varchar(255) collate {COLLATE} default NULL,
   PRIMARY KEY  (`ID`)
@@ -533,7 +533,7 @@ CREATE TABLE `reg_9990` (
 --
 
 CREATE TABLE `reg_9999` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `QTD_LIN` varchar(255) collate {COLLATE} default NULL,
   PRIMARY KEY  (`ID`)
@@ -545,7 +545,7 @@ CREATE TABLE `reg_9999` (
 --
 
 CREATE TABLE `reg_a001` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `IND_MOV` varchar(1) collate {COLLATE} default NULL,
   PRIMARY KEY  (`ID`)
@@ -557,7 +557,7 @@ CREATE TABLE `reg_a001` (
 --
 
 CREATE TABLE `reg_a010` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CNPJ` varchar(14) collate {COLLATE} default NULL,
   PRIMARY KEY  (`ID`)
@@ -569,7 +569,7 @@ CREATE TABLE `reg_a010` (
 --
 
 CREATE TABLE `reg_a100` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `IND_OPER` varchar(1) collate {COLLATE} default NULL,
   `IND_EMIT` varchar(1) collate {COLLATE} default NULL,
@@ -599,7 +599,7 @@ CREATE TABLE `reg_a100` (
 --
 
 CREATE TABLE `reg_a110` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `COD_INF` varchar(6) collate {COLLATE} default NULL,
   `TXT_COMPL` varchar(255) collate {COLLATE} default NULL,
@@ -611,7 +611,7 @@ CREATE TABLE `reg_a110` (
 --
 
 CREATE TABLE `reg_a111` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `NUM_PROC` varchar(20) collate {COLLATE} default NULL,
   `IND_PROC` varchar(1) collate {COLLATE} default NULL,
@@ -623,7 +623,7 @@ CREATE TABLE `reg_a111` (
 --
 
 CREATE TABLE `reg_a120` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `VL_TOT_SERV` decimal(21,2) default NULL,
   `VL_BC_PIS` decimal(21,2) default NULL,
@@ -641,7 +641,7 @@ CREATE TABLE `reg_a120` (
 --
 
 CREATE TABLE `reg_a170` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `NUM_ITEM` varchar(4) collate {COLLATE} default NULL,
   `COD_ITEM` varchar(60) collate {COLLATE} default NULL,
@@ -668,7 +668,7 @@ CREATE TABLE `reg_a170` (
 --
 
 CREATE TABLE `reg_a990` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `QTD_LIN_A` varchar(255) collate {COLLATE} default NULL,
   PRIMARY KEY  (`ID`)
@@ -680,7 +680,7 @@ CREATE TABLE `reg_a990` (
 --
 
 CREATE TABLE `reg_c001` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `IND_MOV` varchar(1) collate {COLLATE} default NULL,
   PRIMARY KEY  (`ID`)
@@ -692,7 +692,7 @@ CREATE TABLE `reg_c001` (
 --
 
 CREATE TABLE `reg_c010` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CNPJ` varchar(14) collate {COLLATE} default NULL,
   `IND_ESCRI` varchar(1) collate {COLLATE} default NULL,
@@ -705,7 +705,7 @@ CREATE TABLE `reg_c010` (
 --
 
 CREATE TABLE `reg_c100` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `IND_OPER` varchar(1) collate {COLLATE} default NULL,
   `IND_EMIT` varchar(1) collate {COLLATE} default NULL,
@@ -743,7 +743,7 @@ CREATE TABLE `reg_c100` (
 --
 
 CREATE TABLE `reg_c110` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `COD_INF` varchar(6) collate {COLLATE} default NULL,
   `TXT_COMPL` varchar(255) collate {COLLATE} default NULL,
@@ -755,7 +755,7 @@ CREATE TABLE `reg_c110` (
 --
 
 CREATE TABLE `reg_c111` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `NUM_PROC` varchar(20) collate {COLLATE} default NULL,
   `IND_PROC` varchar(1) collate {COLLATE} default NULL,
@@ -767,7 +767,7 @@ CREATE TABLE `reg_c111` (
 --
 
 CREATE TABLE `reg_c120` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `COD_DOC_IMP` varchar(1) collate {COLLATE} default NULL,
   `NUM_DOC_IMP` varchar(10) collate {COLLATE} default NULL,
@@ -782,7 +782,7 @@ CREATE TABLE `reg_c120` (
 --
 
 CREATE TABLE `reg_c170` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `NUM_ITEM` varchar(3) collate {COLLATE} default NULL,
   `COD_ITEM` varchar(60) collate {COLLATE} default NULL,
@@ -828,7 +828,7 @@ CREATE TABLE `reg_c170` (
 --
 
 CREATE TABLE `reg_c180` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `COD_MOD` varchar(2) collate {COLLATE} default NULL,
   `DT_DOC_INI` date default NULL,
@@ -845,7 +845,7 @@ CREATE TABLE `reg_c180` (
 --
 
 CREATE TABLE `reg_c181` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CST_PIS` varchar(2) collate {COLLATE} default NULL,
   `CFOP` varchar(4) collate {COLLATE} default NULL,
@@ -865,7 +865,7 @@ CREATE TABLE `reg_c181` (
 --
 
 CREATE TABLE `reg_c185` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CST_COFINS` varchar(2) collate {COLLATE} default NULL,
   `CFOP` varchar(4) collate {COLLATE} default NULL,
@@ -885,7 +885,7 @@ CREATE TABLE `reg_c185` (
 --
 
 CREATE TABLE `reg_c188` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `NUM_PROC` varchar(20) collate {COLLATE} default NULL,
   `IND_PROC` varchar(1) collate {COLLATE} default NULL,
@@ -897,7 +897,7 @@ CREATE TABLE `reg_c188` (
 --
 
 CREATE TABLE `reg_c190` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `COD_MOD` varchar(2) collate {COLLATE} default NULL,
   `DT_REF_INI` date default NULL,
@@ -914,7 +914,7 @@ CREATE TABLE `reg_c190` (
 --
 
 CREATE TABLE `reg_c191` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CNPJ_CPF_PART` varchar(14) collate {COLLATE} default NULL,
   `CST_PIS` varchar(2) collate {COLLATE} default NULL,
@@ -935,7 +935,7 @@ CREATE TABLE `reg_c191` (
 --
 
 CREATE TABLE `reg_c195` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CNPJ_CPF_PART` varchar(14) collate {COLLATE} default NULL,
   `CST_COFINS` varchar(2) collate {COLLATE} default NULL,
@@ -956,7 +956,7 @@ CREATE TABLE `reg_c195` (
 --
 
 CREATE TABLE `reg_c198` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `NUM_PROC` varchar(20) collate {COLLATE} default NULL,
   `IND_PROC` varchar(1) collate {COLLATE} default NULL,
@@ -968,7 +968,7 @@ CREATE TABLE `reg_c198` (
 --
 
 CREATE TABLE `reg_c199` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `COD_DOC_IMP` varchar(1) collate {COLLATE} default NULL,
   `NUM_DOC_IMP` varchar(10) collate {COLLATE} default NULL,
@@ -983,7 +983,7 @@ CREATE TABLE `reg_c199` (
 --
 
 CREATE TABLE `reg_c380` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `COD_MOD` varchar(2) collate {COLLATE} default NULL,
   `DT_DOC_INI` date default NULL,
@@ -1000,7 +1000,7 @@ CREATE TABLE `reg_c380` (
 --
 
 CREATE TABLE `reg_c381` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CST_PIS` varchar(2) collate {COLLATE} default NULL,
   `COD_ITEM` varchar(60) collate {COLLATE} default NULL,
@@ -1019,7 +1019,7 @@ CREATE TABLE `reg_c381` (
 --
 
 CREATE TABLE `reg_c385` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CST_COFINS` varchar(2) collate {COLLATE} default NULL,
   `COD_ITEM` varchar(60) collate {COLLATE} default NULL,
@@ -1038,7 +1038,7 @@ CREATE TABLE `reg_c385` (
 --
 
 CREATE TABLE `reg_c395` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `COD_MOD` varchar(2) collate {COLLATE} default NULL,
   `COD_PART` varchar(60) collate {COLLATE} default NULL,
@@ -1055,7 +1055,7 @@ CREATE TABLE `reg_c395` (
 --
 
 CREATE TABLE `reg_c396` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `COD_ITEM` varchar(60) collate {COLLATE} default NULL,
   `VL_ITEM` decimal(21,2) default NULL,
@@ -1078,7 +1078,7 @@ CREATE TABLE `reg_c396` (
 --
 
 CREATE TABLE `reg_c400` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `COD_MOD` varchar(2) collate {COLLATE} default NULL,
   `ECF_MOD` varchar(20) collate {COLLATE} default NULL,
@@ -1092,7 +1092,7 @@ CREATE TABLE `reg_c400` (
 --
 
 CREATE TABLE `reg_c405` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `DT_DOC` date default NULL,
   `CRO` varchar(3) collate {COLLATE} default NULL,
@@ -1108,7 +1108,7 @@ CREATE TABLE `reg_c405` (
 --
 
 CREATE TABLE `reg_c481` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CST_PIS` varchar(2) collate {COLLATE} default NULL,
   `VL_ITEM` decimal(21,2) default NULL,
@@ -1127,7 +1127,7 @@ CREATE TABLE `reg_c481` (
 --
 
 CREATE TABLE `reg_c485` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CST_COFINS` varchar(2) collate {COLLATE} default NULL,
   `VL_ITEM` decimal(21,2) default NULL,
@@ -1146,7 +1146,7 @@ CREATE TABLE `reg_c485` (
 --
 
 CREATE TABLE `reg_c489` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `NUM_PROC` varchar(20) collate {COLLATE} default NULL,
   `IND_PROC` varchar(1) collate {COLLATE} default NULL,
@@ -1158,7 +1158,7 @@ CREATE TABLE `reg_c489` (
 --
 
 CREATE TABLE `reg_c490` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `DT_DOC_INI` date default NULL,
   `DT_DOC_FIN` date default NULL,
@@ -1171,7 +1171,7 @@ CREATE TABLE `reg_c490` (
 --
 
 CREATE TABLE `reg_c491` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `COD_ITEM` varchar(60) collate {COLLATE} default NULL,
   `CST_PIS` varchar(2) collate {COLLATE} default NULL,
@@ -1191,7 +1191,7 @@ CREATE TABLE `reg_c491` (
 --
 
 CREATE TABLE `reg_c495` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `COD_ITEM` varchar(60) collate {COLLATE} default NULL,
   `CST_COFINS` varchar(2) collate {COLLATE} default NULL,
@@ -1211,7 +1211,7 @@ CREATE TABLE `reg_c495` (
 --
 
 CREATE TABLE `reg_c499` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `NUM_PROC` varchar(20) collate {COLLATE} default NULL,
   `IND_PROC` varchar(1) collate {COLLATE} default NULL,
@@ -1223,7 +1223,7 @@ CREATE TABLE `reg_c499` (
 --
 
 CREATE TABLE `reg_c500` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `COD_PART` varchar(60) collate {COLLATE} default NULL,
   `COD_MOD` varchar(2) collate {COLLATE} default NULL,
@@ -1246,7 +1246,7 @@ CREATE TABLE `reg_c500` (
 --
 
 CREATE TABLE `reg_c501` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CST_PIS` varchar(2) collate {COLLATE} default NULL,
   `VL_ITEM` decimal(21,2) default NULL,
@@ -1263,7 +1263,7 @@ CREATE TABLE `reg_c501` (
 --
 
 CREATE TABLE `reg_c505` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CST_COFINS` varchar(2) collate {COLLATE} default NULL,
   `VL_ITEM` decimal(21,2) default NULL,
@@ -1280,7 +1280,7 @@ CREATE TABLE `reg_c505` (
 --
 
 CREATE TABLE `reg_c509` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `NUM_PROC` varchar(20) collate {COLLATE} default NULL,
   `IND_PROC` varchar(1) collate {COLLATE} default NULL,
@@ -1292,7 +1292,7 @@ CREATE TABLE `reg_c509` (
 --
 
 CREATE TABLE `reg_c600` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `COD_MOD` varchar(2) collate {COLLATE} default NULL,
   `COD_MUN` varchar(7) collate {COLLATE} default NULL,
@@ -1323,7 +1323,7 @@ CREATE TABLE `reg_c600` (
 --
 
 CREATE TABLE `reg_c601` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CST_PIS` varchar(2) collate {COLLATE} default NULL,
   `VL_ITEM` decimal(21,2) default NULL,
@@ -1339,7 +1339,7 @@ CREATE TABLE `reg_c601` (
 --
 
 CREATE TABLE `reg_c605` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CST_COFINS` varchar(2) collate {COLLATE} default NULL,
   `VL_ITEM` decimal(21,2) default NULL,
@@ -1355,7 +1355,7 @@ CREATE TABLE `reg_c605` (
 --
 
 CREATE TABLE `reg_c609` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `NUM_PROC` varchar(20) collate {COLLATE} default NULL,
   `IND_PROC` varchar(1) collate {COLLATE} default NULL,
@@ -1367,7 +1367,7 @@ CREATE TABLE `reg_c609` (
 --
 
 CREATE TABLE `reg_c990` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `QTD_LIN_C` varchar(255) collate {COLLATE} default NULL,
   PRIMARY KEY  (`ID`)
@@ -1379,7 +1379,7 @@ CREATE TABLE `reg_c990` (
 --
 
 CREATE TABLE `reg_d001` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `IND_MOV` varchar(1) collate {COLLATE} default NULL,
   PRIMARY KEY  (`ID`)
@@ -1391,7 +1391,7 @@ CREATE TABLE `reg_d001` (
 --
 
 CREATE TABLE `reg_d010` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CNPJ` varchar(14) collate {COLLATE} default NULL,
   PRIMARY KEY  (`ID`)
@@ -1403,7 +1403,7 @@ CREATE TABLE `reg_d010` (
 --
 
 CREATE TABLE `reg_d100` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `IND_OPER` varchar(1) collate {COLLATE} default NULL,
   `IND_EMIT` varchar(1) collate {COLLATE} default NULL,
@@ -1435,7 +1435,7 @@ CREATE TABLE `reg_d100` (
 --
 
 CREATE TABLE `reg_d101` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `IND_NAT_FRT` varchar(1) collate {COLLATE} default NULL,
   `VL_ITEM` decimal(21,2) default NULL,
@@ -1453,7 +1453,7 @@ CREATE TABLE `reg_d101` (
 --
 
 CREATE TABLE `reg_d105` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `IND_NAT_FRT` varchar(1) collate {COLLATE} default NULL,
   `VL_ITEM` decimal(21,2) default NULL,
@@ -1471,7 +1471,7 @@ CREATE TABLE `reg_d105` (
 --
 
 CREATE TABLE `reg_d111` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `NUM_PROC` varchar(20) collate {COLLATE} default NULL,
   `IND_PROC` varchar(1) collate {COLLATE} default NULL,
@@ -1483,7 +1483,7 @@ CREATE TABLE `reg_d111` (
 --
 
 CREATE TABLE `reg_d200` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `COD_MOD` varchar(2) collate {COLLATE} default NULL,
   `COD_SIT` varchar(2) collate {COLLATE} default NULL,
@@ -1503,7 +1503,7 @@ CREATE TABLE `reg_d200` (
 --
 
 CREATE TABLE `reg_d201` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CST_PIS` varchar(2) collate {COLLATE} default NULL,
   `VL_ITEM` decimal(21,2) default NULL,
@@ -1519,7 +1519,7 @@ CREATE TABLE `reg_d201` (
 --
 
 CREATE TABLE `reg_d205` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CST_COFINS` varchar(2) collate {COLLATE} default NULL,
   `VL_ITEM` decimal(21,2) default NULL,
@@ -1535,7 +1535,7 @@ CREATE TABLE `reg_d205` (
 --
 
 CREATE TABLE `reg_d209` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `NUM_PROC` varchar(20) collate {COLLATE} default NULL,
   `IND_PROC` varchar(1) collate {COLLATE} default NULL,
@@ -1547,7 +1547,7 @@ CREATE TABLE `reg_d209` (
 --
 
 CREATE TABLE `reg_d300` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `COD_MOD` varchar(2) collate {COLLATE} default NULL,
   `SER` varchar(4) collate {COLLATE} default NULL,
@@ -1575,7 +1575,7 @@ CREATE TABLE `reg_d300` (
 --
 
 CREATE TABLE `reg_d309` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `NUM_PROC` varchar(20) collate {COLLATE} default NULL,
   `IND_PROC` varchar(1) collate {COLLATE} default NULL,
@@ -1587,7 +1587,7 @@ CREATE TABLE `reg_d309` (
 --
 
 CREATE TABLE `reg_d350` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `COD_MOD` varchar(2) collate {COLLATE} default NULL,
   `ECF_MOD` varchar(20) collate {COLLATE} default NULL,
@@ -1619,7 +1619,7 @@ CREATE TABLE `reg_d350` (
 --
 
 CREATE TABLE `reg_d359` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `NUM_PROC` varchar(20) collate {COLLATE} default NULL,
   `IND_PROC` varchar(1) collate {COLLATE} default NULL,
@@ -1631,7 +1631,7 @@ CREATE TABLE `reg_d359` (
 --
 
 CREATE TABLE `reg_d500` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `IND_OPER` varchar(1) collate {COLLATE} default NULL,
   `IND_EMIT` varchar(1) collate {COLLATE} default NULL,
@@ -1662,7 +1662,7 @@ CREATE TABLE `reg_d500` (
 --
 
 CREATE TABLE `reg_d501` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CST_PIS` varchar(2) collate {COLLATE} default NULL,
   `VL_ITEM` decimal(21,2) default NULL,
@@ -1679,7 +1679,7 @@ CREATE TABLE `reg_d501` (
 --
 
 CREATE TABLE `reg_d505` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CST_COFINS` varchar(2) collate {COLLATE} default NULL,
   `VL_ITEM` decimal(21,2) default NULL,
@@ -1696,7 +1696,7 @@ CREATE TABLE `reg_d505` (
 --
 
 CREATE TABLE `reg_d509` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `NUM_PROC` varchar(20) collate {COLLATE} default NULL,
   `IND_PROC` varchar(1) collate {COLLATE} default NULL,
@@ -1708,7 +1708,7 @@ CREATE TABLE `reg_d509` (
 --
 
 CREATE TABLE `reg_d600` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `COD_MOD` varchar(2) collate {COLLATE} default NULL,
   `COD_MUN` varchar(7) collate {COLLATE} default NULL,
@@ -1736,7 +1736,7 @@ CREATE TABLE `reg_d600` (
 --
 
 CREATE TABLE `reg_d601` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `COD_CLASS` varchar(4) collate {COLLATE} default NULL,
   `VL_ITEM` decimal(21,2) default NULL,
@@ -1754,7 +1754,7 @@ CREATE TABLE `reg_d601` (
 --
 
 CREATE TABLE `reg_d605` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `COD_CLASS` varchar(4) collate {COLLATE} default NULL,
   `VL_ITEM` decimal(21,2) default NULL,
@@ -1772,7 +1772,7 @@ CREATE TABLE `reg_d605` (
 --
 
 CREATE TABLE `reg_d609` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `NUM_PROC` varchar(20) collate {COLLATE} default NULL,
   `IND_PROC` varchar(1) collate {COLLATE} default NULL,
@@ -1784,7 +1784,7 @@ CREATE TABLE `reg_d609` (
 --
 
 CREATE TABLE `reg_d990` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `QTD_LIN_D` varchar(255) collate {COLLATE} default NULL,
   PRIMARY KEY  (`ID`)
@@ -1796,7 +1796,7 @@ CREATE TABLE `reg_d990` (
 --
 
 CREATE TABLE `reg_f001` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `IND_MOV` varchar(1) collate {COLLATE} default NULL,
   PRIMARY KEY  (`ID`)
@@ -1808,7 +1808,7 @@ CREATE TABLE `reg_f001` (
 --
 
 CREATE TABLE `reg_f010` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CNPJ` varchar(14) collate {COLLATE} default NULL,
   PRIMARY KEY  (`ID`)
@@ -1820,7 +1820,7 @@ CREATE TABLE `reg_f010` (
 --
 
 CREATE TABLE `reg_f100` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `IND_OPER` varchar(1) collate {COLLATE} default NULL,
   `COD_PART` varchar(60) collate {COLLATE} default NULL,
@@ -1848,7 +1848,7 @@ CREATE TABLE `reg_f100` (
 --
 
 CREATE TABLE `reg_f111` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `NUM_PROC` varchar(20) collate {COLLATE} default NULL,
   `IND_PROC` varchar(1) collate {COLLATE} default NULL,
@@ -1860,7 +1860,7 @@ CREATE TABLE `reg_f111` (
 --
 
 CREATE TABLE `reg_f120` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `NAT_BC_CRED` varchar(2) collate {COLLATE} default NULL,
   `IDENT_BEM_IMOB` varchar(2) collate {COLLATE} default NULL,
@@ -1887,7 +1887,7 @@ CREATE TABLE `reg_f120` (
 --
 
 CREATE TABLE `reg_f129` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `NUM_PROC` varchar(20) collate {COLLATE} default NULL,
   `IND_PROC` varchar(1) collate {COLLATE} default NULL,
@@ -1899,7 +1899,7 @@ CREATE TABLE `reg_f129` (
 --
 
 CREATE TABLE `reg_f130` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `NAT_BC_CRED` varchar(2) collate {COLLATE} default NULL,
   `IDENT_BEM_IMOB` varchar(2) collate {COLLATE} default NULL,
@@ -1929,7 +1929,7 @@ CREATE TABLE `reg_f130` (
 --
 
 CREATE TABLE `reg_f139` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `NUM_PROC` varchar(20) collate {COLLATE} default NULL,
   `IND_PROC` varchar(1) collate {COLLATE} default NULL,
@@ -1941,7 +1941,7 @@ CREATE TABLE `reg_f139` (
 --
 
 CREATE TABLE `reg_f150` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `NAT_BC_CRED` varchar(2) collate {COLLATE} default NULL,
   `VL_TOT_EST` decimal(21,2) default NULL,
@@ -1964,7 +1964,7 @@ CREATE TABLE `reg_f150` (
 --
 
 CREATE TABLE `reg_f200` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `IND_OPER` varchar(2) collate {COLLATE} default NULL,
   `UNID_IMOB` varchar(2) collate {COLLATE} default NULL,
@@ -1995,7 +1995,7 @@ CREATE TABLE `reg_f200` (
 --
 
 CREATE TABLE `reg_f205` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `VL_CUS_INC_ACUM_ANT` decimal(21,2) default NULL,
   `VL_CUS_INC_PER_ESC` decimal(21,2) default NULL,
@@ -2022,7 +2022,7 @@ CREATE TABLE `reg_f205` (
 --
 
 CREATE TABLE `reg_f210` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `VL_CUS_ORC` decimal(21,2) default NULL,
   `VL_EXC` decimal(21,2) default NULL,
@@ -2042,7 +2042,7 @@ CREATE TABLE `reg_f210` (
 --
 
 CREATE TABLE `reg_f211` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `NUM_PROC` varchar(20) collate {COLLATE} default NULL,
   `IND_PROC` varchar(1) collate {COLLATE} default NULL,
@@ -2054,7 +2054,7 @@ CREATE TABLE `reg_f211` (
 --
 
 CREATE TABLE `reg_f500` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `VL_REC_CAIXA` decimal(21,2) default NULL,
   `CST_PIS` varchar(2) collate {COLLATE} default NULL,
@@ -2079,7 +2079,7 @@ CREATE TABLE `reg_f500` (
 --
 
 CREATE TABLE `reg_f509` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `NUM_PROC` varchar(20) collate {COLLATE} default NULL,
   `IND_PROC` varchar(1) collate {COLLATE} default NULL,
@@ -2091,7 +2091,7 @@ CREATE TABLE `reg_f509` (
 --
 
 CREATE TABLE `reg_f510` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `VL_REC_CAIXA` decimal(21,2) default NULL,
   `CST_PIS` varchar(2) collate {COLLATE} default NULL,
@@ -2116,7 +2116,7 @@ CREATE TABLE `reg_f510` (
 --
 
 CREATE TABLE `reg_f519` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `NUM_PROC` varchar(20) collate {COLLATE} default NULL,
   `IND_PROC` varchar(1) collate {COLLATE} default NULL,
@@ -2128,7 +2128,7 @@ CREATE TABLE `reg_f519` (
 --
 
 CREATE TABLE `reg_f525` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `VL_REC` decimal(21,2) default NULL,
   `IND_REC` varchar(2) collate {COLLATE} default NULL,
@@ -2148,7 +2148,7 @@ CREATE TABLE `reg_f525` (
 --
 
 CREATE TABLE `reg_f550` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `VL_REC_COMP` decimal(21,2) default NULL,
   `CST_PIS` varchar(2) collate {COLLATE} default NULL,
@@ -2173,7 +2173,7 @@ CREATE TABLE `reg_f550` (
 --
 
 CREATE TABLE `reg_f559` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `NUM_PROC` varchar(20) collate {COLLATE} default NULL,
   `IND_PROC` varchar(1) collate {COLLATE} default NULL,
@@ -2185,7 +2185,7 @@ CREATE TABLE `reg_f559` (
 --
 
 CREATE TABLE `reg_f560` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `VL_REC_COMP` decimal(21,2) default NULL,
   `CST_PIS` varchar(2) collate {COLLATE} default NULL,
@@ -2210,7 +2210,7 @@ CREATE TABLE `reg_f560` (
 --
 
 CREATE TABLE `reg_f569` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `NUM_PROC` varchar(20) collate {COLLATE} default NULL,
   `IND_PROC` varchar(1) collate {COLLATE} default NULL,
@@ -2222,7 +2222,7 @@ CREATE TABLE `reg_f569` (
 --
 
 CREATE TABLE `reg_f600` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `IND_NAT_RET` varchar(2) collate {COLLATE} default NULL,
   `DT_RET` date default NULL,
@@ -2242,7 +2242,7 @@ CREATE TABLE `reg_f600` (
 --
 
 CREATE TABLE `reg_f700` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `IND_ORI_DED` varchar(2) collate {COLLATE} default NULL,
   `IND_NAT_DED` varchar(1) collate {COLLATE} default NULL,
@@ -2259,7 +2259,7 @@ CREATE TABLE `reg_f700` (
 --
 
 CREATE TABLE `reg_f800` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `IND_NAT_EVEN` varchar(2) collate {COLLATE} default NULL,
   `DT_EVEN` date default NULL,
@@ -2277,7 +2277,7 @@ CREATE TABLE `reg_f800` (
 --
 
 CREATE TABLE `reg_f990` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `QTD_LIN_F` varchar(255) collate {COLLATE} default NULL,
   PRIMARY KEY  (`ID`)
@@ -2289,7 +2289,7 @@ CREATE TABLE `reg_f990` (
 --
 
 CREATE TABLE `reg_i001` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `IND_MOV` varchar(1) collate {COLLATE} default NULL,
   PRIMARY KEY  (`ID`)
@@ -2301,7 +2301,7 @@ CREATE TABLE `reg_i001` (
 --
 
 CREATE TABLE `reg_i010` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CNPJ` varchar(14) collate {COLLATE} default NULL,
   `IND_ATIV` varchar(2) collate {COLLATE} default NULL,
@@ -2315,7 +2315,7 @@ CREATE TABLE `reg_i010` (
 --
 
 CREATE TABLE `reg_i100` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `VL_REC_FIN` decimal(21,2) default NULL,
   `CST` varchar(2) collate {COLLATE} default NULL,
@@ -2336,7 +2336,7 @@ CREATE TABLE `reg_i100` (
 --
 
 CREATE TABLE `reg_i199` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `NUM_PROC` varchar(20) collate {COLLATE} default NULL,
   `IND_PROC` varchar(1) collate {COLLATE} default NULL,
@@ -2348,7 +2348,7 @@ CREATE TABLE `reg_i199` (
 --
 
 CREATE TABLE `reg_i200` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `NUM_CAMPO` varchar(2) collate {COLLATE} default NULL,
   `COD_DET` varchar(5) collate {COLLATE} default NULL,
@@ -2363,7 +2363,7 @@ CREATE TABLE `reg_i200` (
 --
 
 CREATE TABLE `reg_i299` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `NUM_PROC` varchar(20) collate {COLLATE} default NULL,
   `IND_PROC` varchar(1) collate {COLLATE} default NULL,
@@ -2375,7 +2375,7 @@ CREATE TABLE `reg_i299` (
 --
 
 CREATE TABLE `reg_i300` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `COD_COMP` varchar(8) collate {COLLATE} default NULL,
   `VL_COMP` decimal(21,2) default NULL,
@@ -2389,7 +2389,7 @@ CREATE TABLE `reg_i300` (
 --
 
 CREATE TABLE `reg_i399` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `NUM_PROC` varchar(20) collate {COLLATE} default NULL,
   `IND_PROC` varchar(1) collate {COLLATE} default NULL,
@@ -2401,7 +2401,7 @@ CREATE TABLE `reg_i399` (
 --
 
 CREATE TABLE `reg_i990` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `QTD_LIN_I` varchar(255) collate {COLLATE} default NULL,
   PRIMARY KEY  (`ID`)
@@ -2413,7 +2413,7 @@ CREATE TABLE `reg_i990` (
 --
 
 CREATE TABLE `reg_m001` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `IND_MOV` varchar(1) collate {COLLATE} default NULL,
   PRIMARY KEY  (`ID`)
@@ -2425,7 +2425,7 @@ CREATE TABLE `reg_m001` (
 --
 
 CREATE TABLE `reg_m100` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `COD_CRED` varchar(3) collate {COLLATE} default NULL,
   `IND_CRED_ORI` varchar(1) collate {COLLATE} default NULL,
@@ -2449,7 +2449,7 @@ CREATE TABLE `reg_m100` (
 --
 
 CREATE TABLE `reg_m105` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `NAT_BC_CRED` varchar(2) collate {COLLATE} default NULL,
   `CST_PIS` varchar(2) collate {COLLATE} default NULL,
@@ -2468,7 +2468,7 @@ CREATE TABLE `reg_m105` (
 --
 
 CREATE TABLE `reg_m110` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `IND_AJ` varchar(1) collate {COLLATE} default NULL,
   `VL_AJ` decimal(21,2) default NULL,
@@ -2484,7 +2484,7 @@ CREATE TABLE `reg_m110` (
 --
 
 CREATE TABLE `reg_m200` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `VL_TOT_CONT_NC_PER` decimal(21,2) default NULL,
   `VL_TOT_CRED_DESC` decimal(21,2) default NULL,
@@ -2506,7 +2506,7 @@ CREATE TABLE `reg_m200` (
 --
 
 CREATE TABLE `reg_m205` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `NUM_CAMPO` varchar(2) collate {COLLATE} default NULL,
   `COD_REC` varchar(6) collate {COLLATE} default NULL,
@@ -2519,7 +2519,7 @@ CREATE TABLE `reg_m205` (
 --
 
 CREATE TABLE `reg_m210` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `COD_CONT` varchar(2) collate {COLLATE} default NULL,
   `VL_REC_BRT` decimal(21,2) default NULL,
@@ -2541,7 +2541,7 @@ CREATE TABLE `reg_m210` (
 --
 
 CREATE TABLE `reg_m211` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `IND_TIP_COOP` varchar(2) collate {COLLATE} default NULL,
   `VL_BC_CONT_ANT_EXC_COOP` decimal(21,2) default NULL,
@@ -2556,7 +2556,7 @@ CREATE TABLE `reg_m211` (
 --
 
 CREATE TABLE `reg_m220` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `IND_AJ` varchar(1) collate {COLLATE} default NULL,
   `VL_AJ` decimal(21,2) default NULL,
@@ -2572,7 +2572,7 @@ CREATE TABLE `reg_m220` (
 --
 
 CREATE TABLE `reg_m230` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CNPJ` varchar(14) collate {COLLATE} default NULL,
   `VL_VEND` decimal(21,2) default NULL,
@@ -2588,7 +2588,7 @@ CREATE TABLE `reg_m230` (
 --
 
 CREATE TABLE `reg_m300` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `COD_CONT` varchar(2) collate {COLLATE} default NULL,
   `VL_CONT_APUR_DIFER` decimal(21,2) default NULL,
@@ -2605,7 +2605,7 @@ CREATE TABLE `reg_m300` (
 --
 
 CREATE TABLE `reg_m350` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `VL_TOT_FOL` decimal(21,2) default NULL,
   `VL_EXC_BC` decimal(21,2) default NULL,
@@ -2620,7 +2620,7 @@ CREATE TABLE `reg_m350` (
 --
 
 CREATE TABLE `reg_m400` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CST_PIS` varchar(2) collate {COLLATE} default NULL,
   `VL_TOT_REC` decimal(21,2) default NULL,
@@ -2634,7 +2634,7 @@ CREATE TABLE `reg_m400` (
 --
 
 CREATE TABLE `reg_m410` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `NAT_REC` varchar(3) collate {COLLATE} default NULL,
   `VL_REC` decimal(21,2) default NULL,
@@ -2648,7 +2648,7 @@ CREATE TABLE `reg_m410` (
 --
 
 CREATE TABLE `reg_m500` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `COD_CRED` varchar(3) collate {COLLATE} default NULL,
   `IND_CRED_ORI` varchar(1) collate {COLLATE} default NULL,
@@ -2672,7 +2672,7 @@ CREATE TABLE `reg_m500` (
 --
 
 CREATE TABLE `reg_m505` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `NAT_BC_CRED` varchar(2) collate {COLLATE} default NULL,
   `CST_COFINS` varchar(2) collate {COLLATE} default NULL,
@@ -2691,7 +2691,7 @@ CREATE TABLE `reg_m505` (
 --
 
 CREATE TABLE `reg_m510` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `IND_AJ` varchar(1) collate {COLLATE} default NULL,
   `VL_AJ` decimal(21,2) default NULL,
@@ -2707,7 +2707,7 @@ CREATE TABLE `reg_m510` (
 --
 
 CREATE TABLE `reg_m600` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `VL_TOT_CONT_NC_PER` decimal(21,2) default NULL,
   `VL_TOT_CRED_DESC` decimal(21,2) default NULL,
@@ -2729,7 +2729,7 @@ CREATE TABLE `reg_m600` (
 --
 
 CREATE TABLE `reg_m605` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `NUM_CAMPO` varchar(2) collate {COLLATE} default NULL,
   `COD_REC` varchar(6) collate {COLLATE} default NULL,
@@ -2742,7 +2742,7 @@ CREATE TABLE `reg_m605` (
 --
 
 CREATE TABLE `reg_m610` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `COD_CONT` varchar(2) collate {COLLATE} default NULL,
   `VL_REC_BRT` decimal(21,2) default NULL,
@@ -2764,7 +2764,7 @@ CREATE TABLE `reg_m610` (
 --
 
 CREATE TABLE `reg_m611` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `IND_TIP_COOP` varchar(2) collate {COLLATE} default NULL,
   `VL_BC_CONT_ANT_EXC_COOP` decimal(21,2) default NULL,
@@ -2779,7 +2779,7 @@ CREATE TABLE `reg_m611` (
 --
 
 CREATE TABLE `reg_m620` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `IND_AJ` varchar(1) collate {COLLATE} default NULL,
   `VL_AJ` decimal(21,2) default NULL,
@@ -2795,7 +2795,7 @@ CREATE TABLE `reg_m620` (
 --
 
 CREATE TABLE `reg_m630` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CNPJ` varchar(14) collate {COLLATE} default NULL,
   `VL_VEND` decimal(21,2) default NULL,
@@ -2811,7 +2811,7 @@ CREATE TABLE `reg_m630` (
 --
 
 CREATE TABLE `reg_m700` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `COD_CONT` varchar(2) collate {COLLATE} default NULL,
   `VL_CONT_APUR_DIFER` decimal(21,2) default NULL,
@@ -2828,7 +2828,7 @@ CREATE TABLE `reg_m700` (
 --
 
 CREATE TABLE `reg_m800` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CST_COFINS` varchar(2) collate {COLLATE} default NULL,
   `VL_TOT_REC` decimal(21,2) default NULL,
@@ -2842,7 +2842,7 @@ CREATE TABLE `reg_m800` (
 --
 
 CREATE TABLE `reg_m810` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `NAT_REC` varchar(3) collate {COLLATE} default NULL,
   `VL_REC` decimal(21,2) default NULL,
@@ -2856,7 +2856,7 @@ CREATE TABLE `reg_m810` (
 --
 
 CREATE TABLE `reg_m990` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `QTD_LIN_M` varchar(255) collate {COLLATE} default NULL,
   PRIMARY KEY  (`ID`)
@@ -2868,7 +2868,7 @@ CREATE TABLE `reg_m990` (
 --
 
 CREATE TABLE `reg_p001` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `IND_MOV` varchar(1) collate {COLLATE} default NULL,
   PRIMARY KEY  (`ID`)
@@ -2880,7 +2880,7 @@ CREATE TABLE `reg_p001` (
 --
 
 CREATE TABLE `reg_p010` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CNPJ` varchar(14) collate {COLLATE} default NULL,
   PRIMARY KEY  (`ID`)
@@ -2892,7 +2892,7 @@ CREATE TABLE `reg_p010` (
 --
 
 CREATE TABLE `reg_p100` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `DT_INI` date default NULL,
   `DT_FIM` date default NULL,
@@ -2913,7 +2913,7 @@ CREATE TABLE `reg_p100` (
 --
 
 CREATE TABLE `reg_p110` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `NUM_CAMPO` varchar(2) collate {COLLATE} default NULL,
   `COD_DET` varchar(8) collate {COLLATE} default NULL,
@@ -2927,7 +2927,7 @@ CREATE TABLE `reg_p110` (
 --
 
 CREATE TABLE `reg_p199` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `NUM_PROC` varchar(20) collate {COLLATE} default NULL,
   `IND_PROC` varchar(1) collate {COLLATE} default NULL,
@@ -2939,7 +2939,7 @@ CREATE TABLE `reg_p199` (
 --
 
 CREATE TABLE `reg_p200` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `PER_REF` varchar(6) collate {COLLATE} default NULL,
   `VL_TOT_CONT_APU` decimal(21,2) default NULL,
@@ -2955,7 +2955,7 @@ CREATE TABLE `reg_p200` (
 --
 
 CREATE TABLE `reg_p210` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `IND_AJ` varchar(1) collate {COLLATE} default NULL,
   `VL_AJ` decimal(21,2) default NULL,
@@ -2971,7 +2971,7 @@ CREATE TABLE `reg_p210` (
 --
 
 CREATE TABLE `reg_p990` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `QTD_LIN_P` varchar(255) collate {COLLATE} default NULL,
   PRIMARY KEY  (`ID`)
