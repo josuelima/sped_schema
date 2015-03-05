@@ -15,7 +15,7 @@ sempre verifique o manual e a versão desejada antes de utilizar um esquema.
 
 Atualmente 3 projetos já estão mapeados:
 
-* [SPED Fiscal (EFD ICMS/IPI) (Versão 2.0.14 e 2.0.15)](http://www1.receita.fazenda.gov.br/sistemas/sped-fiscal/download/GUIA_PRATICO_EFD_Versao2.0.15.pdf)
+* [SPED Fiscal (EFD ICMS/IPI) - Versão 2.0.14 e 2.0.15 (atual)](http://www1.receita.fazenda.gov.br/sistemas/sped-fiscal/download/GUIA_PRATICO_EFD_Versao2.0.15.pdf)
 * [SPED Contábil](http://www1.receita.fazenda.gov.br/sistemas/sped-contabil/download/Manual_de_Orientacao_da_ECD.pdf)
 * [EFD Contribuições](http://www1.receita.fazenda.gov.br/sistemas/efd-contribuicoes/download/Guia_Pratico_EFD_Contribuicoes_Versao116.pdf)
 
