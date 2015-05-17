@@ -1,5 +1,5 @@
 # Script ruby utilizado pelo travis para definir o charset e engine
-# dos schemas mysql. 
+# dos schemas mysql.
 # Utilizado pelo travis ci para definir estas
 # variaveis antes de executar os testes para validar o schemas.
 # Reaproveite esse arquivo para definir o charset, collate e engine

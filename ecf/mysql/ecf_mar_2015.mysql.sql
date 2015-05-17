@@ -1,7 +1,7 @@
 -- ------------------------------------------------------
 -- http://github.com/josuelima/sped_schema
--- Schema SQL EFD-ICMS/IPI
--- Versão 2.0.15
+-- Schema SQL ECF - Escrituração Contábil Fiscal
+-- Versão Março de 2015
 -- MySQL
 -- ------------------------------------------------------
 
