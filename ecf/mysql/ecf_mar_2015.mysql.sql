@@ -10,7 +10,7 @@
 --
 
 CREATE TABLE `reg_0000` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `NOME_ESC` varchar(4) collate {COLLATE} default NULL,
   `COD_VER` varchar(4) collate {COLLATE} default NULL,
@@ -26,7 +26,7 @@ CREATE TABLE `reg_0000` (
   `NUM_REC` varchar(41) collate {COLLATE} default NULL,
   `TIP_ECF` varchar(1) collate {COLLATE} default NULL,
   `COD_SCP` varchar(14) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -34,10 +34,10 @@ CREATE TABLE `reg_0000` (
 --
 
 CREATE TABLE `reg_0001` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `IND_DAD` varchar(1) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -45,7 +45,7 @@ CREATE TABLE `reg_0001` (
 --
 
 CREATE TABLE `reg_0010` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `HASH_ECF_ANTERIOR` varchar(40) collate {COLLATE} default NULL,
   `OPT_REFIS` varchar(1) collate {COLLATE} default NULL,
@@ -61,7 +61,7 @@ CREATE TABLE `reg_0010` (
   `APUR_CSLL` varchar(1) collate {COLLATE} default NULL,
   `OPT_EXT_RTT` varchar(1) collate {COLLATE} default NULL,
   `DIF_FCONT` varchar(1) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -69,7 +69,7 @@ CREATE TABLE `reg_0010` (
 --
 
 CREATE TABLE `reg_0020` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `IND_ALIQ_CSLL` varchar(1) collate {COLLATE} default NULL,
   `IND_QTE_SCP` varchar(3) collate {COLLATE} default NULL,
@@ -101,7 +101,7 @@ CREATE TABLE `reg_0020` (
   `IND_POLO_AM` varchar(1) collate {COLLATE} default NULL,
   `IND_ZON_EXP` varchar(1) collate {COLLATE} default NULL,
   `IND_AREA_COM` varchar(1) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -109,7 +109,7 @@ CREATE TABLE `reg_0020` (
 --
 
 CREATE TABLE `reg_0030` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `COD_NAT` varchar(4) collate {COLLATE} default NULL,
   `CNAE_FISCAL` varchar(7) collate {COLLATE} default NULL,
@@ -122,7 +122,7 @@ CREATE TABLE `reg_0030` (
   `CEP` varchar(8) collate {COLLATE} default NULL,
   `FONE` varchar(15) collate {COLLATE} default NULL,
   `EMAIL` varchar(115) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -130,11 +130,11 @@ CREATE TABLE `reg_0030` (
 --
 
 CREATE TABLE `reg_0035` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `COD_SCP` varchar(14) collate {COLLATE} default NULL,
   `NOME_SCP` varchar(255) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -142,7 +142,7 @@ CREATE TABLE `reg_0035` (
 --
 
 CREATE TABLE `reg_0930` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `IDENT_NOM` varchar(255) collate {COLLATE} default NULL,
   `IDENT_CPF_CNPJ` varchar(14) collate {COLLATE} default NULL,
@@ -150,7 +150,7 @@ CREATE TABLE `reg_0930` (
   `IND_CRC` varchar(255) collate {COLLATE} default NULL,
   `EMAIL` varchar(60) collate {COLLATE} default NULL,
   `FONE` varchar(15) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -158,10 +158,10 @@ CREATE TABLE `reg_0930` (
 --
 
 CREATE TABLE `reg_0990` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `QTD_LIN_0` varchar(255) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -169,10 +169,10 @@ CREATE TABLE `reg_0990` (
 --
 
 CREATE TABLE `reg_9001` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `IND_DAD` varchar(1) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -180,7 +180,7 @@ CREATE TABLE `reg_9001` (
 --
 
 CREATE TABLE `reg_9100` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `NOM_REGRA` varchar(255) collate {COLLATE} default NULL,
   `MSG_REGRA` varchar(255) collate {COLLATE} default NULL,
@@ -188,7 +188,7 @@ CREATE TABLE `reg_9100` (
   `CAMPO` varchar(255) collate {COLLATE} default NULL,
   `CONTEUDO` varchar(255) collate {COLLATE} default NULL,
   `VALOR_ESPERADO` varchar(255) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -196,13 +196,13 @@ CREATE TABLE `reg_9100` (
 --
 
 CREATE TABLE `reg_9900` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `REG_BLC` varchar(4) collate {COLLATE} default NULL,
   `QTD_REG_BLC` varchar(255) collate {COLLATE} default NULL,
   `VERSAO` varchar(4) collate {COLLATE} default NULL,
   `ID_TAB_DIN` varchar(255) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -210,10 +210,10 @@ CREATE TABLE `reg_9900` (
 --
 
 CREATE TABLE `reg_9990` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `QTD_LIN_9` varchar(255) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -221,10 +221,10 @@ CREATE TABLE `reg_9990` (
 --
 
 CREATE TABLE `reg_9999` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `QTD_LIN` varchar(255) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -232,10 +232,10 @@ CREATE TABLE `reg_9999` (
 --
 
 CREATE TABLE `reg_c001` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `IND_DAD` varchar(1) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -243,7 +243,7 @@ CREATE TABLE `reg_c001` (
 --
 
 CREATE TABLE `reg_c040` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `HASH_ECD` varchar(40) collate {COLLATE} default NULL,
   `DT_INI` date default NULL,
@@ -255,7 +255,7 @@ CREATE TABLE `reg_c040` (
   `NAT_LIVR` varchar(80) collate {COLLATE} default NULL,
   `COD_VER_LC` varchar(255) collate {COLLATE} default NULL,
   `IND_ESC` varchar(1) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -263,7 +263,7 @@ CREATE TABLE `reg_c040` (
 --
 
 CREATE TABLE `reg_c050` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `DT_ALT` date default NULL,
   `COD_NAT` varchar(2) collate {COLLATE} default NULL,
@@ -272,7 +272,7 @@ CREATE TABLE `reg_c050` (
   `COD_CTA` varchar(255) collate {COLLATE} default NULL,
   `COD_CTA_SUP` varchar(255) collate {COLLATE} default NULL,
   `CTA` varchar(255) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -280,12 +280,12 @@ CREATE TABLE `reg_c050` (
 --
 
 CREATE TABLE `reg_c051` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `COD_PLAN_REF` varchar(2) collate {COLLATE} default NULL,
   `COD_CCUS` varchar(255) collate {COLLATE} default NULL,
   `COD_CTA_REF` varchar(255) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -293,12 +293,12 @@ CREATE TABLE `reg_c051` (
 --
 
 CREATE TABLE `reg_c053` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `COD_IDT` varchar(6) collate {COLLATE} default NULL,
   `COD_CNT_CORR` varchar(255) collate {COLLATE} default NULL,
   `NAT_SUB_CNT` varchar(2) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -306,12 +306,12 @@ CREATE TABLE `reg_c053` (
 --
 
 CREATE TABLE `reg_c100` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `DT_ALT` date default NULL,
   `COD_CCUS` varchar(255) collate {COLLATE} default NULL,
   `CCUS` varchar(255) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -319,11 +319,11 @@ CREATE TABLE `reg_c100` (
 --
 
 CREATE TABLE `reg_c150` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `DT_INI` date default NULL,
   `DT_FIN` date default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -331,7 +331,7 @@ CREATE TABLE `reg_c150` (
 --
 
 CREATE TABLE `reg_c155` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `COD_CTA` varchar(255) collate {COLLATE} default NULL,
   `COD_CCUS` varchar(255) collate {COLLATE} default NULL,
@@ -342,7 +342,7 @@ CREATE TABLE `reg_c155` (
   `VL_SLD_FIN` decimal(21,2) default NULL,
   `IND_VL_SLD_FIN` varchar(1) collate {COLLATE} default NULL,
   `LINHA_ECD` varchar(255) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -350,14 +350,14 @@ CREATE TABLE `reg_c155` (
 --
 
 CREATE TABLE `reg_c157` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `COD_CTA` varchar(255) collate {COLLATE} default NULL,
   `COD_CCUS` varchar(255) collate {COLLATE} default NULL,
   `VL_SLD_FIN` decimal(21,2) default NULL,
   `IND_VL_SLD_FIN` varchar(1) collate {COLLATE} default NULL,
   `LINHA_ECD` varchar(255) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -365,10 +365,10 @@ CREATE TABLE `reg_c157` (
 --
 
 CREATE TABLE `reg_c350` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `DT_RES` date default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -376,14 +376,14 @@ CREATE TABLE `reg_c350` (
 --
 
 CREATE TABLE `reg_c355` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `COD_CTA` varchar(255) collate {COLLATE} default NULL,
   `COD_CCUS` varchar(255) collate {COLLATE} default NULL,
   `VL_SLD_FIN` decimal(21,2) default NULL,
   `IND_VL_SLD_FIN` varchar(1) collate {COLLATE} default NULL,
   `LINHA_ECD` varchar(255) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -391,10 +391,10 @@ CREATE TABLE `reg_c355` (
 --
 
 CREATE TABLE `reg_c990` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `QTD_LIN_C` varchar(255) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -402,10 +402,10 @@ CREATE TABLE `reg_c990` (
 --
 
 CREATE TABLE `reg_e001` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `IND_DAD` varchar(1) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -413,14 +413,14 @@ CREATE TABLE `reg_e001` (
 --
 
 CREATE TABLE `reg_e010` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `COD_NAT` varchar(4) collate {COLLATE} default NULL,
   `COD_CTA_REF` varchar(255) collate {COLLATE} default NULL,
   `DESC_CTA_REF` varchar(255) collate {COLLATE} default NULL,
   `VAL_CTA_REF` decimal(21,2) default NULL,
   `IND_VAL_CTA_REF` varchar(1) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -428,14 +428,14 @@ CREATE TABLE `reg_e010` (
 --
 
 CREATE TABLE `reg_e015` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `COD_CTA` varchar(255) collate {COLLATE} default NULL,
   `COD_CCUS` varchar(255) collate {COLLATE} default NULL,
   `DESC_CTA` varchar(255) collate {COLLATE} default NULL,
   `VAL_CTA` decimal(21,2) default NULL,
   `IND_VAL_CTA` varchar(1) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -443,7 +443,7 @@ CREATE TABLE `reg_e015` (
 --
 
 CREATE TABLE `reg_e020` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `COD_CTA_B` varchar(255) collate {COLLATE} default NULL,
   `DESC_CTA_B` varchar(255) collate {COLLATE} default NULL,
@@ -454,7 +454,7 @@ CREATE TABLE `reg_e020` (
   `TRIBUTO` varchar(1) collate {COLLATE} default NULL,
   `VL_SALDO_FIN` decimal(21,2) default NULL,
   `IND_VL_SALDO_FIN` varchar(1) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -462,12 +462,12 @@ CREATE TABLE `reg_e020` (
 --
 
 CREATE TABLE `reg_e030` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `DT_INI` date default NULL,
   `DT_FIN` date default NULL,
   `PER_APUR` varchar(3) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -475,7 +475,7 @@ CREATE TABLE `reg_e030` (
 --
 
 CREATE TABLE `reg_e155` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `COD_CTA` varchar(255) collate {COLLATE} default NULL,
   `COD_CCUS` varchar(255) collate {COLLATE} default NULL,
@@ -485,7 +485,7 @@ CREATE TABLE `reg_e155` (
   `VL_CRED` decimal(21,2) default NULL,
   `VL_SLD_FIN` decimal(21,2) default NULL,
   `IND_VL_SLD_FIN` varchar(1) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -493,13 +493,13 @@ CREATE TABLE `reg_e155` (
 --
 
 CREATE TABLE `reg_e355` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `COD_CTA` varchar(255) collate {COLLATE} default NULL,
   `COD_CCUS` varchar(255) collate {COLLATE} default NULL,
   `VL_SLD_FIN` decimal(21,2) default NULL,
   `IND_VL_SLD_FIN` varchar(1) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -507,10 +507,10 @@ CREATE TABLE `reg_e355` (
 --
 
 CREATE TABLE `reg_e990` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `QTD_LIN_E` varchar(255) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -518,10 +518,10 @@ CREATE TABLE `reg_e990` (
 --
 
 CREATE TABLE `reg_j001` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `IND_DAD` varchar(1) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -529,7 +529,7 @@ CREATE TABLE `reg_j001` (
 --
 
 CREATE TABLE `reg_j050` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `DT_ALT` date default NULL,
   `COD_NAT` varchar(2) collate {COLLATE} default NULL,
@@ -538,7 +538,7 @@ CREATE TABLE `reg_j050` (
   `COD_CTA` varchar(255) collate {COLLATE} default NULL,
   `COD_CTA_SUP` varchar(255) collate {COLLATE} default NULL,
   `CTA` varchar(255) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -546,11 +546,11 @@ CREATE TABLE `reg_j050` (
 --
 
 CREATE TABLE `reg_j051` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `COD_CCUS` varchar(255) collate {COLLATE} default NULL,
   `COD_CTA_REF` varchar(255) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -558,12 +558,12 @@ CREATE TABLE `reg_j051` (
 --
 
 CREATE TABLE `reg_j053` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `COD_IDT` varchar(6) collate {COLLATE} default NULL,
   `COD_CNT_CORR` varchar(255) collate {COLLATE} default NULL,
   `NAT_SUB_CNT` varchar(2) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -571,12 +571,12 @@ CREATE TABLE `reg_j053` (
 --
 
 CREATE TABLE `reg_j100` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `DT_ALT` date default NULL,
   `COD_CCUS` varchar(255) collate {COLLATE} default NULL,
   `CCUS` varchar(255) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -584,10 +584,10 @@ CREATE TABLE `reg_j100` (
 --
 
 CREATE TABLE `reg_j990` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `QTD_LIN_J` varchar(255) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -595,10 +595,10 @@ CREATE TABLE `reg_j990` (
 --
 
 CREATE TABLE `reg_k001` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `IND_DAD` varchar(1) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -606,12 +606,12 @@ CREATE TABLE `reg_k001` (
 --
 
 CREATE TABLE `reg_k030` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `DT_INI` date default NULL,
   `DT_FIN` date default NULL,
   `PER_APUR` varchar(3) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -619,7 +619,7 @@ CREATE TABLE `reg_k030` (
 --
 
 CREATE TABLE `reg_k155` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `COD_CTA` varchar(255) collate {COLLATE} default NULL,
   `COD_CCUS` varchar(255) collate {COLLATE} default NULL,
@@ -629,7 +629,7 @@ CREATE TABLE `reg_k155` (
   `VL_CRED` decimal(21,2) default NULL,
   `VL_SLD_FIN` decimal(21,2) default NULL,
   `IND_VL_SLD_FIN` varchar(1) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -637,12 +637,12 @@ CREATE TABLE `reg_k155` (
 --
 
 CREATE TABLE `reg_k156` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `COD_CTA_REF` varchar(255) collate {COLLATE} default NULL,
   `VL_SLD_FIN` decimal(21,2) default NULL,
   `IND_VL_SLD_FIN` varchar(1) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -650,13 +650,13 @@ CREATE TABLE `reg_k156` (
 --
 
 CREATE TABLE `reg_k355` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `COD_CTA` varchar(255) collate {COLLATE} default NULL,
   `COD_CCUS` varchar(255) collate {COLLATE} default NULL,
   `VL_SLD_FIN` decimal(21,2) default NULL,
   `IND_VL_SLD_FIN` varchar(1) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -664,12 +664,12 @@ CREATE TABLE `reg_k355` (
 --
 
 CREATE TABLE `reg_k356` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `COD_CTA_REF` varchar(255) collate {COLLATE} default NULL,
   `VL_SLD_FIN` decimal(21,2) default NULL,
   `IND_VL_SLD_FIN` varchar(1) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -677,10 +677,10 @@ CREATE TABLE `reg_k356` (
 --
 
 CREATE TABLE `reg_k990` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `QTD_LIN_K` varchar(255) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -688,10 +688,10 @@ CREATE TABLE `reg_k990` (
 --
 
 CREATE TABLE `reg_l001` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `IND_DAD` varchar(1) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -699,12 +699,12 @@ CREATE TABLE `reg_l001` (
 --
 
 CREATE TABLE `reg_l030` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `DT_INI` date default NULL,
   `DT_FIN` date default NULL,
   `PER_APUR` varchar(3) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -712,7 +712,7 @@ CREATE TABLE `reg_l030` (
 --
 
 CREATE TABLE `reg_l100` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CODIGO` varchar(255) collate {COLLATE} default NULL,
   `DESCRICAO` varchar(512) collate {COLLATE} default NULL,
@@ -724,7 +724,7 @@ CREATE TABLE `reg_l100` (
   `IND_VAL_CTA_REF_INI` varchar(1) collate {COLLATE} default NULL,
   `VAL_CTA_REF_FIN` decimal(21,2) default NULL,
   `IND_VAL_CTA_REF_FIN` varchar(1) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -732,10 +732,10 @@ CREATE TABLE `reg_l100` (
 --
 
 CREATE TABLE `reg_l200` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `IND_AVAL_ESTOQ` varchar(1) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -743,12 +743,12 @@ CREATE TABLE `reg_l200` (
 --
 
 CREATE TABLE `reg_l210` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CODIGO` varchar(6) collate {COLLATE} default NULL,
   `DESCRICAO` varchar(512) collate {COLLATE} default NULL,
   `VALOR` decimal(21,2) default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -756,7 +756,7 @@ CREATE TABLE `reg_l210` (
 --
 
 CREATE TABLE `reg_l300` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CODIGO` varchar(255) collate {COLLATE} default NULL,
   `DESCRICAO` varchar(512) collate {COLLATE} default NULL,
@@ -766,7 +766,7 @@ CREATE TABLE `reg_l300` (
   `COD_CTA_SUP` varchar(255) collate {COLLATE} default NULL,
   `VALOR` decimal(21,2) default NULL,
   `IND_VALOR` varchar(1) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -774,10 +774,10 @@ CREATE TABLE `reg_l300` (
 --
 
 CREATE TABLE `reg_l990` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `QTD_LIN_L` varchar(255) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -785,10 +785,10 @@ CREATE TABLE `reg_l990` (
 --
 
 CREATE TABLE `reg_m001` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `IND_DAD` varchar(1) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -796,7 +796,7 @@ CREATE TABLE `reg_m001` (
 --
 
 CREATE TABLE `reg_m010` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `COD_CTA_B` varchar(255) collate {COLLATE} default NULL,
   `DESC_CTA_B` varchar(255) collate {COLLATE} default NULL,
@@ -808,7 +808,7 @@ CREATE TABLE `reg_m010` (
   `VL_SALDO_INI` decimal(21,2) default NULL,
   `IND_VL_SALDO_INI` varchar(1) collate {COLLATE} default NULL,
   `CNPJ_SIT_ESP` varchar(14) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -816,12 +816,12 @@ CREATE TABLE `reg_m010` (
 --
 
 CREATE TABLE `reg_m030` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `DT_INI` date default NULL,
   `DT_FIN` date default NULL,
   `PER_APUR` varchar(3) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -829,7 +829,7 @@ CREATE TABLE `reg_m030` (
 --
 
 CREATE TABLE `reg_m300` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CODIGO` varchar(6) collate {COLLATE} default NULL,
   `DESCRICAO` varchar(512) collate {COLLATE} default NULL,
@@ -837,7 +837,7 @@ CREATE TABLE `reg_m300` (
   `IND_RELACAO` varchar(1) collate {COLLATE} default NULL,
   `VALOR` decimal(21,2) default NULL,
   `HIST_LAN_LAL` varchar(500) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -845,12 +845,12 @@ CREATE TABLE `reg_m300` (
 --
 
 CREATE TABLE `reg_m305` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `COD_CTA_B` varchar(255) collate {COLLATE} default NULL,
   `VL_CTA` decimal(21,2) default NULL,
   `IND_VL_CTA` varchar(1) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -858,13 +858,13 @@ CREATE TABLE `reg_m305` (
 --
 
 CREATE TABLE `reg_m310` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `COD_CTA` varchar(255) collate {COLLATE} default NULL,
   `COD_CCUS` varchar(255) collate {COLLATE} default NULL,
   `VL_CTA` decimal(21,2) default NULL,
   `IND_VL_CTA` varchar(1) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -872,10 +872,10 @@ CREATE TABLE `reg_m310` (
 --
 
 CREATE TABLE `reg_m312` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `NUM_LCTO` varchar(255) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -883,11 +883,11 @@ CREATE TABLE `reg_m312` (
 --
 
 CREATE TABLE `reg_m315` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `IND_PROC` varchar(1) collate {COLLATE} default NULL,
   `NUM_PROC` varchar(20) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -895,7 +895,7 @@ CREATE TABLE `reg_m315` (
 --
 
 CREATE TABLE `reg_m350` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CODIGO` varchar(6) collate {COLLATE} default NULL,
   `DESCRICAO` varchar(512) collate {COLLATE} default NULL,
@@ -903,7 +903,7 @@ CREATE TABLE `reg_m350` (
   `IND_RELACAO` varchar(1) collate {COLLATE} default NULL,
   `VALOR` decimal(21,2) default NULL,
   `HIST_LAN_LAL` varchar(500) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -911,12 +911,12 @@ CREATE TABLE `reg_m350` (
 --
 
 CREATE TABLE `reg_m355` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `COD_CTA_B` varchar(255) collate {COLLATE} default NULL,
   `VL_CTA` decimal(21,2) default NULL,
   `IND_VL_CTA` varchar(1) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -924,13 +924,13 @@ CREATE TABLE `reg_m355` (
 --
 
 CREATE TABLE `reg_m360` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `COD_CTA` varchar(255) collate {COLLATE} default NULL,
   `COD_CCUS` varchar(255) collate {COLLATE} default NULL,
   `VL_CTA` decimal(21,2) default NULL,
   `IND_VL_CTA` varchar(1) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -938,10 +938,10 @@ CREATE TABLE `reg_m360` (
 --
 
 CREATE TABLE `reg_m362` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `NUM_LCTO` varchar(255) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -949,11 +949,11 @@ CREATE TABLE `reg_m362` (
 --
 
 CREATE TABLE `reg_m365` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `IND_PROC` varchar(1) collate {COLLATE} default NULL,
   `NUM_PROC` varchar(20) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -961,7 +961,7 @@ CREATE TABLE `reg_m365` (
 --
 
 CREATE TABLE `reg_m410` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `COD_CTA_B` varchar(255) collate {COLLATE} default NULL,
   `TRIBUTO` varchar(1) collate {COLLATE} default NULL,
@@ -970,7 +970,7 @@ CREATE TABLE `reg_m410` (
   `COD_CTA_B_CTP` varchar(255) collate {COLLATE} default NULL,
   `HIST_LAN_LALB` varchar(255) collate {COLLATE} default NULL,
   `IND_LAN_ANT` varchar(1) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -978,11 +978,11 @@ CREATE TABLE `reg_m410` (
 --
 
 CREATE TABLE `reg_m415` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `IND_PROC` varchar(1) collate {COLLATE} default NULL,
   `NUM_PROC` varchar(20) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -990,7 +990,7 @@ CREATE TABLE `reg_m415` (
 --
 
 CREATE TABLE `reg_m500` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `COD_CTA_B` varchar(255) collate {COLLATE} default NULL,
   `TRIBUTO` varchar(1) collate {COLLATE} default NULL,
@@ -1002,7 +1002,7 @@ CREATE TABLE `reg_m500` (
   `IND_VL_LCTO_PARTE_B` varchar(1) collate {COLLATE} default NULL,
   `SD_FIM_LAL` decimal(21,2) default NULL,
   `IND_SD_FIM_LAL` varchar(1) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -1010,10 +1010,10 @@ CREATE TABLE `reg_m500` (
 --
 
 CREATE TABLE `reg_m990` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `QTD_LIN_M` varchar(255) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -1021,10 +1021,10 @@ CREATE TABLE `reg_m990` (
 --
 
 CREATE TABLE `reg_n001` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `IND_DAD` varchar(1) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -1032,12 +1032,12 @@ CREATE TABLE `reg_n001` (
 --
 
 CREATE TABLE `reg_n030` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `DT_INI` date default NULL,
   `DT_FIN` date default NULL,
   `PER_APUR` varchar(3) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -1045,12 +1045,12 @@ CREATE TABLE `reg_n030` (
 --
 
 CREATE TABLE `reg_n500` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CODIGO` varchar(6) collate {COLLATE} default NULL,
   `DESCRICAO` varchar(512) collate {COLLATE} default NULL,
   `VALOR` decimal(21,2) default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -1058,12 +1058,12 @@ CREATE TABLE `reg_n500` (
 --
 
 CREATE TABLE `reg_n600` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CODIGO` varchar(6) collate {COLLATE} default NULL,
   `DESCRICAO` varchar(512) collate {COLLATE} default NULL,
   `VALOR` decimal(21,2) default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -1071,12 +1071,12 @@ CREATE TABLE `reg_n600` (
 --
 
 CREATE TABLE `reg_n610` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CODIGO` varchar(6) collate {COLLATE} default NULL,
   `DESCRICAO` varchar(512) collate {COLLATE} default NULL,
   `VALOR` decimal(21,2) default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -1084,7 +1084,7 @@ CREATE TABLE `reg_n610` (
 --
 
 CREATE TABLE `reg_n615` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `BASE_CALC` decimal(21,2) default NULL,
   `PER_INCEN_FINOR` decimal(7,2) default NULL,
@@ -1095,7 +1095,7 @@ CREATE TABLE `reg_n615` (
   `PER_INCEN_FUNRES` decimal(7,2) default NULL,
   `VL_LIQ_INCEN_FUNRES` decimal(21,2) default NULL,
   `VL_TOTAL` decimal(21,2) default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -1103,12 +1103,12 @@ CREATE TABLE `reg_n615` (
 --
 
 CREATE TABLE `reg_n620` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CODIGO` varchar(6) collate {COLLATE} default NULL,
   `DESCRICAO` varchar(512) collate {COLLATE} default NULL,
   `VALOR` decimal(21,2) default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -1116,12 +1116,12 @@ CREATE TABLE `reg_n620` (
 --
 
 CREATE TABLE `reg_n630` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CODIGO` varchar(6) collate {COLLATE} default NULL,
   `DESCRICAO` varchar(512) collate {COLLATE} default NULL,
   `VALOR` decimal(21,2) default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -1129,12 +1129,12 @@ CREATE TABLE `reg_n630` (
 --
 
 CREATE TABLE `reg_n650` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CODIGO` varchar(6) collate {COLLATE} default NULL,
   `DESCRICAO` varchar(512) collate {COLLATE} default NULL,
   `VALOR` decimal(21,2) default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -1142,12 +1142,12 @@ CREATE TABLE `reg_n650` (
 --
 
 CREATE TABLE `reg_n660` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CODIGO` varchar(6) collate {COLLATE} default NULL,
   `DESCRICAO` varchar(512) collate {COLLATE} default NULL,
   `VALOR` decimal(21,2) default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -1155,12 +1155,12 @@ CREATE TABLE `reg_n660` (
 --
 
 CREATE TABLE `reg_n670` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CODIGO` varchar(6) collate {COLLATE} default NULL,
   `DESCRICAO` varchar(512) collate {COLLATE} default NULL,
   `VALOR` decimal(21,2) default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -1168,10 +1168,10 @@ CREATE TABLE `reg_n670` (
 --
 
 CREATE TABLE `reg_n990` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `QTD_LIN_N` varchar(255) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -1179,10 +1179,10 @@ CREATE TABLE `reg_n990` (
 --
 
 CREATE TABLE `reg_p001` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `IND_DAD` varchar(1) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -1190,12 +1190,12 @@ CREATE TABLE `reg_p001` (
 --
 
 CREATE TABLE `reg_p030` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `DT_INI` date default NULL,
   `DT_FIN` date default NULL,
   `PER_APUR` varchar(3) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -1203,7 +1203,7 @@ CREATE TABLE `reg_p030` (
 --
 
 CREATE TABLE `reg_p100` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CODIGO` varchar(255) collate {COLLATE} default NULL,
   `DESCRICAO` varchar(512) collate {COLLATE} default NULL,
@@ -1215,7 +1215,7 @@ CREATE TABLE `reg_p100` (
   `IND_VAL_CTA_REF_INI` varchar(1) collate {COLLATE} default NULL,
   `VAL_CTA_REF_FIN` decimal(21,2) default NULL,
   `IND_VAL_CTA_REF_FIN` varchar(1) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -1223,12 +1223,12 @@ CREATE TABLE `reg_p100` (
 --
 
 CREATE TABLE `reg_p130` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CODIGO` varchar(6) collate {COLLATE} default NULL,
   `DESCRICAO` varchar(512) collate {COLLATE} default NULL,
   `VALOR` decimal(21,2) default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -1236,7 +1236,7 @@ CREATE TABLE `reg_p130` (
 --
 
 CREATE TABLE `reg_p150` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CODIGO` varchar(255) collate {COLLATE} default NULL,
   `DESCRICAO` varchar(512) collate {COLLATE} default NULL,
@@ -1246,7 +1246,7 @@ CREATE TABLE `reg_p150` (
   `COD_CTA_SUP` varchar(255) collate {COLLATE} default NULL,
   `VALOR` decimal(21,2) default NULL,
   `IND_VALOR` varchar(1) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -1254,12 +1254,12 @@ CREATE TABLE `reg_p150` (
 --
 
 CREATE TABLE `reg_p200` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CODIGO` varchar(6) collate {COLLATE} default NULL,
   `DESCRICAO` varchar(512) collate {COLLATE} default NULL,
   `VALOR` decimal(21,2) default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -1267,12 +1267,12 @@ CREATE TABLE `reg_p200` (
 --
 
 CREATE TABLE `reg_p230` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CODIGO` varchar(6) collate {COLLATE} default NULL,
   `DESCRICAO` varchar(512) collate {COLLATE} default NULL,
   `VALOR` decimal(21,2) default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -1280,12 +1280,12 @@ CREATE TABLE `reg_p230` (
 --
 
 CREATE TABLE `reg_p300` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CODIGO` varchar(6) collate {COLLATE} default NULL,
   `DESCRICAO` varchar(512) collate {COLLATE} default NULL,
   `VALOR` decimal(21,2) default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -1293,12 +1293,12 @@ CREATE TABLE `reg_p300` (
 --
 
 CREATE TABLE `reg_p400` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CODIGO` varchar(6) collate {COLLATE} default NULL,
   `DESCRICAO` varchar(512) collate {COLLATE} default NULL,
   `VALOR` decimal(21,2) default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -1306,12 +1306,12 @@ CREATE TABLE `reg_p400` (
 --
 
 CREATE TABLE `reg_p500` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CODIGO` varchar(6) collate {COLLATE} default NULL,
   `DESCRICAO` varchar(512) collate {COLLATE} default NULL,
   `VALOR` decimal(21,2) default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -1319,10 +1319,10 @@ CREATE TABLE `reg_p500` (
 --
 
 CREATE TABLE `reg_p990` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `QTD_LIN_P` varchar(255) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -1330,10 +1330,10 @@ CREATE TABLE `reg_p990` (
 --
 
 CREATE TABLE `reg_t001` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `IND_DAD` varchar(1) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -1341,12 +1341,12 @@ CREATE TABLE `reg_t001` (
 --
 
 CREATE TABLE `reg_t030` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `DT_INI` date default NULL,
   `DT_FIN` date default NULL,
   `PER_APUR` varchar(3) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -1354,12 +1354,12 @@ CREATE TABLE `reg_t030` (
 --
 
 CREATE TABLE `reg_t120` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CODIGO` varchar(6) collate {COLLATE} default NULL,
   `DESCRICAO` varchar(512) collate {COLLATE} default NULL,
   `VALOR` decimal(21,2) default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -1367,12 +1367,12 @@ CREATE TABLE `reg_t120` (
 --
 
 CREATE TABLE `reg_t150` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CODIGO` varchar(6) collate {COLLATE} default NULL,
   `DESCRICAO` varchar(512) collate {COLLATE} default NULL,
   `VALOR` decimal(21,2) default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -1380,12 +1380,12 @@ CREATE TABLE `reg_t150` (
 --
 
 CREATE TABLE `reg_t170` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CODIGO` varchar(6) collate {COLLATE} default NULL,
   `DESCRICAO` varchar(512) collate {COLLATE} default NULL,
   `VALOR` decimal(21,2) default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -1393,12 +1393,12 @@ CREATE TABLE `reg_t170` (
 --
 
 CREATE TABLE `reg_t181` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CODIGO` varchar(6) collate {COLLATE} default NULL,
   `DESCRICAO` varchar(512) collate {COLLATE} default NULL,
   `VALOR` decimal(21,2) default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -1406,10 +1406,10 @@ CREATE TABLE `reg_t181` (
 --
 
 CREATE TABLE `reg_t990` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `QTD_LIN_T` varchar(255) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -1417,10 +1417,10 @@ CREATE TABLE `reg_t990` (
 --
 
 CREATE TABLE `reg_u001` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `IND_DAD` varchar(1) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -1428,12 +1428,12 @@ CREATE TABLE `reg_u001` (
 --
 
 CREATE TABLE `reg_u030` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `DT_INI` date default NULL,
   `DT_FIN` date default NULL,
   `PER_APUR` varchar(3) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -1441,7 +1441,7 @@ CREATE TABLE `reg_u030` (
 --
 
 CREATE TABLE `reg_u100` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CODIGO` varchar(255) collate {COLLATE} default NULL,
   `DESCRICAO` varchar(512) collate {COLLATE} default NULL,
@@ -1453,7 +1453,7 @@ CREATE TABLE `reg_u100` (
   `IND_VAL_CTA_REF_INI` varchar(1) collate {COLLATE} default NULL,
   `VAL_CTA_REF_FIN` decimal(21,2) default NULL,
   `IND_VAL_CTA_REF_FIN` varchar(1) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -1461,7 +1461,7 @@ CREATE TABLE `reg_u100` (
 --
 
 CREATE TABLE `reg_u150` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CODIGO` varchar(255) collate {COLLATE} default NULL,
   `DESCRICAO` varchar(512) collate {COLLATE} default NULL,
@@ -1471,7 +1471,7 @@ CREATE TABLE `reg_u150` (
   `COD_CTA_SUP` varchar(255) collate {COLLATE} default NULL,
   `VALOR` decimal(21,2) default NULL,
   `IND_VALOR` varchar(1) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -1479,12 +1479,12 @@ CREATE TABLE `reg_u150` (
 --
 
 CREATE TABLE `reg_u180` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CODIGO` varchar(6) collate {COLLATE} default NULL,
   `DESCRICAO` varchar(512) collate {COLLATE} default NULL,
   `VALOR` decimal(21,2) default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -1492,12 +1492,12 @@ CREATE TABLE `reg_u180` (
 --
 
 CREATE TABLE `reg_u182` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CODIGO` varchar(6) collate {COLLATE} default NULL,
   `DESCRICAO` varchar(512) collate {COLLATE} default NULL,
   `VALOR` decimal(21,2) default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -1505,10 +1505,10 @@ CREATE TABLE `reg_u182` (
 --
 
 CREATE TABLE `reg_u990` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `QTD_LIN_U` varchar(255) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -1516,10 +1516,10 @@ CREATE TABLE `reg_u990` (
 --
 
 CREATE TABLE `reg_x001` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `IND_DAD` varchar(1) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -1527,14 +1527,14 @@ CREATE TABLE `reg_x001` (
 --
 
 CREATE TABLE `reg_x280` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `IND_ATIV` varchar(2) collate {COLLATE} default NULL,
   `IND_PROJ` varchar(2) collate {COLLATE} default NULL,
   `ATO_CONC` varchar(30) collate {COLLATE} default NULL,
   `VIG_INI` date default NULL,
   `VIG_FIM` date default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -1542,12 +1542,12 @@ CREATE TABLE `reg_x280` (
 --
 
 CREATE TABLE `reg_x291` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CODIGO` varchar(6) collate {COLLATE} default NULL,
   `DESCRICAO` varchar(512) collate {COLLATE} default NULL,
   `VALOR` decimal(21,2) default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -1555,12 +1555,12 @@ CREATE TABLE `reg_x291` (
 --
 
 CREATE TABLE `reg_x292` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CODIGO` varchar(6) collate {COLLATE} default NULL,
   `DESCRICAO` varchar(512) collate {COLLATE} default NULL,
   `VALOR` decimal(21,2) default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -1568,7 +1568,7 @@ CREATE TABLE `reg_x292` (
 --
 
 CREATE TABLE `reg_x300` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `NUM_ORDEM` varchar(255) collate {COLLATE} default NULL,
   `TIP_EXP` varchar(2) collate {COLLATE} default NULL,
@@ -1587,7 +1587,7 @@ CREATE TABLE `reg_x300` (
   `VL_JUR_MAX` decimal(11,4) default NULL,
   `COD_CNC` varchar(5) collate {COLLATE} default NULL,
   `TIP_MOEDA` varchar(255) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -1595,13 +1595,13 @@ CREATE TABLE `reg_x300` (
 --
 
 CREATE TABLE `reg_x310` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `NOME` varchar(255) collate {COLLATE} default NULL,
   `PAIS` varchar(255) collate {COLLATE} default NULL,
   `VL_OPER` decimal(21,2) default NULL,
   `COND_PES` varchar(2) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -1609,7 +1609,7 @@ CREATE TABLE `reg_x310` (
 --
 
 CREATE TABLE `reg_x320` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `NUM_ORDEM` varchar(255) collate {COLLATE} default NULL,
   `TIP_IMP` varchar(2) collate {COLLATE} default NULL,
@@ -1627,7 +1627,7 @@ CREATE TABLE `reg_x320` (
   `VL_JUR_MAX` decimal(11,4) default NULL,
   `COD_CNC` varchar(5) collate {COLLATE} default NULL,
   `TIP_MOEDA` varchar(3) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -1635,13 +1635,13 @@ CREATE TABLE `reg_x320` (
 --
 
 CREATE TABLE `reg_x330` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `NOME` varchar(255) collate {COLLATE} default NULL,
   `PAIS` varchar(255) collate {COLLATE} default NULL,
   `VL_OPER` decimal(21,2) default NULL,
   `COND_PES` varchar(2) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -1649,7 +1649,7 @@ CREATE TABLE `reg_x330` (
 --
 
 CREATE TABLE `reg_x340` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `RAZ_SOCIAL` varchar(255) collate {COLLATE} default NULL,
   `NIF` varchar(255) collate {COLLATE} default NULL,
@@ -1658,7 +1658,7 @@ CREATE TABLE `reg_x340` (
   `IND_ISEN_PETR` varchar(1) collate {COLLATE} default NULL,
   `IND_CONSOL` varchar(1) collate {COLLATE} default NULL,
   `MOT_NAO_CONSOL` varchar(1) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -1666,7 +1666,7 @@ CREATE TABLE `reg_x340` (
 --
 
 CREATE TABLE `reg_x350` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `REC_LIQ` decimal(21,2) default NULL,
   `CUSTOS` decimal(21,2) default NULL,
@@ -1685,7 +1685,7 @@ CREATE TABLE `reg_x350` (
   `LUC_ARB_ANT_IMP` decimal(21,2) default NULL,
   `IMP_DEV_ARB` decimal(21,2) default NULL,
   `LUC_ARB_PER` decimal(21,2) default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -1693,7 +1693,7 @@ CREATE TABLE `reg_x350` (
 --
 
 CREATE TABLE `reg_x351` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `RES_INV_PER` decimal(21,2) default NULL,
   `RES_INV_PER_REAL` decimal(21,2) default NULL,
@@ -1709,7 +1709,7 @@ CREATE TABLE `reg_x351` (
   `IMP_RET_EXT` decimal(21,2) default NULL,
   `IMP_RET_EXT_REAL` decimal(21,2) default NULL,
   `IMP_RET_BR` decimal(21,2) default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -1717,13 +1717,13 @@ CREATE TABLE `reg_x351` (
 --
 
 CREATE TABLE `reg_x352` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `RES_PER` decimal(21,2) default NULL,
   `RES_PER_REAL` decimal(21,2) default NULL,
   `LUC_DISP` decimal(21,2) default NULL,
   `LUC_DISP_REAL` decimal(21,2) default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -1731,13 +1731,13 @@ CREATE TABLE `reg_x352` (
 --
 
 CREATE TABLE `reg_x353` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `RES_NEG_UTIL` decimal(21,2) default NULL,
   `RES_NEG_UTIL_REAL` decimal(21,2) default NULL,
   `SALDO_RES_NEG_NAO_UTIL` decimal(21,2) default NULL,
   `SALDO_RES_NEG_NAO_UTIL_REAL` decimal(21,2) default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -1745,12 +1745,12 @@ CREATE TABLE `reg_x353` (
 --
 
 CREATE TABLE `reg_x354` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `RES_NEG_PER_ANT` decimal(21,2) default NULL,
   `RES_NEG_PER_ANT_REAL` decimal(21,2) default NULL,
   `SALDO_NEG_ACUM_PER_ANT` decimal(21,2) default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -1758,7 +1758,7 @@ CREATE TABLE `reg_x354` (
 --
 
 CREATE TABLE `reg_x355` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `REND_PASS_PROP` decimal(21,2) default NULL,
   `REND_PASS_PROP_REAL` decimal(21,2) default NULL,
@@ -1767,7 +1767,7 @@ CREATE TABLE `reg_x355` (
   `REND_ATIV_PROP` decimal(21,2) default NULL,
   `REND_ATIV_PROP_REAL` decimal(21,2) default NULL,
   `PERCENTUAL` decimal(11,4) default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -1775,12 +1775,12 @@ CREATE TABLE `reg_x355` (
 --
 
 CREATE TABLE `reg_x356` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `PERC_PART` decimal(21,2) default NULL,
   `ATIVO_TOTAL` decimal(21,2) default NULL,
   `PAT_LIQUIDO` decimal(21,2) default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -1788,12 +1788,12 @@ CREATE TABLE `reg_x356` (
 --
 
 CREATE TABLE `reg_x390` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CODIGO` varchar(6) collate {COLLATE} default NULL,
   `DESCRICAO` varchar(512) collate {COLLATE} default NULL,
   `VALOR` decimal(21,2) default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -1801,12 +1801,12 @@ CREATE TABLE `reg_x390` (
 --
 
 CREATE TABLE `reg_x400` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CODIGO` varchar(6) collate {COLLATE} default NULL,
   `DESCRICAO` varchar(255) collate {COLLATE} default NULL,
   `VALOR` decimal(21,2) default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -1814,12 +1814,12 @@ CREATE TABLE `reg_x400` (
 --
 
 CREATE TABLE `reg_x410` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `PAIS` varchar(3) collate {COLLATE} default NULL,
   `IND_HOME_DISP` varchar(1) collate {COLLATE} default NULL,
   `IND_SERV_DISP` varchar(1) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -1827,7 +1827,7 @@ CREATE TABLE `reg_x410` (
 --
 
 CREATE TABLE `reg_x420` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `TIP_ROY` varchar(1) collate {COLLATE} default NULL,
   `PAIS` varchar(3) collate {COLLATE} default NULL,
@@ -1838,7 +1838,7 @@ CREATE TABLE `reg_x420` (
   `VL_EXPL_KNOW` decimal(21,2) default NULL,
   `VL_EXPL_FRANQ` decimal(21,2) default NULL,
   `VL_EXPL_INT` decimal(21,2) default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -1846,7 +1846,7 @@ CREATE TABLE `reg_x420` (
 --
 
 CREATE TABLE `reg_x430` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `PAIS` varchar(3) collate {COLLATE} default NULL,
   `VL_SERV_ASSIST` decimal(21,2) default NULL,
@@ -1855,7 +1855,7 @@ CREATE TABLE `reg_x430` (
   `VL_JURO` decimal(21,2) default NULL,
   `VL_DEMAIS_JUROS` decimal(21,2) default NULL,
   `VL_DIVID` decimal(21,2) default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -1863,7 +1863,7 @@ CREATE TABLE `reg_x430` (
 --
 
 CREATE TABLE `reg_x450` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `PAIS` varchar(3) collate {COLLATE} default NULL,
   `VL_SERV_ASSIST` decimal(21,2) default NULL,
@@ -1874,7 +1874,7 @@ CREATE TABLE `reg_x450` (
   `VL_DEMAIS_JUROS` decimal(21,2) default NULL,
   `VL_DIVID_PF` decimal(21,2) default NULL,
   `VL_DIVID_PJ` decimal(21,2) default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -1882,12 +1882,12 @@ CREATE TABLE `reg_x450` (
 --
 
 CREATE TABLE `reg_x460` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CODIGO` varchar(6) collate {COLLATE} default NULL,
   `DESCRICAO` varchar(512) collate {COLLATE} default NULL,
   `VALOR` decimal(21,2) default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -1895,12 +1895,12 @@ CREATE TABLE `reg_x460` (
 --
 
 CREATE TABLE `reg_x470` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CODIGO` varchar(6) collate {COLLATE} default NULL,
   `DESCRICAO` varchar(512) collate {COLLATE} default NULL,
   `VALOR` decimal(21,2) default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -1908,12 +1908,12 @@ CREATE TABLE `reg_x470` (
 --
 
 CREATE TABLE `reg_x480` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CODIGO` varchar(6) collate {COLLATE} default NULL,
   `DESCRICAO` varchar(512) collate {COLLATE} default NULL,
   `VALOR` decimal(21,2) default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -1921,12 +1921,12 @@ CREATE TABLE `reg_x480` (
 --
 
 CREATE TABLE `reg_x490` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CODIGO` varchar(6) collate {COLLATE} default NULL,
   `DESCRICAO` varchar(512) collate {COLLATE} default NULL,
   `VALOR` decimal(21,2) default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -1934,12 +1934,12 @@ CREATE TABLE `reg_x490` (
 --
 
 CREATE TABLE `reg_x500` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CODIGO` varchar(6) collate {COLLATE} default NULL,
   `DESCRICAO` varchar(512) collate {COLLATE} default NULL,
   `VALOR` decimal(21,2) default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -1947,12 +1947,12 @@ CREATE TABLE `reg_x500` (
 --
 
 CREATE TABLE `reg_x510` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CODIGO` varchar(6) collate {COLLATE} default NULL,
   `DESCRICAO` varchar(512) collate {COLLATE} default NULL,
   `VALOR` decimal(21,2) default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -1960,10 +1960,10 @@ CREATE TABLE `reg_x510` (
 --
 
 CREATE TABLE `reg_x990` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `QTD_LIN_X` varchar(255) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -1971,10 +1971,10 @@ CREATE TABLE `reg_x990` (
 --
 
 CREATE TABLE `reg_y001` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `IND_DAD` varchar(1) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -1982,14 +1982,14 @@ CREATE TABLE `reg_y001` (
 --
 
 CREATE TABLE `reg_y520` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `TIP_EXT` varchar(1) collate {COLLATE} default NULL,
   `PAIS` varchar(3) collate {COLLATE} default NULL,
   `FORMA` varchar(1) collate {COLLATE} default NULL,
   `NAT_OPER` varchar(5) collate {COLLATE} default NULL,
   `VL_PERIODO` decimal(21,2) default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -1997,12 +1997,12 @@ CREATE TABLE `reg_y520` (
 --
 
 CREATE TABLE `reg_y540` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CNPJ_ESTAB` varchar(14) collate {COLLATE} default NULL,
   `VL_REC_ESTAB` decimal(21,2) default NULL,
   `CNAE` varchar(7) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -2010,12 +2010,12 @@ CREATE TABLE `reg_y540` (
 --
 
 CREATE TABLE `reg_y550` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CNPJ_EXP` varchar(14) collate {COLLATE} default NULL,
   `COD_NCM` varchar(8) collate {COLLATE} default NULL,
   `VL_VENDA` decimal(21,2) default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -2023,13 +2023,13 @@ CREATE TABLE `reg_y550` (
 --
 
 CREATE TABLE `reg_y560` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CNPJ` varchar(14) collate {COLLATE} default NULL,
   `COD_NCM` varchar(8) collate {COLLATE} default NULL,
   `VL_COMPRA` decimal(21,2) default NULL,
   `VL_EXP` decimal(21,2) default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -2037,7 +2037,7 @@ CREATE TABLE `reg_y560` (
 --
 
 CREATE TABLE `reg_y570` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CNPJ_FON` varchar(14) collate {COLLATE} default NULL,
   `NOM_EMP` varchar(255) collate {COLLATE} default NULL,
@@ -2046,7 +2046,7 @@ CREATE TABLE `reg_y570` (
   `VL_REND` decimal(21,2) default NULL,
   `IR_RET` decimal(21,2) default NULL,
   `CSLL_RET` decimal(21,2) default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -2054,13 +2054,13 @@ CREATE TABLE `reg_y570` (
 --
 
 CREATE TABLE `reg_y580` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CNPJ` varchar(14) collate {COLLATE} default NULL,
   `TIP_BENEF` varchar(2) collate {COLLATE} default NULL,
   `FORM_DOA` varchar(2) collate {COLLATE} default NULL,
   `VL_DOA` decimal(21,2) default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -2068,14 +2068,14 @@ CREATE TABLE `reg_y580` (
 --
 
 CREATE TABLE `reg_y590` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `TIP_ATIVO` varchar(14) collate {COLLATE} default NULL,
   `PAIS` varchar(3) collate {COLLATE} default NULL,
   `DISCRIMINACAO` varchar(255) collate {COLLATE} default NULL,
   `VL_ANT` decimal(21,2) default NULL,
   `VL_ATUAL` decimal(21,2) default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -2083,7 +2083,7 @@ CREATE TABLE `reg_y590` (
 --
 
 CREATE TABLE `reg_y600` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `DT_ALT_SOC` date default NULL,
   `DT_FIM_SOC` date default NULL,
@@ -2096,7 +2096,7 @@ CREATE TABLE `reg_y600` (
   `PERC_CAP_VOT` decimal(7,2) default NULL,
   `CPF_REP_LEG` varchar(11) collate {COLLATE} default NULL,
   `QUALIF_REP_LEG` varchar(2) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -2104,7 +2104,7 @@ CREATE TABLE `reg_y600` (
 --
 
 CREATE TABLE `reg_y611` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `PAIS` varchar(3) collate {COLLATE} default NULL,
   `IND_PF_PJ` varchar(2) collate {COLLATE} default NULL,
@@ -2116,7 +2116,7 @@ CREATE TABLE `reg_y611` (
   `VL_JUR_CAP` decimal(21,2) default NULL,
   `VL_DEM_REND` decimal(21,2) default NULL,
   `VL_IR_RET` decimal(21,2) default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -2124,7 +2124,7 @@ CREATE TABLE `reg_y611` (
 --
 
 CREATE TABLE `reg_y612` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CPF` varchar(11) collate {COLLATE} default NULL,
   `NOME` varchar(255) collate {COLLATE} default NULL,
@@ -2132,7 +2132,7 @@ CREATE TABLE `reg_y612` (
   `VL_REM_TRAB` decimal(21,2) default NULL,
   `VL_DEM_REND` decimal(21,2) default NULL,
   `VL_IR_RET` decimal(21,2) default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -2140,7 +2140,7 @@ CREATE TABLE `reg_y612` (
 --
 
 CREATE TABLE `reg_y620` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `DT_EVENTO` date default NULL,
   `IND_RELAC` varchar(1) collate {COLLATE} default NULL,
@@ -2158,7 +2158,7 @@ CREATE TABLE `reg_y620` (
   `NOME_CART` varchar(255) collate {COLLATE} default NULL,
   `IND_PROC_RFB` varchar(1) collate {COLLATE} default NULL,
   `NUM_PROC_RFB` varchar(255) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -2166,7 +2166,7 @@ CREATE TABLE `reg_y620` (
 --
 
 CREATE TABLE `reg_y630` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CNPJ` varchar(14) collate {COLLATE} default NULL,
   `QTE_QUOT` varchar(255) collate {COLLATE} default NULL,
@@ -2174,7 +2174,7 @@ CREATE TABLE `reg_y630` (
   `PATR_FIN_PER` decimal(21,2) default NULL,
   `DAT_ABERT` date default NULL,
   `DAT_ENCER` date default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -2182,14 +2182,14 @@ CREATE TABLE `reg_y630` (
 --
 
 CREATE TABLE `reg_y640` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CNPJ` varchar(14) collate {COLLATE} default NULL,
   `COND_DECL` varchar(1) collate {COLLATE} default NULL,
   `VL_CONS` decimal(21,2) default NULL,
   `CNPJ_LID` varchar(14) collate {COLLATE} default NULL,
   `VL_DECL` decimal(21,2) default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -2197,11 +2197,11 @@ CREATE TABLE `reg_y640` (
 --
 
 CREATE TABLE `reg_y650` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CNPJ` varchar(14) collate {COLLATE} default NULL,
   `VL_PART` decimal(21,2) default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -2209,12 +2209,12 @@ CREATE TABLE `reg_y650` (
 --
 
 CREATE TABLE `reg_y660` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CNPJ` varchar(14) collate {COLLATE} default NULL,
   `NOM_EMP` varchar(255) collate {COLLATE} default NULL,
   `PERC_PAT_LIQ` decimal(7,2) default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -2222,7 +2222,7 @@ CREATE TABLE `reg_y660` (
 --
 
 CREATE TABLE `reg_y665` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `COD_CTA` varchar(255) collate {COLLATE} default NULL,
   `COD_CCUS` varchar(255) collate {COLLATE} default NULL,
@@ -2235,7 +2235,7 @@ CREATE TABLE `reg_y665` (
   `MET_CONTR` varchar(1) collate {COLLATE} default NULL,
   `COD_SUBCONT` varchar(255) collate {COLLATE} default NULL,
   `COD_CCUS_SUB` varchar(255) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -2243,7 +2243,7 @@ CREATE TABLE `reg_y665` (
 --
 
 CREATE TABLE `reg_y671` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `VL_AQ_MAQ` decimal(21,2) default NULL,
   `VL_DOA_CRIANCA` decimal(21,2) default NULL,
@@ -2258,7 +2258,7 @@ CREATE TABLE `reg_y671` (
   `VL_ALIQ_RED` decimal(7,2) default NULL,
   `IND_ALTER_CAPITAL` varchar(1) collate {COLLATE} default NULL,
   `IND_BCN_CSLL` varchar(1) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -2266,7 +2266,7 @@ CREATE TABLE `reg_y671` (
 --
 
 CREATE TABLE `reg_y672` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `VL_CAPITAL_ANT` decimal(21,2) default NULL,
   `VL_CAPITAL` decimal(21,2) default NULL,
@@ -2288,7 +2288,7 @@ CREATE TABLE `reg_y672` (
   `VL_ALIQ_RED` decimal(6,2) default NULL,
   `IND_REG_APUR` varchar(1) collate {COLLATE} default NULL,
   `IND_AVAL_ESTOQ` varchar(1) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -2296,10 +2296,10 @@ CREATE TABLE `reg_y672` (
 --
 
 CREATE TABLE `reg_y680` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `MES` varchar(2) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -2307,12 +2307,12 @@ CREATE TABLE `reg_y680` (
 --
 
 CREATE TABLE `reg_y681` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `CODIGO` varchar(6) collate {COLLATE} default NULL,
   `DESCRICAO` varchar(512) collate {COLLATE} default NULL,
   `VALOR` decimal(21,2) default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -2320,11 +2320,11 @@ CREATE TABLE `reg_y681` (
 --
 
 CREATE TABLE `reg_y682` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `MES` varchar(2) collate {COLLATE} default NULL,
   `ACRES_PATR` varchar(19) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -2332,11 +2332,11 @@ CREATE TABLE `reg_y682` (
 --
 
 CREATE TABLE `reg_y690` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `MES` varchar(2) collate {COLLATE} default NULL,
   `VL_REC_BRU` decimal(21,2) default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -2344,11 +2344,11 @@ CREATE TABLE `reg_y690` (
 --
 
 CREATE TABLE `reg_y800` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `ARQ_RTF` varchar(255) collate {COLLATE} default NULL,
   `IND_FIN_RTF` varchar(255) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
 
 --
@@ -2356,8 +2356,8 @@ CREATE TABLE `reg_y800` (
 --
 
 CREATE TABLE `reg_y990` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `REG` varchar(4) collate {COLLATE} default NULL,
   `QTD_LIN_Y` varchar(255) collate {COLLATE} default NULL,
-  PRIMARY KEY  (`ID`)
+  PRIMARY KEY  (`id`)
 ) ENGINE={ENGINE} DEFAULT CHARSET={CHARSET} COLLATE={COLLATE};
